@@ -6,10 +6,16 @@ import (
 	"log"
 	"net/http"
 	"regexp"
+	"strconv"
 	"strings"
 )
 
 func main() {
+	getPossibleDPT()
+
+}
+
+func getPossibleDPT() {
 	response, err := http.Get("https://boards.4channel.org/g/catalog#s=dpt")
 	if err != nil {
 		log.Fatal(err)
@@ -24,7 +30,7 @@ func main() {
 
 	var dptThreads []string
 
-	re := regexp.MustCompile("\\d+\"(.*?)\"sub\":\"(.*?)\"")
+	re := regexp.MustCompile("\"\\d+\"(.*?)\"sub\":\"(.*?)\"")
 	latestThreads := re.FindAllString(string(body), -1)
 	if latestThreads == nil {
 		fmt.Println("no dpt threads currently")
@@ -36,6 +42,28 @@ func main() {
 		}
 	}
 
-	fmt.Println(dptThreads)
+	// Change later to be splice and get latest one based on time value
+	var dptThreadObj dptThreadInfo
 
+	for _, dptThread := range dptThreads {
+		var split []string = strings.Split(dptThread, ":")
+		threadID := split[0]
+
+		unixTime, err := strconv.Atoi(strings.Split(split[2], ",")[0])
+		if err != nil {
+			fmt.Println("something is in error")
+		}
+
+		imgURLPath := strings.Split(split[3], ",")[0]
+
+		dptThreadObj = dptThreadInfo{threadID, uint32(unixTime), imgURLPath}
+		fmt.Println(dptThreadObj)
+	}
+
+}
+
+type dptThreadInfo struct {
+	id         string // thread id
+	unixTime   uint32 // unix time, won't work after January 2038 lol
+	imgURLPath string // thread picture
 }
