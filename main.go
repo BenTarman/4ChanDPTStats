@@ -15,6 +15,24 @@ func main() {
 
 }
 
+func getThread(apiURL string) {
+	fmt.Println(apiURL)
+	response, err := http.Get(apiURL)
+	if err != nil {
+		log.Fatal(err)
+	}
+	defer response.Body.Close()
+
+	// Read response data in to memeory
+	body, err := ioutil.ReadAll(response.Body)
+	if err != nil {
+		log.Fatal("Error reading HTTP body", err)
+	}
+
+	fmt.Println(string(body))
+
+}
+
 func getPossibleDPT() {
 	response, err := http.Get("https://boards.4channel.org/g/catalog#s=dpt")
 	if err != nil {
@@ -47,10 +65,10 @@ func getPossibleDPT() {
 
 	for _, dptThread := range dptThreads {
 		var split []string = strings.Split(dptThread, ":")
-		threadID := split[0]
+		threadID := split[0][1 : len(split[0])-1]
 
-		unixTime, err := strconv.Atoi(strings.Split(split[2], ",")[0])
-		if err != nil {
+		unixTime, err2 := strconv.Atoi(strings.Split(split[2], ",")[0])
+		if err2 != nil {
 			fmt.Println("something is in error")
 		}
 
@@ -59,6 +77,9 @@ func getPossibleDPT() {
 		dptThreadObj = dptThreadInfo{threadID, uint32(unixTime), imgURLPath}
 		fmt.Println(dptThreadObj)
 	}
+
+	apiURL := fmt.Sprintf("https://a.4cdn.org/g/thread/%v.json", dptThreadObj.id)
+	getThread(apiURL)
 
 }
 
