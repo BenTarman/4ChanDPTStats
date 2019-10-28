@@ -15,7 +15,7 @@ import (
 // GetActiveThreads = Gets Active DPT Threads
 func GetActiveThreads(w http.ResponseWriter, r *http.Request) {
 
-	var dptActiveThreads []types.Thread = getPossibleDPT()
+	var dptActiveThreads []types.Thread = GetPossibleDPT()
 	w.Header().Set("Content-Type", "application/json")
 	json.NewEncoder(w).Encode(dptActiveThreads)
 }
@@ -42,7 +42,7 @@ func getThread(apiURL string, threadInfo types.ThreadInfo, dptActiveThreads *[]t
 	*dptActiveThreads = append(*dptActiveThreads, dptThreadJSONObj)
 }
 
-func getPossibleDPT() []types.Thread {
+func GetPossibleDPT() []types.Thread {
 	var dptActiveThreads []types.Thread
 	response, err := http.Get("https://boards.4channel.org/g/catalog#s=dpt")
 	if err != nil {

@@ -1,0 +1,2540 @@
+{
+    "posts":
+    [
+        {
+            "no": 73339442,
+            "now": "10/27/19(Sun)15:54:38",
+            "name": "Anonymous",
+            "sub": "/dpt/ - Daily Programming Thread",
+            "com": "Old thread: <a href=\"/g/thread/73335285#p73335285\" class=\"quotelink\">&gt;&gt;73335285</a><br><br>What are you working on, /g/?",
+            "filename": "haskell-logo",
+            "ext": ".png",
+            "w": 602,
+            "h": 425,
+            "tn_w": 250,
+            "tn_h": 176,
+            "tim": 1572206078620,
+            "time": 1572206078,
+            "md5": "Ii5GDqu8vdzHGnGz2AVmJg==",
+            "fsize": 7088,
+            "resto": 0,
+            "bumplimit": 0,
+            "imagelimit": 0,
+            "semantic_url": "dpt-daily-programming-thread",
+            "replies": 288,
+            "images": 23,
+            "unique_ips": 67,
+            "tail_size": 50
+        },
+        {
+            "no": 73339467,
+            "now": "10/27/19(Sun)15:56:08",
+            "name": "Anonymous",
+            "com": "Lisp is the second most powerful programming language.<br>Everything else is tied for first.",
+            "time": 1572206168,
+            "resto": 73339442
+        },
+        {
+            "no": 73339475,
+            "now": "10/27/19(Sun)15:56:43",
+            "name": "Anonymous",
+            "com": "<a href=\"#p73339467\" class=\"quotelink\">&gt;&gt;73339467</a><br>rude!",
+            "time": 1572206203,
+            "resto": 73339442
+        },
+        {
+            "no": 73339477,
+            "now": "10/27/19(Sun)15:56:54",
+            "name": "Anonymous",
+            "com": "<a href=\"#p73339467\" class=\"quotelink\">&gt;&gt;73339467</a><br>kys pajeet<br>Lisp is the most powerful programming language.",
+            "time": 1572206214,
+            "resto": 73339442
+        },
+        {
+            "no": 73339484,
+            "now": "10/27/19(Sun)15:57:14",
+            "name": "Anonymous",
+            "com": "Shit OP delet",
+            "time": 1572206234,
+            "resto": 73339442
+        },
+        {
+            "no": 73339497,
+            "now": "10/27/19(Sun)15:57:48",
+            "name": "Anonymous",
+            "com": "<a href=\"#p73339442\" class=\"quotelink\">&gt;&gt;73339442</a><br>PHP backend for an app I&#039;m building. Just setup the lamp server last night.",
+            "time": 1572206268,
+            "resto": 73339442
+        },
+        {
+            "no": 73339504,
+            "now": "10/27/19(Sun)15:58:25",
+            "name": "Anonymous",
+            "com": "<a href=\"#p73339497\" class=\"quotelink\">&gt;&gt;73339497</a><br>i&#039;m so sorry anon",
+            "time": 1572206305,
+            "resto": 73339442
+        },
+        {
+            "no": 73339509,
+            "now": "10/27/19(Sun)15:58:40",
+            "name": "Anonymous",
+            "com": "<a href=\"#p73339497\" class=\"quotelink\">&gt;&gt;73339497</a><br>Nice. Keep going<br><br><a href=\"#p73339484\" class=\"quotelink\">&gt;&gt;73339484</a><br>kys",
+            "time": 1572206320,
+            "resto": 73339442
+        },
+        {
+            "no": 73339510,
+            "now": "10/27/19(Sun)15:58:44",
+            "name": "Anonymous",
+            "com": "<span class=\"quote\">&gt;What are you working on, /g/?</span><br>Opened up an old project of mine that I wanted to finish but then I realized I dropped it because Qt&#039;s documentation blows and figuring out how to dynamically toggle QTableWidget columns based on view settings on the fly made me drop it because fuck rebuilding the table every time.",
+            "time": 1572206324,
+            "resto": 73339442
+        },
+        {
+            "no": 73339517,
+            "now": "10/27/19(Sun)15:59:15",
+            "name": "Anonymous",
+            "com": "<a href=\"#p73339497\" class=\"quotelink\">&gt;&gt;73339497</a><br><span class=\"quote\">&gt;PHP</span><br><span class=\"quote\">&gt;lamp</span><br>niBBA it&#039;s 2000 + 19, just use nodejs",
+            "time": 1572206355,
+            "resto": 73339442
+        },
+        {
+            "no": 73339533,
+            "now": "10/27/19(Sun)16:00:35",
+            "name": "Anonymous",
+            "com": "<a href=\"/g/thread/73335285#p73339463\" class=\"quotelink\">&gt;&gt;73339463</a><br>The code is more complex than this, this is just one of the restrictions it has, but basically all the inner tuples also need to have a 1 in the first and last position, and both the outer and inner tuples need to have 3 elements at least. I have all those already, I just need to implement what I said",
+            "filename": "pokpok",
+            "ext": ".png",
+            "w": 410,
+            "h": 373,
+            "tn_w": 125,
+            "tn_h": 113,
+            "tim": 1572206435701,
+            "time": 1572206435,
+            "md5": "Ny47pMt5KDErk0SW+mCd6w==",
+            "fsize": 8890,
+            "resto": 73339442
+        },
+        {
+            "no": 73339540,
+            "now": "10/27/19(Sun)16:01:05",
+            "name": "Anonymous",
+            "com": "<a href=\"#p73339510\" class=\"quotelink\">&gt;&gt;73339510</a><br>Are you using the model/view thing from the doc? What exactly are you trying to do? Because you most likely don&#039;t need to rebuild a table, just change the view parameters",
+            "time": 1572206465,
+            "resto": 73339442
+        },
+        {
+            "no": 73339548,
+            "now": "10/27/19(Sun)16:01:29",
+            "name": "Anonymous",
+            "com": "Why people keep replacing ( with { and calling it another programming language when it&#039;s just a copy of Lisp with less features?",
+            "time": 1572206489,
+            "resto": 73339442
+        },
+        {
+            "no": 73339563,
+            "now": "10/27/19(Sun)16:02:15",
+            "name": "Anonymous",
+            "com": "If I mostly screw around with windows, will learning Pyhton do me any favor?",
+            "time": 1572206535,
+            "resto": 73339442
+        },
+        {
+            "no": 73339565,
+            "now": "10/27/19(Sun)16:02:36",
+            "name": "Anonymous",
+            "com": "<a href=\"#p73339533\" class=\"quotelink\">&gt;&gt;73339533</a><br>i still have no idea what the fuck you talking about",
+            "time": 1572206556,
+            "resto": 73339442
+        },
+        {
+            "no": 73339566,
+            "now": "10/27/19(Sun)16:02:38",
+            "name": "Anonymous",
+            "com": "<a href=\"#p73339533\" class=\"quotelink\">&gt;&gt;73339533</a><br><span class=\"quote\">&gt;el_labirinto</span><br>Is this a new amerimutt species I&#039;m not aware of?",
+            "time": 1572206558,
+            "resto": 73339442
+        },
+        {
+            "no": 73339579,
+            "now": "10/27/19(Sun)16:03:30",
+            "name": "Anonymous",
+            "com": "<a href=\"#p73339540\" class=\"quotelink\">&gt;&gt;73339540</a><br>No, I&#039;m using QTableWidget and use the following to set columns:<br><pre class=\"prettyprint\">table-&gt;setColumnCount(4);<br>table-&gt;setHorizontalHeaderLabels({&quot;<wbr>File&quot;, &quot;Folder&quot;, &quot;Size&quot;, &quot;Perms&quot;});</pre><br><br>Then I populate it like so:<br><pre class=\"prettyprint\">    if (index != queryIndex) {<br>        return;<br>    }<br><br>    const auto &amp;[file, path, _, size, perms] = entry;<br>    table-&gt;insertRow(table-&gt;rowCount())<wbr>;<br><br>    auto createItem = [] () {<br>        auto item = new QTableWidgetItem();<br>        item-&gt;setFlags(item-&gt;flags() &amp;  ~Qt::ItemIsEditable);<br>        return item;<br>    };<br><br>    auto fileItem = createItem();<br>    fileItem-&gt;setText(QString::fromStdS<wbr>tring(file));<br><br>    auto pathItem = createItem();<br>    pathItem-&gt;setText(QString::fromStdS<wbr>tring(path));<br><br>    auto sizeItem = createItem();<br>    sizeItem-&gt;setText(QString(&quot;%1&quot;).arg<wbr>(QString::fromStdString(HumanReadab<wbr>leSize(size))));<br>    sizeItem-&gt;setTextAlignment(Qt::Alig<wbr>nVCenter | Qt::AlignRight);<br><br>    auto permsItem = createItem();<br>    permsItem-&gt;setText(QString(&quot;%1&quot;).ar<wbr>g(QString::fromStdString(HumanReada<wbr>blePerms(perms))));<br>    permsItem-&gt;setTextAlignment(Qt::Ali<wbr>gnVCenter | Qt::AlignHCenter);<br><br>    table-&gt;setItem(table-&gt;rowCount() - 1, 0, fileItem);<br>    table-&gt;setItem(table-&gt;rowCount() - 1, 1, pathItem);<br>    table-&gt;setItem(table-&gt;rowCount() - 1, 2, sizeItem);<br>    table-&gt;setItem(table-&gt;rowCount() - 1, 3, permsItem);<br><br>    if (viewSettings.showIcons) {<br>        auto res = FileTypeToResource(GetFileType(file<wbr>));<br>        if (!res.empty()) {<br>            fileItem-&gt;setIcon(QIcon(QString::fr<wbr>omStdString(res)));<br>        }<br>    }<br></pre><br><br>So I wanted to have an option to turn the individual columns on/off while the widget is populated.",
+            "time": 1572206610,
+            "resto": 73339442
+        },
+        {
+            "no": 73339581,
+            "now": "10/27/19(Sun)16:03:36",
+            "name": "Anonymous",
+            "com": "<a href=\"#p73339533\" class=\"quotelink\">&gt;&gt;73339533</a><br><pre class=\"prettyprint\">if <br>    return<br>else<br>    ...</pre><br>you just like indentation don&#039;t you",
+            "time": 1572206616,
+            "resto": 73339442
+        },
+        {
+            "no": 73339603,
+            "now": "10/27/19(Sun)16:05:33",
+            "name": "Anonymous",
+            "com": "<a href=\"#p73339565\" class=\"quotelink\">&gt;&gt;73339565</a><br>basically I just need to implement this for the code to be complete:<br><br>len(x[0])==len(x[1])==len(x[2])==..<wbr>.==len(x[-1])<br><br>the length of all the inner tuples (elements of the outer tuple) need to have the same length",
+            "time": 1572206733,
+            "resto": 73339442
+        },
+        {
+            "no": 73339604,
+            "now": "10/27/19(Sun)16:05:34",
+            "name": "Anonymous",
+            "com": "I&#039;m gonna have to set up a filter for all posts containing Lisp. This is getting ridiculous.",
+            "time": 1572206734,
+            "resto": 73339442
+        },
+        {
+            "no": 73339607,
+            "now": "10/27/19(Sun)16:05:36",
+            "name": "Anonymous",
+            "com": "<a href=\"#p73339579\" class=\"quotelink\">&gt;&gt;73339579</a><br>Yeah you&#039;ll need a model/view because what you need is not trivial and the model/view system is much more flexible.",
+            "time": 1572206736,
+            "resto": 73339442
+        },
+        {
+            "no": 73339612,
+            "now": "10/27/19(Sun)16:06:01",
+            "name": "Anonymous",
+            "com": "Since Anone is so busy learning JavaScript, I brought some snacks!",
+            "filename": "3bdd4b626edcb3acc07bed530343f483",
+            "ext": ".jpg",
+            "w": 683,
+            "h": 1024,
+            "tn_w": 83,
+            "tn_h": 125,
+            "tim": 1572206761899,
+            "time": 1572206761,
+            "md5": "TobxA097Q/z3vfioD1dLxw==",
+            "fsize": 119435,
+            "resto": 73339442
+        },
+        {
+            "no": 73339623,
+            "now": "10/27/19(Sun)16:06:49",
+            "name": "Anonymous",
+            "com": "<a href=\"#p73339604\" class=\"quotelink\">&gt;&gt;73339604</a><br>t. lisplet",
+            "time": 1572206809,
+            "resto": 73339442
+        },
+        {
+            "no": 73339625,
+            "now": "10/27/19(Sun)16:06:55",
+            "name": "Anonymous",
+            "com": "<a href=\"#p73339581\" class=\"quotelink\">&gt;&gt;73339581</a><br>I started learning how to code a month ago, so I don&#039;t have the best practices yet, I&#039;m not sure how to have it in a more elegant way",
+            "time": 1572206815,
+            "resto": 73339442
+        },
+        {
+            "no": 73339634,
+            "now": "10/27/19(Sun)16:07:18",
+            "name": "Anonymous",
+            "com": "Chicken Scheme for everything",
+            "time": 1572206838,
+            "resto": 73339442
+        },
+        {
+            "no": 73339635,
+            "now": "10/27/19(Sun)16:07:22",
+            "name": "Anonymous",
+            "com": "<a href=\"#p73339607\" class=\"quotelink\">&gt;&gt;73339607</a><br>Alright I&#039;ll look into QTableView, I remember looking at the doc before and figured QTableWidget would have sufficed since QTableView seemed much more complex but I guess I can&#039;t take the short path here.",
+            "time": 1572206842,
+            "resto": 73339442
+        },
+        {
+            "no": 73339637,
+            "now": "10/27/19(Sun)16:07:39",
+            "name": "Anonymous",
+            "com": "<a href=\"#p73339604\" class=\"quotelink\">&gt;&gt;73339604</a><br>kys pajeet<br>go write your stupid python code elsewhere",
+            "time": 1572206859,
+            "resto": 73339442
+        },
+        {
+            "no": 73339652,
+            "now": "10/27/19(Sun)16:08:41",
+            "name": "Anonymous",
+            "com": "<a href=\"#p73339563\" class=\"quotelink\">&gt;&gt;73339563</a><br><span class=\"quote\">&gt;windows</span><br>You should learn PowerShell or C# and dotnet.",
+            "time": 1572206921,
+            "resto": 73339442
+        },
+        {
+            "no": 73339664,
+            "now": "10/27/19(Sun)16:09:24",
+            "name": "Anonymous",
+            "com": "<span class=\"quote\">&gt;spend a week agonizing on and procrastinating a minor feature that should have been done in an hour</span><br>just fucking kill me",
+            "time": 1572206964,
+            "resto": 73339442
+        },
+        {
+            "no": 73339665,
+            "now": "10/27/19(Sun)16:09:36",
+            "name": "Anonymous",
+            "com": "<a href=\"#p73339603\" class=\"quotelink\">&gt;&gt;73339603</a><br><a href=\"#p73339565\" class=\"quotelink\">&gt;&gt;73339565</a><br><a href=\"#p73339533\" class=\"quotelink\">&gt;&gt;73339533</a><br>for exemple, the function needs to return False for this input",
+            "filename": "fgfh",
+            "ext": ".png",
+            "w": 575,
+            "h": 29,
+            "tn_w": 125,
+            "tn_h": 6,
+            "tim": 1572206976882,
+            "time": 1572206976,
+            "md5": "y1GQ53zBDkWU3smycdE1Rg==",
+            "fsize": 850,
+            "resto": 73339442
+        },
+        {
+            "no": 73339681,
+            "now": "10/27/19(Sun)16:11:56",
+            "name": "Anonymous",
+            "com": "<a href=\"#p73339665\" class=\"quotelink\">&gt;&gt;73339665</a><br><pre class=\"prettyprint\">first_len=len(tuples[0])<br>for x in tuples[1:]:<br>    if len(x) != first_len:<br>         return False<br>return True</pre>",
+            "time": 1572207116,
+            "resto": 73339442
+        },
+        {
+            "no": 73339689,
+            "now": "10/27/19(Sun)16:12:21",
+            "name": "Anonymous",
+            "com": "<a href=\"#p73339652\" class=\"quotelink\">&gt;&gt;73339652</a><br>This. Windows stack is unsarcastically neat these days.",
+            "time": 1572207141,
+            "resto": 73339442
+        },
+        {
+            "no": 73339692,
+            "now": "10/27/19(Sun)16:12:34",
+            "name": "Anonymous",
+            "com": "<a href=\"#p73339665\" class=\"quotelink\">&gt;&gt;73339665</a><br>You simply need to compare each tuple&#039;s tuple.length to the first tuple&#039;s tuple.length. what is the problem?",
+            "time": 1572207154,
+            "resto": 73339442
+        },
+        {
+            "no": 73339704,
+            "now": "10/27/19(Sun)16:13:50",
+            "name": "Anonymous",
+            "com": "post your epeen<br><pre class=\"prettyprint\">uptime | perl -naE &#039;say+8,&quot;=&quot;x$F[2],D&#039;<br></pre><br><pre class=\"prettyprint\">reimu@v109:~$ ./epeen.sh <br>8==================================<wbr>===========================D<br></pre>",
+            "time": 1572207230,
+            "resto": 73339442
+        },
+        {
+            "no": 73339714,
+            "now": "10/27/19(Sun)16:14:29",
+            "name": "Anonymous",
+            "com": "<a href=\"#p73339665\" class=\"quotelink\">&gt;&gt;73339665</a><br><pre class=\"prettyprint\">foo = ((1,1,1,1), (1,0,0,1),(1,0,0,1),(1,1,1),(1,0,1,<wbr>1))<br>all(map(lambda x: len(x) == len(foo[1]), foo[1:-1]))  # False<br></pre>",
+            "time": 1572207269,
+            "resto": 73339442
+        },
+        {
+            "no": 73339719,
+            "now": "10/27/19(Sun)16:14:48",
+            "name": "Anonymous",
+            "com": "<a href=\"#p73339681\" class=\"quotelink\">&gt;&gt;73339681</a><br><a href=\"#p73339692\" class=\"quotelink\">&gt;&gt;73339692</a><br>yeah, thanks I got it just now",
+            "filename": "pok",
+            "ext": ".png",
+            "w": 372,
+            "h": 377,
+            "tn_w": 123,
+            "tn_h": 125,
+            "tim": 1572207288507,
+            "time": 1572207288,
+            "md5": "CHZ0PPnoJZNDfXpElQ3Pwg==",
+            "fsize": 9843,
+            "resto": 73339442
+        },
+        {
+            "no": 73339725,
+            "now": "10/27/19(Sun)16:15:18",
+            "name": "Anonymous",
+            "com": "<a href=\"#p73339704\" class=\"quotelink\">&gt;&gt;73339704</a>",
+            "filename": "aaaaa",
+            "ext": ".png",
+            "w": 1625,
+            "h": 562,
+            "tn_w": 125,
+            "tn_h": 43,
+            "tim": 1572207318531,
+            "time": 1572207318,
+            "md5": "aw10WGP5LyarTGNJxQs5Og==",
+            "fsize": 79128,
+            "resto": 73339442
+        },
+        {
+            "no": 73339730,
+            "now": "10/27/19(Sun)16:15:33",
+            "name": "Anonymous",
+            "com": "<a href=\"#p73339719\" class=\"quotelink\">&gt;&gt;73339719</a><br>what the hell is this for anyways?",
+            "time": 1572207333,
+            "resto": 73339442
+        },
+        {
+            "no": 73339735,
+            "now": "10/27/19(Sun)16:16:01",
+            "name": "Anonymous",
+            "com": "<a href=\"/g/thread/73335285#p73339368\" class=\"quotelink\">&gt;&gt;73339368</a><br><pre class=\"prettyprint\">process = sum(i, 100, k*k with { k = i+1; });</pre><br>I love faust :3",
+            "time": 1572207361,
+            "resto": 73339442
+        },
+        {
+            "no": 73339742,
+            "now": "10/27/19(Sun)16:16:35",
+            "name": "Anonymous",
+            "com": "<a href=\"#p73339730\" class=\"quotelink\">&gt;&gt;73339730</a><br>a school project",
+            "time": 1572207395,
+            "resto": 73339442
+        },
+        {
+            "no": 73339745,
+            "now": "10/27/19(Sun)16:17:05",
+            "name": "Anonymous",
+            "com": "<a href=\"#p73339563\" class=\"quotelink\">&gt;&gt;73339563</a><br>Have to agree with the other anon C# master race, it&#039;s similar to java so if you ever want to make java stuff later you&#039;ll find familiarity with the syntax and a lot of other things.",
+            "time": 1572207425,
+            "resto": 73339442
+        },
+        {
+            "no": 73339755,
+            "now": "10/27/19(Sun)16:18:02",
+            "name": "Anonymous",
+            "com": "<a href=\"#p73339730\" class=\"quotelink\">&gt;&gt;73339730</a><br>Why, the el_labyrinto, of course. The cartel is mapping routes from drop zone A to B, and they must not use a corrupt agents from alphabet agencies which have different amount of letters, in the same drop-off.",
+            "time": 1572207482,
+            "resto": 73339442
+        },
+        {
+            "no": 73339759,
+            "now": "10/27/19(Sun)16:18:48",
+            "name": "Anonymous",
+            "com": "<a href=\"#p73339745\" class=\"quotelink\">&gt;&gt;73339745</a><br><a href=\"#p73339652\" class=\"quotelink\">&gt;&gt;73339652</a><br>So, Python is useless in Windows?",
+            "time": 1572207528,
+            "resto": 73339442
+        },
+        {
+            "no": 73339763,
+            "now": "10/27/19(Sun)16:19:06",
+            "name": "Anonymous",
+            "com": "<a href=\"#p73339755\" class=\"quotelink\">&gt;&gt;73339755</a><br>little they know cartel guys belong to the alphabet agencies",
+            "time": 1572207546,
+            "resto": 73339442
+        },
+        {
+            "no": 73339769,
+            "now": "10/27/19(Sun)16:19:59",
+            "name": "Anonymous",
+            "com": "<a href=\"#p73339759\" class=\"quotelink\">&gt;&gt;73339759</a><br>python is mostly useless everywhere.",
+            "time": 1572207599,
+            "resto": 73339442
+        },
+        {
+            "no": 73339776,
+            "now": "10/27/19(Sun)16:20:25",
+            "name": "Anonymous",
+            "com": "<pre class=\"prettyprint\">(loop for i from 1 to 100 summing (* i i))</pre>",
+            "time": 1572207625,
+            "resto": 73339442
+        },
+        {
+            "no": 73339783,
+            "now": "10/27/19(Sun)16:21:00",
+            "name": "Anonymous",
+            "com": "<a href=\"#p73339763\" class=\"quotelink\">&gt;&gt;73339763</a><br>don&#039;t worry, the glow in the darks can only follow their algorithms",
+            "time": 1572207660,
+            "resto": 73339442
+        },
+        {
+            "no": 73339786,
+            "now": "10/27/19(Sun)16:21:16",
+            "name": "Anonymous",
+            "com": "<a href=\"#p73339769\" class=\"quotelink\">&gt;&gt;73339769</a><br>it&#039;s installed in pretty much every distro by default",
+            "time": 1572207676,
+            "resto": 73339442
+        },
+        {
+            "no": 73339792,
+            "now": "10/27/19(Sun)16:21:27",
+            "name": "Anonymous",
+            "com": "<a href=\"#p73339776\" class=\"quotelink\">&gt;&gt;73339776</a><br><pre class=\"prettyprint\">loop [1..100] squared<br></pre>",
+            "time": 1572207687,
+            "resto": 73339442
+        },
+        {
+            "no": 73339796,
+            "now": "10/27/19(Sun)16:21:48",
+            "name": "Anonymous",
+            "com": "<a href=\"#p73339792\" class=\"quotelink\">&gt;&gt;73339792</a><br>what lang?",
+            "time": 1572207708,
+            "resto": 73339442
+        },
+        {
+            "no": 73339797,
+            "now": "10/27/19(Sun)16:21:57",
+            "name": "Anonymous",
+            "com": "<a href=\"#p73339769\" class=\"quotelink\">&gt;&gt;73339769</a><br>True.<br><br><a href=\"#p73339759\" class=\"quotelink\">&gt;&gt;73339759</a><br>If you know C# and PowerShell, Python is useless.",
+            "time": 1572207717,
+            "resto": 73339442
+        },
+        {
+            "no": 73339804,
+            "now": "10/27/19(Sun)16:22:28",
+            "name": "Anonymous",
+            "com": "<a href=\"#p73339786\" class=\"quotelink\">&gt;&gt;73339786</a><br>so is perl.",
+            "time": 1572207748,
+            "resto": 73339442
+        },
+        {
+            "no": 73339806,
+            "now": "10/27/19(Sun)16:22:33",
+            "name": "Anonymous",
+            "com": "<a href=\"#p73339796\" class=\"quotelink\">&gt;&gt;73339796</a><br>None.<br><br>I just made that up. But could be one really.",
+            "time": 1572207753,
+            "resto": 73339442
+        },
+        {
+            "no": 73339810,
+            "now": "10/27/19(Sun)16:22:50",
+            "name": "Anonymous",
+            "com": "<a href=\"#p73339776\" class=\"quotelink\">&gt;&gt;73339776</a><br><span class=\"quote\">&gt;prefix notation</span><br><br><a href=\"#p73339759\" class=\"quotelink\">&gt;&gt;73339759</a><br><a href=\"#p73339563\" class=\"quotelink\">&gt;&gt;73339563</a><br>If by &quot;screwing around with Windows&quot;, you mean &quot;using the Windows API&quot; then yes your best bet will be C# or C++.<br>If you are building anything of actual value however, any language will do. It doesn&#039;t have to be C# or Python as long as you can clearly implement your solution in it.",
+            "time": 1572207770,
+            "resto": 73339442
+        },
+        {
+            "no": 73339820,
+            "now": "10/27/19(Sun)16:23:27",
+            "name": "Anonymous",
+            "com": "<a href=\"#p73339566\" class=\"quotelink\">&gt;&gt;73339566</a><br><a href=\"#p73339755\" class=\"quotelink\">&gt;&gt;73339755</a><br>it&#039;s not an &quot;l&quot;, it&#039;s an &quot;h&quot;",
+            "time": 1572207807,
+            "resto": 73339442
+        },
+        {
+            "no": 73339833,
+            "now": "10/27/19(Sun)16:24:46",
+            "name": "Anonymous",
+            "com": "<a href=\"#p73339612\" class=\"quotelink\">&gt;&gt;73339612</a><br>thanks ill have the oreos",
+            "time": 1572207886,
+            "resto": 73339442
+        },
+        {
+            "no": 73339837,
+            "now": "10/27/19(Sun)16:24:54",
+            "name": "Anonymous",
+            "com": "<a href=\"#p73339759\" class=\"quotelink\">&gt;&gt;73339759</a><br>Well, for starters python to run on windows requires the needed python version installed, if you want to run a v2 python program it will throw an error even if you have a newer version installed, sometimes you need to add the environment variable path (pointing to the dll) manually too, while c# runs mostly on .net framework that comes installed with windows and the windows updates always get latest version, you will rarely find a .net program that doesn&#039;t run with latest framework unless it was very old (like from windows xp or earlier). With c# you can also paly around in unity if you like it.",
+            "time": 1572207894,
+            "resto": 73339442
+        },
+        {
+            "no": 73339846,
+            "now": "10/27/19(Sun)16:25:30",
+            "name": "Anonymous",
+            "com": "is vscode any good?<br>what do people use on actual jobs?",
+            "time": 1572207930,
+            "resto": 73339442
+        },
+        {
+            "no": 73339867,
+            "now": "10/27/19(Sun)16:27:33",
+            "name": "Anonymous",
+            "com": "<a href=\"#p73339833\" class=\"quotelink\">&gt;&gt;73339833</a><br>is that your favorite cookie?<br><br><span class=\"quote\">&gt;tfw website stored oreos in my computer again</span>",
+            "time": 1572208053,
+            "resto": 73339442
+        },
+        {
+            "no": 73339869,
+            "now": "10/27/19(Sun)16:27:35",
+            "name": "Anonymous",
+            "com": "<a href=\"#p73339846\" class=\"quotelink\">&gt;&gt;73339846</a><br><span class=\"quote\">&gt;what do people use on actual jobs</span><br>they use whatever the fuck they want, you monkey.<br><br>VS Code has feature parity with Sublime and then some, and it&#039;s also free. There is literally no reason to use any other text editor on your dev machine.<br>But IDEs for specific languages are always gonna be better.<br>Big boy Visual Studio, PyCharm, IntelliJ, whatever.",
+            "time": 1572208055,
+            "resto": 73339442
+        },
+        {
+            "no": 73339872,
+            "now": "10/27/19(Sun)16:28:05",
+            "name": "Anonymous",
+            "com": "<a href=\"#p73339846\" class=\"quotelink\">&gt;&gt;73339846</a><br>I use Visual Studio, VS code, Qt creator and now I started learning Emacs, so I think that I&#039;ll stop using VS code since Emacs is more powerful.<br>Overall, VS code is good enough, there are plugins for almost everything and it&#039;s easy to use.",
+            "time": 1572208085,
+            "resto": 73339442
+        },
+        {
+            "no": 73339880,
+            "now": "10/27/19(Sun)16:28:37",
+            "name": "Anonymous",
+            "com": "Oreos are the least powerful cookie.<br>Cream is pig disgusting",
+            "time": 1572208117,
+            "resto": 73339442
+        },
+        {
+            "no": 73339906,
+            "now": "10/27/19(Sun)16:31:30",
+            "name": "Anonymous",
+            "com": "<a href=\"#p73339872\" class=\"quotelink\">&gt;&gt;73339872</a><br><span class=\"quote\">&gt;Emacs is more powerful</span><br>lol how?<br><br><a href=\"#p73339869\" class=\"quotelink\">&gt;&gt;73339869</a><br><span class=\"quote\">&gt;imagine needing 10GB of software to write hello world</span>",
+            "time": 1572208290,
+            "resto": 73339442
+        },
+        {
+            "no": 73339909,
+            "now": "10/27/19(Sun)16:31:43",
+            "name": "Anonymous",
+            "com": "<a href=\"#p73339867\" class=\"quotelink\">&gt;&gt;73339867</a><br>I don&#039;t like picking favourites but I like oreos.<br><br><a href=\"#p73339880\" class=\"quotelink\">&gt;&gt;73339880</a><br>Oreos are yummy.",
+            "time": 1572208303,
+            "resto": 73339442
+        },
+        {
+            "no": 73339910,
+            "now": "10/27/19(Sun)16:31:43",
+            "name": "Anonymous",
+            "com": "Hello, /dpt/, I have a simple question.<br>When you have a situation where you have to react on a mouse click, and you have to determine where the click happened in order to determine which action to take (say, clicking on a desktop icon, clicking on an arbitrary surface area in a game, etc...), exactly, how is it handled algorithmically?<br>GUI toolkits have elements such as event handlers, etc. where you can specify actions to take when the element gets clicked on, but how would you do it without a toolkit? Do you poll every relevant screen region, do you use separate threads for each region of interest which periodically check whether a click happened... exactly how would you go about it?<br>Brute-forcing every possible element of course works, but it seems like a very inelegant solution, which obviously doesn&#039;t scale well.",
+            "filename": "1552316069506",
+            "ext": ".png",
+            "w": 640,
+            "h": 896,
+            "tn_w": 89,
+            "tn_h": 125,
+            "tim": 1572208303861,
+            "time": 1572208303,
+            "md5": "fOuFKyIqOc3qKPPNsYNT6g==",
+            "fsize": 288732,
+            "resto": 73339442
+        },
+        {
+            "no": 73339923,
+            "now": "10/27/19(Sun)16:32:50",
+            "name": "Anonymous",
+            "com": "<a href=\"#p73339846\" class=\"quotelink\">&gt;&gt;73339846</a><br>Used Visual Studio + Visual Assist on my last job (C++ with a bit of C#, Windows desktop applications), CLion now (C++/Python backend stuff).",
+            "time": 1572208370,
+            "resto": 73339442
+        },
+        {
+            "no": 73339924,
+            "now": "10/27/19(Sun)16:32:54",
+            "name": "Anonymous",
+            "com": "<a href=\"#p73339906\" class=\"quotelink\">&gt;&gt;73339906</a><br><span class=\"quote\">&gt;&gt;imagine needing 10GB of software to write hello world</span><br>i doubt people with jobs are making hello world or fibbonaci sequence programs anon",
+            "time": 1572208374,
+            "resto": 73339442
+        },
+        {
+            "no": 73339930,
+            "now": "10/27/19(Sun)16:33:06",
+            "name": "Anonymous",
+            "com": "<a href=\"#p73339906\" class=\"quotelink\">&gt;&gt;73339906</a><br><span class=\"quote\">&gt;lol how?</span><br>I can play Tetris while my program compiles.<br>Alas, VScode doesn&#039;t allow me to.",
+            "time": 1572208386,
+            "resto": 73339442
+        },
+        {
+            "no": 73339938,
+            "now": "10/27/19(Sun)16:33:47",
+            "name": "Anonymous",
+            "com": "<a href=\"#p73339906\" class=\"quotelink\">&gt;&gt;73339906</a><br><span class=\"quote\">&gt;imagine needing 10GB of software to write hello world</span><br>Personally I can&#039;t imagine doing nothing with my life other than writing hello world, but you do you, neet supreme",
+            "time": 1572208427,
+            "resto": 73339442
+        },
+        {
+            "no": 73339950,
+            "now": "10/27/19(Sun)16:34:49",
+            "name": "Anonymous",
+            "com": "<a href=\"#p73339906\" class=\"quotelink\">&gt;&gt;73339906</a><br><span class=\"quote\">&gt;lol how?</span><br>Emacs is not just a text editor, it&#039;s a Lisp interpreter, so you can change everything. There&#039;s nothing that VS code can do that Emacs can&#039;t, but there are lots of things that Emacs can do that VS code can&#039;t.",
+            "time": 1572208489,
+            "resto": 73339442
+        },
+        {
+            "no": 73339953,
+            "now": "10/27/19(Sun)16:35:05",
+            "name": "Anonymous",
+            "com": "<a href=\"#p73339910\" class=\"quotelink\">&gt;&gt;73339910</a><br>You just traverse the widget tree, find matching top most widget, then propagate recursively through children.",
+            "time": 1572208505,
+            "resto": 73339442
+        },
+        {
+            "no": 73339956,
+            "now": "10/27/19(Sun)16:35:18",
+            "name": "Anonymous",
+            "com": "<a href=\"#p73339867\" class=\"quotelink\">&gt;&gt;73339867</a><br><span class=\"quote\">&gt;oreos in my browser</span><br><span class=\"quote\">&gt;digestives in my lock files</span><br>It has gone too far",
+            "time": 1572208518,
+            "resto": 73339442
+        },
+        {
+            "no": 73339959,
+            "now": "10/27/19(Sun)16:35:30",
+            "name": "Anonymous",
+            "com": "<span class=\"quote\">&gt;she is programming on linux</span>",
+            "time": 1572208530,
+            "resto": 73339442
+        },
+        {
+            "no": 73339962,
+            "now": "10/27/19(Sun)16:35:40",
+            "name": "Anonymous",
+            "com": "<a href=\"#p73339924\" class=\"quotelink\">&gt;&gt;73339924</a><br><span class=\"quote\">&gt;emacs</span><br><span class=\"quote\">&gt;people with jobs</span><br>The time you will waste to learn how to config it to work like an IDE will get you fired. But hey at least you played Snake in your text editor! that&#039;s cool and more gratifying than having a job.",
+            "time": 1572208540,
+            "resto": 73339442
+        },
+        {
+            "no": 73339966,
+            "now": "10/27/19(Sun)16:36:05",
+            "name": "Anonymous",
+            "com": "<a href=\"#p73339924\" class=\"quotelink\">&gt;&gt;73339924</a><br><a href=\"#p73339938\" class=\"quotelink\">&gt;&gt;73339938</a><br>riiiiiight<br>explain how does your literal text editor needs to have 10GB so you can write your meme apps<br><br>imagine UNIX creators or whatever ever needed such abominations to write literals OSs and kernels",
+            "time": 1572208565,
+            "resto": 73339442
+        },
+        {
+            "no": 73339980,
+            "now": "10/27/19(Sun)16:36:54",
+            "name": "Anonymous",
+            "com": "<a href=\"#p73339910\" class=\"quotelink\">&gt;&gt;73339910</a><br>The lowest that I&#039;ve ever been was directly using xlib in C. It&#039;s just an event infinite loop getting the screen coordinates and doing appropriate actions.",
+            "time": 1572208614,
+            "resto": 73339442
+        },
+        {
+            "no": 73339981,
+            "now": "10/27/19(Sun)16:37:04",
+            "name": "Anonymous",
+            "com": "<a href=\"#p73339950\" class=\"quotelink\">&gt;&gt;73339950</a><br>Does emacs have a plugin that lets you change your workspace to a running docker container or VM?",
+            "time": 1572208624,
+            "resto": 73339442
+        },
+        {
+            "no": 73339984,
+            "now": "10/27/19(Sun)16:37:20",
+            "name": "Anonymous",
+            "com": "<a href=\"#p73339950\" class=\"quotelink\">&gt;&gt;73339950</a><br><span class=\"quote\">&gt;but there are lots of things that Emacs can do that VS code can&#039;t.</span><br>yeah,waste shitton of your time to never accomplish anything or to just have a functional editor <br>just top of my head",
+            "time": 1572208640,
+            "resto": 73339442
+        },
+        {
+            "no": 73339989,
+            "now": "10/27/19(Sun)16:37:48",
+            "name": "Anonymous",
+            "com": "It&#039;s a beautiful sunday, why not add a syscall to your kernel just for fun?",
+            "time": 1572208668,
+            "resto": 73339442
+        },
+        {
+            "no": 73339994,
+            "now": "10/27/19(Sun)16:38:03",
+            "name": "Anonymous",
+            "com": "<a href=\"#p73339962\" class=\"quotelink\">&gt;&gt;73339962</a><br>It&#039;s very easy to config if you know Lisp. You know Lisp, right, anon? Or are you a pajeet?",
+            "time": 1572208683,
+            "resto": 73339442
+        },
+        {
+            "no": 73340002,
+            "now": "10/27/19(Sun)16:38:41",
+            "name": "Anonymous",
+            "com": "<a href=\"#p73339966\" class=\"quotelink\">&gt;&gt;73339966</a><br><span class=\"quote\">&gt;10GB</span><br>You mean in Visual Studio?<br>I don&#039;t use it because I don&#039;t program in .NET languages, but most of that is just libraries.<br><br>You must be a jobless NEET if you don&#039;t know things like this. Even Anaconda starts at 3GB because of all of the scientific computing packages it has built in.",
+            "time": 1572208721,
+            "resto": 73339442
+        },
+        {
+            "no": 73340008,
+            "now": "10/27/19(Sun)16:39:23",
+            "name": "Anonymous",
+            "com": "<a href=\"#p73339994\" class=\"quotelink\">&gt;&gt;73339994</a><br>im a virgin without ever working a day in my life or even creating anything useful for others to use, so yes , i know Lisp",
+            "time": 1572208763,
+            "resto": 73339442
+        },
+        {
+            "no": 73340010,
+            "now": "10/27/19(Sun)16:39:27",
+            "name": "Anonymous",
+            "com": "<a href=\"#p73339981\" class=\"quotelink\">&gt;&gt;73339981</a><br>Yes, docker mode. https://github.com/Silex/docker.el<br><br><a href=\"#p73339984\" class=\"quotelink\">&gt;&gt;73339984</a><br>Well, I think that I know more than you since I switched from VS code to Emacs.",
+            "time": 1572208767,
+            "resto": 73339442
+        },
+        {
+            "no": 73340016,
+            "now": "10/27/19(Sun)16:40:11",
+            "name": "Anonymous",
+            "com": "<a href=\"#p73339962\" class=\"quotelink\">&gt;&gt;73339962</a><br>i dont use emacs but i know people just copies their config file so theres 0 time spent in configuration when changing jobs or whatever<br><br><a href=\"#p73339966\" class=\"quotelink\">&gt;&gt;73339966</a><br>these IDEs dont need 10gb of storage themselves they carry a bunch of libraries so you can start any kind of project",
+            "time": 1572208811,
+            "resto": 73339442
+        },
+        {
+            "no": 73340031,
+            "now": "10/27/19(Sun)16:41:18",
+            "name": "Anonymous",
+            "com": "<a href=\"#p73340016\" class=\"quotelink\">&gt;&gt;73340016</a><br><span class=\"quote\">&gt;they carry a bunch of libraries so you can start any kind of project</span><br><span class=\"quote\">&gt;not installing just libraries you actually need</span><br>and people with actual degrees created this monstrosity and thought it was good design",
+            "time": 1572208878,
+            "resto": 73339442
+        },
+        {
+            "no": 73340038,
+            "now": "10/27/19(Sun)16:42:31",
+            "name": "Anonymous",
+            "com": "<a href=\"#p73340008\" class=\"quotelink\">&gt;&gt;73340008</a><br>I&#039;m not the only one in my company that uses Emacs, there are other boomers that use it too. I&#039;m not saying that VS code is bad, I like it too, but Emacs really is more powerful, I don&#039;t know why you are getting mad over this simple fact.",
+            "time": 1572208951,
+            "resto": 73339442
+        },
+        {
+            "no": 73340050,
+            "now": "10/27/19(Sun)16:43:35",
+            "name": "Anonymous",
+            "com": "<a href=\"#p73340031\" class=\"quotelink\">&gt;&gt;73340031</a><br>it&#039;s a pretty good design if you&#039;re trying to attract an audience of people who don&#039;t make it a habit of transforming their hands into claws :^)",
+            "time": 1572209015,
+            "resto": 73339442
+        },
+        {
+            "no": 73340051,
+            "now": "10/27/19(Sun)16:43:41",
+            "name": "Anonymous",
+            "com": "<a href=\"#p73340038\" class=\"quotelink\">&gt;&gt;73340038</a><br><span class=\"quote\">&gt;but X really is more powerful</span><br>because this is what would literal cringy moron would say",
+            "time": 1572209021,
+            "resto": 73339442
+        },
+        {
+            "no": 73340052,
+            "now": "10/27/19(Sun)16:43:44",
+            "name": "Anonymous",
+            "com": "<a href=\"#p73340016\" class=\"quotelink\">&gt;&gt;73340016</a><br>Yes, I have my .emacs file on my github, so it takes 0 seconds to configure it. It works on both windows and Linux.<br>All of my extensions are automatically downloaded using (use-package :ensure t)",
+            "time": 1572209024,
+            "resto": 73339442
+        },
+        {
+            "no": 73340064,
+            "now": "10/27/19(Sun)16:44:29",
+            "name": "Anonymous",
+            "com": "<a href=\"#p73340031\" class=\"quotelink\">&gt;&gt;73340031</a><br>you can choose what you want to install tho...",
+            "time": 1572209069,
+            "resto": 73339442
+        },
+        {
+            "no": 73340072,
+            "now": "10/27/19(Sun)16:45:09",
+            "name": "Anonymous",
+            "com": "<a href=\"#p73340051\" class=\"quotelink\">&gt;&gt;73340051</a><br>It&#039;s a fucking Lisp interpreter, it&#039;s not a text editor. It&#039;s more powerful and that&#039;s a fact, zoomer.",
+            "time": 1572209109,
+            "resto": 73339442
+        },
+        {
+            "no": 73340074,
+            "now": "10/27/19(Sun)16:45:19",
+            "name": "Anonymous",
+            "com": "terrible OP<br><br>delet dis nao",
+            "time": 1572209119,
+            "resto": 73339442
+        },
+        {
+            "no": 73340086,
+            "now": "10/27/19(Sun)16:46:25",
+            "name": "Anonymous",
+            "com": "<a href=\"#p73339776\" class=\"quotelink\">&gt;&gt;73339776</a><br><a href=\"#p73339792\" class=\"quotelink\">&gt;&gt;73339792</a><br><br><pre class=\"prettyprint\">map(lambda x: x**2, range(1,101))</pre>",
+            "time": 1572209185,
+            "resto": 73339442
+        },
+        {
+            "no": 73340123,
+            "now": "10/27/19(Sun)16:49:33",
+            "name": "Anonymous",
+            "com": "Create a ~/.emacs and write this:<br><br><pre class=\"prettyprint\">(use-package ivy :ensure t)           <br>(use-package swiper :ensure t)     <br>(use-package company :ensure t)  <br></pre><br><br>There, now you have a somewhat good text editor. Is this too hard for the pajeets?",
+            "time": 1572209373,
+            "resto": 73339442
+        },
+        {
+            "no": 73340129,
+            "now": "10/27/19(Sun)16:50:15",
+            "name": "Anonymous",
+            "com": "<a href=\"#p73339533\" class=\"quotelink\">&gt;&gt;73339533</a><br>Perhaps generalize your checking for tuples since you repeat the same code segment twice. It will make the overall function a bit more readable.",
+            "time": 1572209415,
+            "resto": 73339442
+        },
+        {
+            "no": 73340133,
+            "now": "10/27/19(Sun)16:50:37",
+            "name": "Anonymous",
+            "com": "<a href=\"#p73340123\" class=\"quotelink\">&gt;&gt;73340123</a><br><span class=\"quote\">&gt;install bunch of wtf shits</span><br><span class=\"quote\">&gt;now you have a somewhat good text editor</span><br><span class=\"quote\">&gt;somewhat</span>",
+            "time": 1572209437,
+            "resto": 73339442
+        },
+        {
+            "no": 73340150,
+            "now": "10/27/19(Sun)16:52:32",
+            "name": "Anonymous",
+            "com": "<a href=\"#p73340133\" class=\"quotelink\">&gt;&gt;73340133</a><br>ivy is a better auto-completion tool, swiper improves searching and company is for code auto-completion.",
+            "time": 1572209552,
+            "resto": 73339442
+        },
+        {
+            "no": 73340176,
+            "now": "10/27/19(Sun)16:54:36",
+            "name": "Anonymous",
+            "com": "Which string library to use with C?",
+            "time": 1572209676,
+            "resto": 73339442
+        },
+        {
+            "no": 73340181,
+            "now": "10/27/19(Sun)16:55:08",
+            "name": "Anonymous",
+            "com": "<a href=\"#p73339776\" class=\"quotelink\">&gt;&gt;73339776</a><br>Enumerable.Range(1,100).Sum(x =&gt; x*x)",
+            "time": 1572209708,
+            "resto": 73339442
+        },
+        {
+            "no": 73340185,
+            "now": "10/27/19(Sun)16:55:33",
+            "name": "Anonymous",
+            "com": "<a href=\"#p73340176\" class=\"quotelink\">&gt;&gt;73340176</a><br>The C standard library.",
+            "time": 1572209733,
+            "resto": 73339442
+        },
+        {
+            "no": 73340188,
+            "now": "10/27/19(Sun)16:55:44",
+            "name": "Anonymous",
+            "com": "<a href=\"#p73340150\" class=\"quotelink\">&gt;&gt;73340150</a><br>i have all that and more and better already setu up and working in my modern editor for people who dont waste time and neet away",
+            "time": 1572209744,
+            "resto": 73339442
+        },
+        {
+            "no": 73340208,
+            "now": "10/27/19(Sun)16:57:21",
+            "name": "Anonymous",
+            "com": "<a href=\"#p73340123\" class=\"quotelink\">&gt;&gt;73340123</a><br><span class=\"quote\">&gt;download 300MB of shit that for the 99% you will never use</span><br><span class=\"quote\">&gt;download other shit to make more usable the 1% part you need</span><br>Yeah no, I prefer notepads and cli scripts.",
+            "time": 1572209841,
+            "resto": 73339442
+        },
+        {
+            "no": 73340212,
+            "now": "10/27/19(Sun)16:57:36",
+            "name": "Anonymous",
+            "com": "<a href=\"#p73340185\" class=\"quotelink\">&gt;&gt;73340185</a><br>strcat sucks, it needs to travel the whole string unless you keep the length around in which case you might as well just use some other library instead of making struct that holds data and length.",
+            "time": 1572209856,
+            "resto": 73339442
+        },
+        {
+            "no": 73340220,
+            "now": "10/27/19(Sun)16:58:05",
+            "name": "Anonymous",
+            "com": "<a href=\"#p73340188\" class=\"quotelink\">&gt;&gt;73340188</a><br>As I said, I also use VS code. To make VS code somewhat good, you have to install a shit ton of plugins for things like powershell, bash, python, go, docker, c++, kubernetes etc.",
+            "time": 1572209885,
+            "resto": 73339442
+        },
+        {
+            "no": 73340232,
+            "now": "10/27/19(Sun)16:58:59",
+            "name": "Anonymous",
+            "com": "<a href=\"#p73340212\" class=\"quotelink\">&gt;&gt;73340212</a><br>Yes, strcat sucks. Don&#039;t use it. snprintf is the patrician string function, and you should use that.<br>Otherwise you don&#039;t need some pointless string library to do basic shit for you.",
+            "time": 1572209939,
+            "resto": 73339442
+        },
+        {
+            "no": 73340240,
+            "now": "10/27/19(Sun)16:59:38",
+            "name": "Anonymous",
+            "com": "<a href=\"#p73339776\" class=\"quotelink\">&gt;&gt;73339776</a><br><span class=\"quote\">&gt;being a loop pleb</span><br><pre class=\"prettyprint\">(let ((x (scan-range :from 1 :upto 100)))<br>  (collect-sum (#M* x x)))</pre>",
+            "time": 1572209978,
+            "resto": 73339442
+        },
+        {
+            "no": 73340242,
+            "now": "10/27/19(Sun)17:00:13",
+            "name": "Anonymous",
+            "com": "why are there many different &quot;ctl&quot; meanings in computer world<br>why are people so shit",
+            "time": 1572210013,
+            "resto": 73339442
+        },
+        {
+            "no": 73340257,
+            "now": "10/27/19(Sun)17:02:01",
+            "name": "Anonymous",
+            "com": "<a href=\"#p73340220\" class=\"quotelink\">&gt;&gt;73340220</a><br>These are just some of the extensions that I had to install to make VS code somewhat OK.",
+            "time": 1572210121,
+            "resto": 73339442
+        },
+        {
+            "no": 73340267,
+            "now": "10/27/19(Sun)17:03:05",
+            "name": "Anonymous",
+            "com": "<a href=\"#p73340232\" class=\"quotelink\">&gt;&gt;73340232</a><br>I bet using strcat would be more efficient compared to snprintf",
+            "time": 1572210185,
+            "resto": 73339442
+        },
+        {
+            "no": 73340268,
+            "now": "10/27/19(Sun)17:03:07",
+            "name": "Anonymous",
+            "com": "<a href=\"#p73340257\" class=\"quotelink\">&gt;&gt;73340257</a>",
+            "filename": "51535316427",
+            "ext": ".png",
+            "w": 162,
+            "h": 570,
+            "tn_w": 35,
+            "tn_h": 125,
+            "tim": 1572210187275,
+            "time": 1572210187,
+            "md5": "H+8j1VAyY2Ybxt+cpBwLXw==",
+            "fsize": 46020,
+            "resto": 73339442
+        },
+        {
+            "no": 73340401,
+            "now": "10/27/19(Sun)17:15:52",
+            "name": "Anonymous",
+            "com": "<a href=\"#p73340268\" class=\"quotelink\">&gt;&gt;73340268</a><br><br>Wow, a real cultist.",
+            "time": 1572210952,
+            "resto": 73339442
+        },
+        {
+            "no": 73340415,
+            "now": "10/27/19(Sun)17:18:07",
+            "name": "Anonymous",
+            "com": "<a href=\"#p73340129\" class=\"quotelink\">&gt;&gt;73340129</a><br>and in that exemple I can remove both elses right? that&#039;ll not affect the code I believe",
+            "time": 1572211087,
+            "resto": 73339442
+        },
+        {
+            "no": 73340436,
+            "now": "10/27/19(Sun)17:20:33",
+            "name": "Anonymous",
+            "com": "and yet ,as far as modern editors go, sublime text beats everyone, literally as if creator of sublime is the only sane programmer out there in the world of shit moronic hipster idiots<br>i have never payed for sublime, i always used some licence key from internet, but god damn he deserved every cent he is charging it for<br><br>you simply cant compare sublime (written in c++)  and other piece of shit literal web browser editors written in javascript",
+            "time": 1572211233,
+            "resto": 73339442
+        },
+        {
+            "no": 73340454,
+            "now": "10/27/19(Sun)17:22:56",
+            "name": "Anonymous",
+            "com": "<a href=\"#p73340436\" class=\"quotelink\">&gt;&gt;73340436</a><br><span class=\"quote\">&gt;written in c++</span><br>lmao imagine using that as a positive",
+            "time": 1572211376,
+            "resto": 73339442
+        },
+        {
+            "no": 73340462,
+            "now": "10/27/19(Sun)17:23:43",
+            "name": "Anonymous",
+            "com": "<a href=\"#p73340454\" class=\"quotelink\">&gt;&gt;73340454</a><br>based retard webdev &quot;&quot;&quot;programmer&quot;&quot;&quot;&quot;",
+            "time": 1572211423,
+            "resto": 73339442
+        },
+        {
+            "no": 73340467,
+            "now": "10/27/19(Sun)17:24:14",
+            "name": "Anonymous",
+            "com": "<a href=\"#p73340401\" class=\"quotelink\">&gt;&gt;73340401</a><br><span class=\"quote\">&gt;work with X</span><br><span class=\"quote\">&gt;install plugin for X</span><br><span class=\"quote\">&gt;&quot;Wow, a real cultist&quot;</span>",
+            "filename": "1555529326016",
+            "ext": ".jpg",
+            "w": 2048,
+            "h": 1536,
+            "tn_w": 125,
+            "tn_h": 93,
+            "tim": 1572211454899,
+            "time": 1572211454,
+            "md5": "mV2vqx2CTxnZ425tNJgFqQ==",
+            "fsize": 593056,
+            "resto": 73339442
+        },
+        {
+            "no": 73340498,
+            "now": "10/27/19(Sun)17:27:58",
+            "name": "Anonymous",
+            "com": "<a href=\"#p73340415\" class=\"quotelink\">&gt;&gt;73340415</a><br>When you create any code segment, always try to make it orthogonal and easy to change. Everything should be a modular as possible. <br><br>For example, what happens if you now need to check if the tuple is greater than or equal to 4? In the current form, you would need to change that particular variable in 2 places. <br><br>If you created a function that does the tuple and size check, that accepts a parameter corresponding to the desired size of your tuple, you would shorten your code and make it more flexible. <br><br>Likewise, you could also generalize your pass condition such that if you change the specification in the future it will not be a headache to go through your codebase and update it. <br><br>When you work in industry and with a team of others, specifications are always changing. You want the code you write to be flexible to accommodate the changes as easily as possible. <br><br>Always be introspective with any code you write, analyze how you could do it better. Just by doing this simple thing, you will get much better at programming.",
+            "time": 1572211678,
+            "resto": 73339442
+        },
+        {
+            "no": 73340524,
+            "now": "10/27/19(Sun)17:30:17",
+            "name": "Anonymous",
+            "com": "<a href=\"#p73340462\" class=\"quotelink\">&gt;&gt;73340462</a><br>Now I want you to explain in great detail the mental process that led you to write this.",
+            "time": 1572211817,
+            "resto": 73339442
+        },
+        {
+            "no": 73340575,
+            "now": "10/27/19(Sun)17:34:55",
+            "name": "Anonymous",
+            "com": "<a href=\"#p73340467\" class=\"quotelink\">&gt;&gt;73340467</a><br><br>Okay, dude. I&#039;m not the one using Dogger and Kuckernetes.",
+            "time": 1572212095,
+            "resto": 73339442
+        },
+        {
+            "no": 73340615,
+            "now": "10/27/19(Sun)17:39:00",
+            "name": "Anonymous",
+            "com": "<a href=\"#p73340575\" class=\"quotelink\">&gt;&gt;73340575</a><br>I have to use it because I actually have a 6 figures job on a giant tech company. :^)",
+            "time": 1572212340,
+            "resto": 73339442
+        },
+        {
+            "no": 73340646,
+            "now": "10/27/19(Sun)17:41:20",
+            "name": "Anonymous",
+            "com": "<a href=\"#p73340615\" class=\"quotelink\">&gt;&gt;73340615</a><br>your basement is not a &quot;giant tech company&quot;",
+            "time": 1572212480,
+            "resto": 73339442
+        },
+        {
+            "no": 73340661,
+            "now": "10/27/19(Sun)17:42:40",
+            "name": "Anonymous",
+            "com": "<a href=\"#p73340615\" class=\"quotelink\">&gt;&gt;73340615</a><br>If you need to say how rich and successful you &quot;are&quot; to be right, you&#039;re wrong.",
+            "time": 1572212560,
+            "resto": 73339442
+        },
+        {
+            "no": 73340711,
+            "now": "10/27/19(Sun)17:47:12",
+            "name": "Anonymous",
+            "com": "learning nvim, because my professor is forcing it to learn ...",
+            "time": 1572212832,
+            "resto": 73339442
+        },
+        {
+            "no": 73340746,
+            "now": "10/27/19(Sun)17:50:29",
+            "name": "Anonymous",
+            "com": "<a href=\"#p73340661\" class=\"quotelink\">&gt;&gt;73340661</a><br>Ok, I&#039;m sorry.",
+            "time": 1572213029,
+            "resto": 73339442
+        },
+        {
+            "no": 73340762,
+            "now": "10/27/19(Sun)17:51:44",
+            "name": "Anonymous",
+            "com": "<a href=\"#p73340711\" class=\"quotelink\">&gt;&gt;73340711</a><br>lies",
+            "time": 1572213104,
+            "resto": 73339442
+        },
+        {
+            "no": 73340810,
+            "now": "10/27/19(Sun)17:57:51",
+            "name": "Anonymous",
+            "com": "<a href=\"#p73339442\" class=\"quotelink\">&gt;&gt;73339442</a><br>Lisp is the most powerful programming language.",
+            "time": 1572213471,
+            "resto": 73339442
+        },
+        {
+            "no": 73340844,
+            "now": "10/27/19(Sun)18:01:41",
+            "name": "Anonymous",
+            "com": "<a href=\"#p73340498\" class=\"quotelink\">&gt;&gt;73340498</a><br>wow, thanks for writing this, it certainly makes sense. I&#039;ll try to generalize it then, after I get done with the other functions of the project",
+            "time": 1572213701,
+            "resto": 73339442
+        },
+        {
+            "no": 73340847,
+            "now": "10/27/19(Sun)18:01:52",
+            "name": "Anonymous",
+            "com": "<a href=\"#p73340575\" class=\"quotelink\">&gt;&gt;73340575</a><br>Why not, they are easy to use and help you with many tasks.",
+            "time": 1572213712,
+            "resto": 73339442
+        },
+        {
+            "no": 73340858,
+            "now": "10/27/19(Sun)18:03:11",
+            "name": "Anonymous",
+            "com": "<a href=\"#p73340498\" class=\"quotelink\">&gt;&gt;73340498</a><br>fucking reddit",
+            "time": 1572213791,
+            "resto": 73339442
+        },
+        {
+            "no": 73340876,
+            "now": "10/27/19(Sun)18:04:39",
+            "name": "Anonymous",
+            "com": "<a href=\"#p73340844\" class=\"quotelink\">&gt;&gt;73340844</a><br>Learn Lisp.",
+            "time": 1572213879,
+            "resto": 73339442
+        },
+        {
+            "no": 73340877,
+            "now": "10/27/19(Sun)18:04:42",
+            "name": "Anonymous",
+            "com": "<a href=\"#p73340762\" class=\"quotelink\">&gt;&gt;73340762</a><br>no joke, he gave us pdf with instructions how to install ubuntu and his docker image with modifed nvim, gcc, tmux and all kinds of shit... <br><br>when doing the practices on uni&#039;s pc&#039;s you have to use his tools. I personally don&#039;t mind using ubuntu, but most of people are not happy about that<br><br>also he is kinda narcissistic asshole, he only accepts his definitions on exams and doesn&#039;t give us any break inbetween lectures",
+            "time": 1572213882,
+            "resto": 73339442
+        },
+        {
+            "no": 73340907,
+            "now": "10/27/19(Sun)18:07:27",
+            "name": "Anonymous",
+            "com": "<a href=\"#p73340877\" class=\"quotelink\">&gt;&gt;73340877</a><br>fucking reddit REEEEEEEEEEE",
+            "time": 1572214047,
+            "resto": 73339442
+        },
+        {
+            "no": 73340914,
+            "now": "10/27/19(Sun)18:07:49",
+            "name": "Anonymous",
+            "com": "<a href=\"#p73340810\" class=\"quotelink\">&gt;&gt;73340810</a><br>Show an example of Lisp&#039;s power",
+            "time": 1572214069,
+            "resto": 73339442
+        },
+        {
+            "no": 73340977,
+            "now": "10/27/19(Sun)18:13:09",
+            "name": "Anonymous",
+            "com": "<a href=\"#p73340914\" class=\"quotelink\">&gt;&gt;73340914</a><br>all languages are just variants of lisp.",
+            "time": 1572214389,
+            "resto": 73339442
+        },
+        {
+            "no": 73340982,
+            "now": "10/27/19(Sun)18:13:46",
+            "name": "Anonymous",
+            "com": "How do cpp includes work? I just downloaded and built opencv from source. I have no idea how to include it in a program, or how to include any other library (non-standard) for that matter. At the moment I just have it compiled and sitting in a local directory.<br>I&#039;m not even sure if I can use g++ still or if I have to use other tools as well to compile.",
+            "time": 1572214426,
+            "resto": 73339442
+        },
+        {
+            "no": 73341024,
+            "now": "10/27/19(Sun)18:17:06",
+            "name": "Anonymous",
+            "com": "<a href=\"#p73340982\" class=\"quotelink\">&gt;&gt;73340982</a><br>Download library<br>Type <pre class=\"prettyprint\">#include &quot;[library path/library name]&quot;</pre><br>And use the right namespaces when they are required.",
+            "time": 1572214626,
+            "resto": 73339442
+        },
+        {
+            "no": 73341027,
+            "now": "10/27/19(Sun)18:17:13",
+            "name": "Anonymous",
+            "com": "<a href=\"#p73340982\" class=\"quotelink\">&gt;&gt;73340982</a><br>It’s a mess and hell to setup manually. Look up how to compile C code, C++ is essentially the same.<br>But in all honesty you will be better served learning how to use cmake because it is setup to manage this complexity for you.",
+            "time": 1572214633,
+            "resto": 73339442
+        },
+        {
+            "no": 73341042,
+            "now": "10/27/19(Sun)18:18:29",
+            "name": "Anonymous",
+            "com": "Types are a spook.",
+            "filename": "C897C545-993C-4A02-B0CA-55E63145DA1E",
+            "ext": ".png",
+            "w": 1200,
+            "h": 1555,
+            "tn_w": 96,
+            "tn_h": 125,
+            "tim": 1572214709412,
+            "time": 1572214709,
+            "md5": "Rz1HeUQUPAgA4gyKkeaobA==",
+            "fsize": 86375,
+            "resto": 73339442
+        },
+        {
+            "no": 73341078,
+            "now": "10/27/19(Sun)18:21:41",
+            "name": "Anonymous",
+            "com": "i have a program that generates binary numbers as a string. how would i go about looping through these to count the number of 1&#039;s at each index and store it somewhere so i can analyze the distribution of 1&#039;s?<br><br>python btw",
+            "time": 1572214901,
+            "resto": 73339442
+        },
+        {
+            "no": 73341089,
+            "now": "10/27/19(Sun)18:22:45",
+            "name": "Anonymous",
+            "com": "<a href=\"#p73340982\" class=\"quotelink\">&gt;&gt;73340982</a><br>good lord.<br>at a basic level:<br>1. includes describe data structures and symbols<br>2. g++ compiles your code as if what the includes say is true<br>3. your code is then linked at some point with libraries that have code corresponding to the include files<br>analogy: you open a book called &quot;how to poo in the loo&quot;, the book describes &#039;toilets&#039; that you can &#039;flush&#039;. You compile a plan to use toilets appropriately. And then when you execute the plan, the runtime linker connects you to a physical toilet that you can poo into.<br>for simple stuff you don&#039;t need to invoke the linker in a separate step. You can just tell g++ where to find the libraries and the includes, both.<br>e.g., g++ -I/usr/include -L/usr/lib -o poo poo.c -lpoo -ltoilets<br>all of the above is true as well of C. C++&#039;s headers can just do a lot more, because they can have C++ in them and C++&#039;s a more powerful language.",
+            "time": 1572214965,
+            "resto": 73339442
+        },
+        {
+            "no": 73341137,
+            "now": "10/27/19(Sun)18:26:36",
+            "name": "Anonymous",
+            "com": "<a href=\"#p73341042\" class=\"quotelink\">&gt;&gt;73341042</a><br>&quot;is a spook&quot; is a stupid fucking meme that tells you more about the speaker than what&#039;s spoken of.",
+            "time": 1572215196,
+            "resto": 73339442
+        },
+        {
+            "no": 73341185,
+            "now": "10/27/19(Sun)18:31:14",
+            "name": "Anonymous",
+            "com": "<a href=\"#p73341137\" class=\"quotelink\">&gt;&gt;73341137</a><br>Is a spook",
+            "time": 1572215474,
+            "resto": 73339442
+        },
+        {
+            "no": 73341239,
+            "now": "10/27/19(Sun)18:36:03",
+            "name": "Anonymous",
+            "com": "<a href=\"#p73340977\" class=\"quotelink\">&gt;&gt;73340977</a><br>Prove it",
+            "time": 1572215763,
+            "resto": 73339442
+        },
+        {
+            "no": 73341251,
+            "now": "10/27/19(Sun)18:36:59",
+            "name": "Anonymous",
+            "com": "<a href=\"#p73339517\" class=\"quotelink\">&gt;&gt;73339517</a><br>I still need a database and that&#039;s the bottleneck anyways. Node or php won&#039;t really make a.difference. I just need the server to act as an API for an app.",
+            "time": 1572215819,
+            "resto": 73339442
+        },
+        {
+            "no": 73341252,
+            "now": "10/27/19(Sun)18:37:01",
+            "name": "Anonymous",
+            "com": "Tell me about Docker and AWS. I keep hearing them when job hunting idk what they are.<br>How do I learn them?",
+            "time": 1572215821,
+            "resto": 73339442
+        },
+        {
+            "no": 73341262,
+            "now": "10/27/19(Sun)18:37:57",
+            "name": "Anonymous",
+            "com": "<a href=\"#p73341239\" class=\"quotelink\">&gt;&gt;73341239</a><br>it&#039;s a programmable programming language, so every language is really just a lisp in disguise.",
+            "time": 1572215877,
+            "resto": 73339442
+        },
+        {
+            "no": 73341283,
+            "now": "10/27/19(Sun)18:39:54",
+            "name": "Anonymous",
+            "com": "Why do you all discuss about dead meme langs instead of discussing professional work problems? You are employed aren&#039;t you?",
+            "time": 1572215994,
+            "resto": 73339442
+        },
+        {
+            "no": 73341297,
+            "now": "10/27/19(Sun)18:40:41",
+            "name": "Anonymous",
+            "com": "<a href=\"#p73341283\" class=\"quotelink\">&gt;&gt;73341283</a><br>what kinds of professional work problems do you wish to discuss?",
+            "time": 1572216041,
+            "resto": 73339442
+        },
+        {
+            "no": 73341302,
+            "now": "10/27/19(Sun)18:41:03",
+            "name": "Anonymous",
+            "com": "<a href=\"#p73341252\" class=\"quotelink\">&gt;&gt;73341252</a><br>By using your brain and doing a google search.",
+            "time": 1572216063,
+            "resto": 73339442
+        },
+        {
+            "no": 73341314,
+            "now": "10/27/19(Sun)18:42:31",
+            "name": "Anonymous",
+            "com": "Have sex",
+            "time": 1572216151,
+            "resto": 73339442
+        },
+        {
+            "no": 73341325,
+            "now": "10/27/19(Sun)18:43:22",
+            "name": "Anonymous",
+            "com": "<a href=\"#p73340914\" class=\"quotelink\">&gt;&gt;73340914</a><br><pre class=\"prettyprint\">(format t &quot;~{fuck ~a~^ and ~}~%&quot; &#039;(&quot;niggers&quot; &quot;jannies&quot;))</pre>",
+            "time": 1572216202,
+            "resto": 73339442
+        },
+        {
+            "no": 73341349,
+            "now": "10/27/19(Sun)18:45:00",
+            "name": "Anonymous",
+            "com": "How do you figure out a cardinal/intercardinal direction using only three yes or no questions?<br>(I don&#039;t think you can use selection/if statements, the question is kind of vague)",
+            "time": 1572216300,
+            "resto": 73339442
+        },
+        {
+            "no": 73341377,
+            "now": "10/27/19(Sun)18:48:42",
+            "name": "Anonymous",
+            "com": "<a href=\"#p73341349\" class=\"quotelink\">&gt;&gt;73341349</a><br>?",
+            "time": 1572216522,
+            "resto": 73339442
+        },
+        {
+            "no": 73341440,
+            "now": "10/27/19(Sun)18:54:41",
+            "name": "Anonymous",
+            "com": "Other than having an immediate mode-style api, with retained mode code under the hood, what else is needed to make GUI good, and not cancer aids like always?",
+            "time": 1572216881,
+            "resto": 73339442
+        },
+        {
+            "no": 73341471,
+            "now": "10/27/19(Sun)18:58:49",
+            "name": "Anonymous",
+            "com": "I&#039;ve noticed a severe lack of anime. Did the normalniggers win?",
+            "filename": "5BC80611-0F1C-446E-BE63-D7AA828BDA26",
+            "ext": ".jpg",
+            "w": 704,
+            "h": 400,
+            "tn_w": 125,
+            "tn_h": 71,
+            "tim": 1572217129529,
+            "time": 1572217129,
+            "md5": "5unonvOkajZQJ4zsuOhfBw==",
+            "fsize": 38188,
+            "resto": 73339442
+        },
+        {
+            "no": 73341486,
+            "now": "10/27/19(Sun)18:59:33",
+            "name": "Anonymous",
+            "com": "<a href=\"#p73341471\" class=\"quotelink\">&gt;&gt;73341471</a><br>fuck off back to r/anime normie",
+            "time": 1572217173,
+            "resto": 73339442
+        },
+        {
+            "no": 73341505,
+            "now": "10/27/19(Sun)19:01:04",
+            "name": "Anonymous",
+            "com": "<a href=\"#p73341377\" class=\"quotelink\">&gt;&gt;73341377</a>",
+            "filename": "2019-10-27-185837_958x1059_scrot",
+            "ext": ".png",
+            "w": 958,
+            "h": 1059,
+            "tn_w": 113,
+            "tn_h": 125,
+            "tim": 1572217264434,
+            "time": 1572217264,
+            "md5": "k+5NI0ky6QVfvg6ALcnbjQ==",
+            "fsize": 129414,
+            "resto": 73339442
+        },
+        {
+            "no": 73341528,
+            "now": "10/27/19(Sun)19:02:33",
+            "name": "Anonymous",
+            "com": "<a href=\"#p73341486\" class=\"quotelink\">&gt;&gt;73341486</a>",
+            "filename": "B8A91F65-D9EA-469D-8A68-7AB547BAFE9A",
+            "ext": ".jpg",
+            "w": 744,
+            "h": 1024,
+            "tn_w": 90,
+            "tn_h": 125,
+            "tim": 1572217353687,
+            "time": 1572217353,
+            "md5": "N9uG95RQu0q9TiHPoPYY7A==",
+            "fsize": 290644,
+            "resto": 73339442
+        },
+        {
+            "no": 73341538,
+            "now": "10/27/19(Sun)19:03:13",
+            "name": "Anonymous",
+            "com": "<a href=\"#p73341349\" class=\"quotelink\">&gt;&gt;73341349</a><br>Simple binary search.<br><pre class=\"prettyprint\">#include &lt;stdbool.h&gt;<br>#include &lt;stdio.h&gt;<br>#include &lt;ctype.h&gt;<br><br>static void drain_stdin(void)<br>{<br>    int c;<br>    while ((c = getchar()) != &#039;\\n&#039; &amp;&amp; c != EOF);<br>}<br><br>static bool ask(const char *str)<br>{<br>    int ret = -1;<br><br>    do {<br>        puts(str);<br><br>        char c;<br>        if (scanf(&quot; %c&quot;, &amp;c) != 1) {<br>            drain_stdin();<br>            continue;<br>        }<br><br>        if (tolower(c) == &#039;y&#039;)<br>            ret = 1;<br>        else if (tolower(c) == &#039;n&#039;)<br>            ret = 0;<br><br>        drain_stdin();<br>    } while (ret == -1);<br><br>    return ret;<br>}<br><br>int main()<br>{<br>    bool ret;<br><br>    if (ask(&quot;Is the direction either north or east?&quot;)) {    <br>        if (ask(&quot;Is the direction north?&quot;))<br>            puts(&quot;The answer is north&quot;);<br>        else<br>            puts(&quot;The answer is east&quot;);<br>    } else {<br>        if (ask(&quot;Is the direction south?&quot;))<br>            puts(&quot;The answer is south&quot;);<br>        else<br>            puts(&quot;The answer is west&quot;);<br>    }<br>}</pre>",
+            "time": 1572217393,
+            "resto": 73339442
+        },
+        {
+            "no": 73341539,
+            "now": "10/27/19(Sun)19:03:12",
+            "name": "Anonymous",
+            "com": "<a href=\"#p73339910\" class=\"quotelink\">&gt;&gt;73339910</a><br>you have to use whatever operating system function gets you the input<br>For example, on windows, the lowest level input you can really get is raw input, which is still part of the win32 windowing system event loop<br>GUI toolkits use event handlers because windowing systems use event queues",
+            "time": 1572217392,
+            "resto": 73339442
+        },
+        {
+            "no": 73341546,
+            "now": "10/27/19(Sun)19:03:36",
+            "name": "Anonymous",
+            "com": "<a href=\"#p73341505\" class=\"quotelink\">&gt;&gt;73341505</a><br>I meant to post a cropped version but oh well<br><a href=\"#p73341471\" class=\"quotelink\">&gt;&gt;73341471</a><br>help me please",
+            "filename": "hungry",
+            "ext": ".jpg",
+            "w": 768,
+            "h": 768,
+            "tn_w": 125,
+            "tn_h": 125,
+            "tim": 1572217416800,
+            "time": 1572217416,
+            "md5": "RqFVwFBxIRXav5smztmQXA==",
+            "fsize": 116435,
+            "resto": 73339442
+        },
+        {
+            "no": 73341566,
+            "now": "10/27/19(Sun)19:05:31",
+            "name": "Anonymous",
+            "com": "<a href=\"#p73341538\" class=\"quotelink\">&gt;&gt;73341538</a><br>I don&#039;t think this is what the question is asking<br>see <a href=\"#p73341505\" class=\"quotelink\">&gt;&gt;73341505</a>",
+            "time": 1572217531,
+            "resto": 73339442
+        },
+        {
+            "no": 73341586,
+            "now": "10/27/19(Sun)19:08:04",
+            "name": "Anonymous",
+            "com": "<a href=\"#p73341538\" class=\"quotelink\">&gt;&gt;73341538</a><br><pre class=\"prettyprint\">#include &lt;stdio.h&gt;<br>#include &lt;ctype.h&gt;<br><br>void drain_stdin()<br>{<br>    int c;<br>    while ((c = getchar()) != &#039;\\n&#039; &amp;&amp; c != EOF);<br>}<br><br>int ask(const char *str)<br>{<br>    int ret = -1;<br><br>    do {<br>        puts(str);<br><br>        char c;<br>        if (scanf(&quot; %c&quot;, &amp;c) != 1) {<br>            drain_stdin();<br>            continue;<br>        }<br><br>        ret = (tolower(c) == &#039;y&#039;);<br><br>        drain_stdin();<br>    } while (ret == -1);<br><br>    return ret;<br>}<br><br>int main()<br>{<br>    if (ask(&quot;Is the direction either north or east?&quot;)) {    <br>        if (ask(&quot;Is the direction north?&quot;))<br>            puts(&quot;The answer is north&quot;);<br>        else<br>            puts(&quot;The answer is east&quot;);<br>    } else {<br>        if (ask(&quot;Is the direction south?&quot;))<br>            puts(&quot;The answer is south&quot;);<br>        else<br>            puts(&quot;The answer is west&quot;);<br>    }<br>    return 0;<br>}</pre>",
+            "time": 1572217684,
+            "resto": 73339442
+        },
+        {
+            "no": 73341594,
+            "now": "10/27/19(Sun)19:08:48",
+            "name": "Anonymous",
+            "com": "<a href=\"#p73341505\" class=\"quotelink\">&gt;&gt;73341505</a><br><a href=\"#p73341546\" class=\"quotelink\">&gt;&gt;73341546</a><br><a href=\"#p73341566\" class=\"quotelink\">&gt;&gt;73341566</a><br>You can still get to the answer with a binary search. Each question you ask should cut the number of possible solutions in half.<br>Having to use the same questions regardless of which &quot;path&quot; you takes complicates it a little bit, but I guess they didn&#039;t want to make your homework too easy.",
+            "time": 1572217728,
+            "resto": 73339442
+        },
+        {
+            "no": 73341609,
+            "now": "10/27/19(Sun)19:10:32",
+            "name": "Anonymous",
+            "com": "<a href=\"#p73339776\" class=\"quotelink\">&gt;&gt;73339776</a><br><pre class=\"prettyprint\">1..100 |&gt; map(&amp;(&amp;1*&amp;1))<br></pre>",
+            "time": 1572217832,
+            "resto": 73339442
+        },
+        {
+            "no": 73341624,
+            "now": "10/27/19(Sun)19:11:31",
+            "name": "Anonymous",
+            "com": "<a href=\"#p73341325\" class=\"quotelink\">&gt;&gt;73341325</a><br>nice",
+            "time": 1572217891,
+            "resto": 73339442
+        },
+        {
+            "no": 73341629,
+            "now": "10/27/19(Sun)19:11:57",
+            "name": "Anonymous",
+            "com": "<a href=\"#p73339442\" class=\"quotelink\">&gt;&gt;73339442</a><br>a discord bot to help run a sci-fi game I&#039;m doing with my /tg/ group. learning asyncio for it too.<br>I&#039;m a fan of ARG-style stuff in RPGs especially sci-fi ones, so beyond stat tracking and rolling the bot will probably become part of the story eventually.",
+            "time": 1572217917,
+            "resto": 73339442
+        },
+        {
+            "no": 73341655,
+            "now": "10/27/19(Sun)19:14:54",
+            "name": "Anonymous",
+            "com": "UML is a mess and could only have been invented by Germans.",
+            "time": 1572218094,
+            "resto": 73339442
+        },
+        {
+            "no": 73341658,
+            "now": "10/27/19(Sun)19:15:05",
+            "name": "Anonymous",
+            "com": "atom or vscode for JavaScript?",
+            "time": 1572218105,
+            "resto": 73339442
+        },
+        {
+            "no": 73341692,
+            "now": "10/27/19(Sun)19:17:57",
+            "name": "Anonymous",
+            "com": "<a href=\"#p73341594\" class=\"quotelink\">&gt;&gt;73341594</a><br><a href=\"#p73341505\" class=\"quotelink\">&gt;&gt;73341505</a><br>Is the directional cardinal?<br>Is the direction between north and south east (inclusive)?<br>Is the direction either between north and northeast or south and southwest (inclusive)?",
+            "filename": "1565712575602",
+            "ext": ".jpg",
+            "w": 600,
+            "h": 727,
+            "tn_w": 103,
+            "tn_h": 125,
+            "tim": 1572218277632,
+            "time": 1572218277,
+            "md5": "ZfzNTJpknhWeX3O+SERcfg==",
+            "fsize": 173988,
+            "resto": 73339442
+        },
+        {
+            "no": 73341736,
+            "now": "10/27/19(Sun)19:21:13",
+            "name": "Anonymous",
+            "com": "<a href=\"#p73341609\" class=\"quotelink\">&gt;&gt;73341609</a><br>I think you forget to sum my man.",
+            "time": 1572218473,
+            "resto": 73339442
+        },
+        {
+            "no": 73341800,
+            "now": "10/27/19(Sun)19:27:33",
+            "name": "Anonymous",
+            "com": "I tried to do this: <a href=\"#p73339735\" class=\"quotelink\">&gt;&gt;73339735</a> in C# but with a reusable model:<br><br><pre class=\"prettyprint\">int k = 1, n = 100, e = 2;<br>int[] numbers = new int[n+k];<br>for (;k &lt;= n; k++)<br>numbers[k] = Convert.ToInt32(Math.Pow(k,e));<br><br>Console.WriteLine(&quot;Numbers: &quot; + (string.Join(&quot;, &quot;, numbers) + &quot;\\nSum: &quot; + numbers.Sum()));<br>Console.ReadKey();</pre><br><br>The problem is I don&#039;t like it one bit. How can I beautify this monstrosity? ignoring last 2 lines. First of all the problems, the [n+1] which is supposed to be just [n] yet no matter what, the array always starts with a zero, you can change k to any number the result is the same, the zero is there to occupy the first position of the array, that&#039;s why I needed 101 (or just n+1) positions. Then, in the for loop, I didn&#039;t have anything to initialize so I left the first part empty with just the semicolon, it looks like a mistake but it actually compiles fine but it still feels wrong. Last but not least is the Convert.ToInt32() part, without this it throws an error, cannot convert double to int, probably related to Math.Pow(), it&#039;s a shame C# doesn&#039;t have a power operator. Any hints? I was planning to make it into a method.",
+            "time": 1572218853,
+            "resto": 73339442
+        },
+        {
+            "no": 73341812,
+            "now": "10/27/19(Sun)19:28:59",
+            "name": "Anonymous",
+            "com": "<a href=\"#p73341692\" class=\"quotelink\">&gt;&gt;73341692</a><br>Thank you kind Akari poster, I didn&#039;t think to use ranges of directions like that.",
+            "filename": "bIxo",
+            "ext": ".gif",
+            "w": 287,
+            "h": 344,
+            "tn_w": 104,
+            "tn_h": 125,
+            "tim": 1572218939847,
+            "time": 1572218939,
+            "md5": "kaY44o7axSGu+36zT4c3dQ==",
+            "fsize": 73756,
+            "resto": 73339442
+        },
+        {
+            "no": 73341851,
+            "now": "10/27/19(Sun)19:33:41",
+            "name": "Anonymous",
+            "com": "<a href=\"#p73341800\" class=\"quotelink\">&gt;&gt;73341800</a><br><pre class=\"prettyprint\">Console.WriteLine(&quot;{0}&quot;, Enumerable.Range(1, 100).Select(x =&gt; x * x).Sum())</pre>",
+            "time": 1572219221,
+            "resto": 73339442
+        },
+        {
+            "no": 73341868,
+            "now": "10/27/19(Sun)19:35:03",
+            "name": "Anonymous",
+            "com": "<a href=\"#p73341812\" class=\"quotelink\">&gt;&gt;73341812</a><br><a href=\"#p73341692\" class=\"quotelink\">&gt;&gt;73341692</a><br>Actually, I came up with a slightly more minimal third question that doesn&#039;t involve saying &quot;or&quot;.<br>Is the direction between west and northeast (inclusive)?",
+            "filename": "1565712671475",
+            "ext": ".jpg",
+            "w": 540,
+            "h": 763,
+            "tn_w": 88,
+            "tn_h": 125,
+            "tim": 1572219303996,
+            "time": 1572219303,
+            "md5": "QphOCEHjHj3YcNmV/AmN3w==",
+            "fsize": 168793,
+            "resto": 73339442
+        },
+        {
+            "no": 73341875,
+            "now": "10/27/19(Sun)19:35:22",
+            "name": "Anonymous",
+            "com": "In C++<br>can I do this?<br>char array[] = {1,2,&quot;love&quot;,7,8};<br>so sizeof(array)  = 8",
+            "time": 1572219322,
+            "resto": 73339442
+        },
+        {
+            "no": 73341887,
+            "now": "10/27/19(Sun)19:36:49",
+            "name": "Anonymous",
+            "com": "<a href=\"#p73341851\" class=\"quotelink\">&gt;&gt;73341851</a><br>Oh well, I did try Enumerable.Range() before but it threw a different error, I couldn&#039;t figure out what was wrong with it. Yours just werks, thanks.",
+            "filename": "1487954620364",
+            "ext": ".jpg",
+            "w": 353,
+            "h": 349,
+            "tn_w": 124,
+            "tn_h": 123,
+            "tim": 1572219409701,
+            "time": 1572219409,
+            "md5": "ODHCeUhvkmhVzPdm2m+3oQ==",
+            "fsize": 18541,
+            "resto": 73339442
+        },
+        {
+            "no": 73341899,
+            "now": "10/27/19(Sun)19:37:55",
+            "name": "Anonymous",
+            "com": "<a href=\"#p73341875\" class=\"quotelink\">&gt;&gt;73341875</a><br>why are you asking for expressive conveniences in C++?<br>just write {1,2,&#039;l&#039;,&#039;o&#039;,&#039;v&#039;,...}<br>or &quot;\\x01\\x02love\\x07\\x08&quot;",
+            "time": 1572219475,
+            "resto": 73339442
+        },
+        {
+            "no": 73341920,
+            "now": "10/27/19(Sun)19:39:16",
+            "name": "Anonymous",
+            "com": "<a href=\"#p73341887\" class=\"quotelink\">&gt;&gt;73341887</a><br><span class=\"quote\">&gt;Yours just werks,</span><br>glad it does, I don&#039;t even know C# but the LINQ shills from a while ago burned these features into my brain",
+            "time": 1572219556,
+            "resto": 73339442
+        },
+        {
+            "no": 73341935,
+            "now": "10/27/19(Sun)19:40:57",
+            "name": "Anonymous",
+            "com": "<pre class=\"prettyprint\">#include &lt;iostream&gt;<br>#include &lt;sstream&gt;<br>#include &lt;memory&gt;<br><br>struct FibGen {<br>private:<br>    unsigned int a{0}, b{1};<br>public:<br>    [[nodiscard]] auto next() -&gt; unsigned int {<br>        const auto result{a+b};<br>        a = b;<br>        b = result;<br>        return result;<br>    }<br>};<br><br>auto main(int argc, const char** argv) -&gt; int {<br>    std::istringstream iss(argv[1]);<br>    unsigned int target;<br>    if (iss &gt;&gt; target) {<br>        auto fibGen{std::make_unique&lt;FibGen&gt;()};<wbr><br><br>        for (auto next{fibGen-&gt;next()}; next &lt; target; next = fibGen-&gt;next()) <br>            std::cout &lt;&lt; next &lt;&lt; &#039;\\n&#039;;<br>    <br>    }<br>    <br>}</pre>",
+            "time": 1572219657,
+            "resto": 73339442
+        },
+        {
+            "no": 73341947,
+            "now": "10/27/19(Sun)19:42:04",
+            "name": "Anonymous",
+            "com": "<a href=\"#p73341868\" class=\"quotelink\">&gt;&gt;73341868</a><br>that works too thank you",
+            "filename": "1519521915416",
+            "ext": ".gif",
+            "w": 360,
+            "h": 640,
+            "tn_w": 70,
+            "tn_h": 125,
+            "tim": 1572219724719,
+            "time": 1572219724,
+            "md5": "IDgKrvID5iw6Lhx/64XIoQ==",
+            "fsize": 412197,
+            "resto": 73339442
+        },
+        {
+            "no": 73341951,
+            "now": "10/27/19(Sun)19:42:21",
+            "name": "Anonymous",
+            "com": "<a href=\"#p73339776\" class=\"quotelink\">&gt;&gt;73339776</a><br><pre class=\"prettyprint\">square = -&gt;(x) { x*x }<br>(1..100).map(&amp;square).sum<br></pre>",
+            "time": 1572219741,
+            "resto": 73339442
+        },
+        {
+            "no": 73341980,
+            "now": "10/27/19(Sun)19:44:24",
+            "name": "Anonymous",
+            "com": "<a href=\"#p73341935\" class=\"quotelink\">&gt;&gt;73341935</a><br>that&#039;s just dumb",
+            "time": 1572219864,
+            "resto": 73339442
+        },
+        {
+            "no": 73342004,
+            "now": "10/27/19(Sun)19:46:41",
+            "name": "Anonymous",
+            "com": "<a href=\"#p73341980\" class=\"quotelink\">&gt;&gt;73341980</a><br>How?",
+            "time": 1572220001,
+            "resto": 73339442
+        },
+        {
+            "no": 73342018,
+            "now": "10/27/19(Sun)19:47:40",
+            "name": "Anonymous",
+            "com": "<a href=\"#p73342004\" class=\"quotelink\">&gt;&gt;73342004</a><br>1) why use struct if you&#039;re going to bother with private fields first? just make it a class and you can omit private: then<br>2) why use trailing return type and auto for primitive types?<br>3) you&#039;re not checking argc<br>4) why are you heap allocating",
+            "time": 1572220060,
+            "resto": 73339442
+        },
+        {
+            "no": 73342055,
+            "now": "10/27/19(Sun)19:51:25",
+            "name": "Anonymous",
+            "com": "<a href=\"#p73341935\" class=\"quotelink\">&gt;&gt;73341935</a><br><pre class=\"prettyprint\">class FibGen : Sequence&lt;Int&gt; {<br>    override fun iterator() = object : Iterator&lt;Int&gt; {<br>        var a = 0<br>        var b = 1<br>        override fun hasNext() = true<br>        override fun next(): Int {<br>            val result = a<br>            a = b<br>            b = result + b<br>            return result<br>        }<br>    }<br>}<br><br>fun main() {<br>    FibGen().take(20).forEach { println(it) }<br>}</pre>",
+            "time": 1572220285,
+            "resto": 73339442
+        },
+        {
+            "no": 73342063,
+            "now": "10/27/19(Sun)19:52:15",
+            "name": "Anonymous",
+            "com": "<a href=\"#p73342018\" class=\"quotelink\">&gt;&gt;73342018</a><br><span class=\"quote\">&gt;1) why use struct if you&#039;re going to bother with private fields first? just make it a class and you can omit private: then</span><br>ok<br><span class=\"quote\">&gt;2) why use trailing return type and auto for primitive types?</span><br>But I like my meme arrows!<br><span class=\"quote\">&gt;3) you&#039;re not checking argc</span><br>I don&#039;t want to, I don&#039;t have a recovery from a no-arg situation<br><span class=\"quote\">&gt;4) why are you heap allocating</span><br>ok<br><pre class=\"prettyprint\">#include &lt;iostream&gt;<br>#include &lt;sstream&gt;<br>#include &lt;memory&gt;<br><br>class FibGen {<br>    unsigned int a{0}, b{1};<br>public:<br>    [[nodiscard]] auto next() -&gt; unsigned int {<br>        const auto result{a+b};<br>        a = b;<br>        b = result;<br>        return result;<br>    }<br>};<br><br>auto main(int argc, const char** argv) -&gt; int {<br>    std::istringstream iss(argv[1]);<br>    unsigned int target;<br>    if (iss &gt;&gt; target) {<br>        auto fibGen{FibGen{}};<br><br>        for (auto next{fibGen.next()}; next &lt; target; next = fibGen.next()) <br>            std::cout &lt;&lt; next &lt;&lt; &#039;\\n&#039;;<br>    }<br>}</pre>",
+            "time": 1572220335,
+            "resto": 73339442
+        },
+        {
+            "no": 73342078,
+            "now": "10/27/19(Sun)19:54:00",
+            "name": "Anonymous",
+            "com": "<a href=\"#p73342055\" class=\"quotelink\">&gt;&gt;73342055</a><br>Not the same, the aim is not to print first N fib, it&#039;s to print fib until you reach N.",
+            "time": 1572220440,
+            "resto": 73339442
+        },
+        {
+            "no": 73342119,
+            "now": "10/27/19(Sun)19:57:36",
+            "name": "Anonymous",
+            "com": "<a href=\"#p73342063\" class=\"quotelink\">&gt;&gt;73342063</a><br><span class=\"quote\">&gt;I don&#039;t want to, I don&#039;t have a recovery from a no-arg situation</span><br>then just exit, beats accessing out of bounds, also you can now get rid of the memory header",
+            "time": 1572220656,
+            "resto": 73339442
+        },
+        {
+            "no": 73342144,
+            "now": "10/27/19(Sun)20:00:11",
+            "name": "Anonymous",
+            "com": "<a href=\"#p73342078\" class=\"quotelink\">&gt;&gt;73342078</a><br>didn&#039;t even pay attention to that part of your code.<br><pre class=\"prettyprint\">fun main(args: Array&lt;String&gt;) {<br>    if (args.size == 1) {<br>        val target = args[0].toInt()<br>        FibGen().forEach {<br>            println(it)<br>            if (target &lt; it) return<br>        }<br>    } else {<br>        System.err.println(&quot;usage: poo &lt;n&gt;&quot;)<br>    }<br>}</pre>",
+            "time": 1572220811,
+            "resto": 73339442
+        },
+        {
+            "no": 73342183,
+            "now": "10/27/19(Sun)20:05:45",
+            "name": "Anonymous",
+            "com": "<a href=\"#p73341935\" class=\"quotelink\">&gt;&gt;73341935</a><br><pre class=\"prettyprint\">function* fibGen(n) {<br>  for (let a = 0, b = 1, i = 0; i &lt; n; ++i) {<br>    [a, b] = [b, a + b];<br>    yield b;<br>  }<br>}<br><br>for (const number of fibGen(process.argv[1] &gt;&gt;&gt; 0)) {<br>  console.log(number);<br>}</pre><br><br><a href=\"#p73342144\" class=\"quotelink\">&gt;&gt;73342144</a><br><pre class=\"prettyprint\">fun main(args: Array&lt;String&gt;) {<br>    require(args.size &gt; 1) { &quot;usage: poo &lt;n&gt;&quot; }<br><br>    val target = args[0].toInt()<br>    FibGen().forEach {<br>        println(it)<br>        if (target &lt; it) return<br>    }<br>}</pre>",
+            "time": 1572221145,
+            "resto": 73339442
+        },
+        {
+            "no": 73342227,
+            "now": "10/27/19(Sun)20:11:11",
+            "name": "Anonymous",
+            "com": "<a href=\"#p73339776\" class=\"quotelink\">&gt;&gt;73339776</a><br>r8<br><pre class=\"prettyprint\">(nlet ss ((i 1) (sum 0))<br>  (if (&gt; i 100) sum (ss (1+ i) (+ sum (* i i)))))</pre>",
+            "time": 1572221471,
+            "resto": 73339442
+        },
+        {
+            "no": 73342251,
+            "now": "10/27/19(Sun)20:14:39",
+            "name": "Anonymous",
+            "com": "<a href=\"#p73342227\" class=\"quotelink\">&gt;&gt;73342227</a><br><span class=\"quote\">&gt;nlet</span><br>0/10<br><span class=\"quote\">&gt;ss</span><br>0/10<br><span class=\"quote\">&gt;(if (&gt; i 100) sum (ss (1+ i) ...))))))))))))))))))))))))))))))))<wbr>)))))))))))))))))))))))))))))))))))<wbr>)))))))))))))))))))))))))))))))))))<wbr>)))))))))))))))))))))))))))))))))))<wbr>)))))))))))))))))))))))))))))))))</span><br>-NaN/10, unreadable dreck, and impressive for being so annoying to scan while also being so simply constructed.",
+            "time": 1572221679,
+            "resto": 73339442
+        },
+        {
+            "no": 73342275,
+            "now": "10/27/19(Sun)20:18:28",
+            "name": "Anonymous",
+            "com": "<a href=\"#p73342227\" class=\"quotelink\">&gt;&gt;73342227</a><br><span class=\"quote\">&gt;nlet</span><br>Is that someone who doesn&#039;t have a very masculine n?",
+            "time": 1572221908,
+            "resto": 73339442
+        },
+        {
+            "no": 73342291,
+            "now": "10/27/19(Sun)20:20:14",
+            "name": "Anonymous",
+            "com": "<a href=\"#p73341935\" class=\"quotelink\">&gt;&gt;73341935</a><br><a href=\"#p73342063\" class=\"quotelink\">&gt;&gt;73342063</a><br>incompatible with stl algorithms",
+            "time": 1572222014,
+            "resto": 73339442
+        },
+        {
+            "no": 73342296,
+            "now": "10/27/19(Sun)20:20:29",
+            "name": "Anonymous",
+            "com": "Are there tools out there that looks at a couple of file samples and tells me what compression method was used?<br>The files have no headers.",
+            "time": 1572222029,
+            "resto": 73339442
+        },
+        {
+            "no": 73342298,
+            "now": "10/27/19(Sun)20:20:46",
+            "name": "Anonymous",
+            "com": "<a href=\"#p73342251\" class=\"quotelink\">&gt;&gt;73342251</a><br>lel, it&#039;s also twice as slow as the loop.",
+            "time": 1572222046,
+            "resto": 73339442
+        },
+        {
+            "no": 73342308,
+            "now": "10/27/19(Sun)20:21:37",
+            "name": "Anonymous",
+            "com": "<a href=\"#p73342296\" class=\"quotelink\">&gt;&gt;73342296</a><br><span class=\"quote\">&gt;no headers</span><br>you will have to write headers manually and try to read the files I guess",
+            "time": 1572222097,
+            "resto": 73339442
+        },
+        {
+            "no": 73342311,
+            "now": "10/27/19(Sun)20:22:20",
+            "name": "Anonymous",
+            "com": "<a href=\"#p73341935\" class=\"quotelink\">&gt;&gt;73341935</a><br><pre class=\"prettyprint\">struct FibGen {<br>private:<br>    uint a = 0, b = 1;<br>public:<br>    uint next() {<br>        const auto result = a + b;<br>        a = b;<br>        b = result;<br>        return result;<br>    }<br>}<br><br>void main(string[] args) {<br>    import std.conv : parse;<br>    import std.stdio: stdout, setvbuf;<br><br>    stdout.lock();<br><br>    FibGen fibGen;<br>    const auto target = parse!uint(args[1]);<br>    for (auto next = fibGen.next(); next &lt; target; next = fibGen.next()) {<br>        import core.stdc.stdio: printf;<br>        printf(&quot;%u &quot;, next);<br>    }<br>}</pre>",
+            "time": 1572222140,
+            "resto": 73339442
+        },
+        {
+            "no": 73342320,
+            "now": "10/27/19(Sun)20:22:54",
+            "name": "Anonymous",
+            "com": "<a href=\"#p73342227\" class=\"quotelink\">&gt;&gt;73342227</a><br>contrast Erlang, a language so &#039;ugly&#039; someone went and replaced the syntax with Ruby:<br><pre class=\"prettyprint\">squares(N) -&gt; squares(1, N, 0).<br><br>squares(N, N, Sum) -&gt; Sum;<br>squares(I, N, Sum) -&gt; squares(I + 1, N, Sum + I * I).</pre><br>Lisp is an experiment and the experimental results are negative.",
+            "time": 1572222174,
+            "resto": 73339442
+        },
+        {
+            "no": 73342363,
+            "now": "10/27/19(Sun)20:26:42",
+            "name": "Anonymous",
+            "com": "<a href=\"#p73339776\" class=\"quotelink\">&gt;&gt;73339776</a><br><pre class=\"prettyprint\">+/*:&gt;:i.100<br></pre>",
+            "time": 1572222402,
+            "resto": 73339442
+        },
+        {
+            "no": 73342454,
+            "now": "10/27/19(Sun)20:35:50",
+            "name": "Anonymous",
+            "com": "<a href=\"#p73339776\" class=\"quotelink\">&gt;&gt;73339776</a><br><pre class=\"prettyprint\">do.math{[<br>        [1]<br>        [+.+]&lt;2&gt;<br>        [100] = sum ]}</pre>",
+            "time": 1572222950,
+            "resto": 73339442
+        },
+        {
+            "no": 73342468,
+            "now": "10/27/19(Sun)20:37:01",
+            "name": "Anonymous",
+            "com": "<a href=\"#p73342311\" class=\"quotelink\">&gt;&gt;73342311</a><br><pre class=\"prettyprint\">#! /usr/bin/env rdmd<br>struct FibGen {<br>    private uint[2] state = [0, 1];<br>    bool empty() { return false; }<br>    void popFront() { state[] = [state[1], state[0] + state[1]]; }<br>    uint front() { return state[0]; }<br>}<br><br>void main(string[] args) {<br>    import std.conv : parse;<br>    import std.stdio: writefln;<br><br>    const auto target = parse!uint(args[1]);<br>    foreach (n; FibGen()) {<br>        if (n &gt; target) break;<br>        writefln(&quot;%u &quot;, n);<br>    }<br>}</pre>",
+            "time": 1572223021,
+            "resto": 73339442
+        },
+        {
+            "no": 73342487,
+            "now": "10/27/19(Sun)20:39:50",
+            "name": "Anonymous",
+            "com": "<a href=\"#p73342320\" class=\"quotelink\">&gt;&gt;73342320</a><br>based erlanger",
+            "time": 1572223190,
+            "resto": 73339442
+        },
+        {
+            "no": 73342531,
+            "now": "10/27/19(Sun)20:45:05",
+            "name": "Anonymous",
+            "com": "python port of anonymouth but i don&#039;t know shit about linguistics",
+            "time": 1572223505,
+            "resto": 73339442
+        },
+        {
+            "no": 73342543,
+            "now": "10/27/19(Sun)20:46:16",
+            "name": "Anonymous",
+            "com": "D BTFO<br><pre class=\"prettyprint\">$ cat d.d &amp;&amp; ldc2 -O5  d.d &amp;&amp; time ./d &gt;&gt; /dev/null<br>void main() {<br>    import std.stdio;<br>    stdout.setvbuf(null);<br>    stdout.lock();<br><br>    foreach(i; 0 .. 900_000_000)<br>        writef(&quot;Hello, {}\\n&quot;, i);<br>}<br>real    0m58.790s<br>user    0m58.545s<br>sys     0m0.232s<br></pre><br><br><pre class=\"prettyprint\">$ cat rust.rs &amp;&amp; rustc -C opt-level=3 rust.rs &amp;&amp; time ./rust &gt;&gt; /dev/null<br>use std::io::Write;<br><br>fn main() {<br>    let stdout = std::io::stdout();<br>    let lock = stdout.lock();<br>    let mut buf = std::io::BufWriter::new(lock);<br>    for i in 0 .. 900_000_000 {<br>        buf.write_fmt(format_args!(<br>            &quot;Hello, {}\\n&quot;, i<br>        )).unwrap();<br>    }<br>}<br><br>real    0m46.502s<br>user    0m46.263s<br>sys     0m0.228s</pre>",
+            "time": 1572223576,
+            "resto": 73339442
+        },
+        {
+            "no": 73342618,
+            "now": "10/27/19(Sun)20:55:26",
+            "name": "Anonymous",
+            "com": "<a href=\"#p73342543\" class=\"quotelink\">&gt;&gt;73342543</a><br><span class=\"quote\">&gt;test on my machine</span><br><span class=\"quote\">&gt;rust is twice is fast</span><br><span class=\"quote\">&gt;strace</span><br><span class=\"quote\">&gt;rust is using a write() buffer that&#039;s twice as large</span><br><span class=\"quote\">&gt;rust therefore executes half the syscalls</span><br>more importantly:<br><pre class=\"prettyprint\">write(1, &quot; {}\\nHello, {}\\nHello, {}\\nHello, {&quot;..., 4096) = 4096<br>write(1, &quot;llo, {}\\nHello, {}\\nHello, {}\\nHell&quot;..., 4096) = 4096<br>write(1, &quot;}\\nHello, {}\\nHello, {}\\nHello, {}\\n&quot;..., 4096) = 4096<br>write(1, &quot;o, {}\\nHello, {}\\nHello, {}\\nHello,&quot;..., 4096) = 4096<br>write(1, &quot;Hello, {}\\nHello, {}\\nHello, {}\\nHe&quot;..., 4096) = 4096</pre><br>at least test your bizarre, idiosyncratic I/O",
+            "time": 1572224126,
+            "resto": 73339442
+        },
+        {
+            "no": 73342671,
+            "now": "10/27/19(Sun)21:00:32",
+            "name": "Anonymous",
+            "com": "Why the FUCK isn&#039;t this working? I have FootballTeam as a subclass of SportsTeam, and I have a constructor for SportsTeam set up and I want to use it in the constructor for FootballTeam. Every Example I have found so far looks exactly like this, but it just doesn&#039;t want to fucking work.",
+            "filename": "Annotation 2019-10-27 205955",
+            "ext": ".png",
+            "w": 434,
+            "h": 231,
+            "tn_w": 124,
+            "tn_h": 66,
+            "tim": 1572224432755,
+            "time": 1572224432,
+            "md5": "o1gxL4F2j89IhmEL4vX0oA==",
+            "fsize": 6174,
+            "resto": 73339442
+        },
+        {
+            "no": 73342704,
+            "now": "10/27/19(Sun)21:05:05",
+            "name": "Anonymous",
+            "com": "<a href=\"#p73342543\" class=\"quotelink\">&gt;&gt;73342543</a><br>... I can&#039;t actually improve the speed by fixing the buffering though. Best I&#039;ve got is<br><pre class=\"prettyprint\">extern(C) void main() {<br>    import core.stdc.stdio: printf;<br><br>    foreach(i; 0 .. 100_000_000)<br>        printf(&quot;Hello, %d\\n&quot;, i);<br>}</pre>",
+            "time": 1572224705,
+            "resto": 73339442
+        },
+        {
+            "no": 73342707,
+            "now": "10/27/19(Sun)21:05:21",
+            "name": "Anonymous",
+            "com": "<a href=\"#p73342671\" class=\"quotelink\">&gt;&gt;73342671</a><br>if your baseclass is named FootballTeam, then type FootballTeam and not &#039;base&#039;. <br>also use std::string&amp;<br><br>oh, it&#039;s not c++. i will send this post anyway idc",
+            "time": 1572224721,
+            "resto": 73339442
+        },
+        {
+            "no": 73342723,
+            "now": "10/27/19(Sun)21:06:14",
+            "name": "Anonymous",
+            "com": "<a href=\"#p73342618\" class=\"quotelink\">&gt;&gt;73342618</a><br>Ok I fixed it but can&#039;t possibly go faster than this in D.<br><pre class=\"prettyprint\">user0@pop-os ~/Projects/bench % rustc rust.rs -C opt-level=3 &amp;&amp; time ./rust &gt;&gt; /dev/null<br>./rust &gt;&gt; /dev/null  <br>13.71s user 8.88s system 99% cpu 22.594 total<br>user0@pop-os ~/Projects/bench % cat rust.rs <br>use std::io::Write;<br><br>fn main() {<br>    let stdout = std::io::stdout();<br>    let mut lock = stdout.lock();<br>    for i in 0 .. 100_000_000 {<br>        lock.write_fmt(format_args!(<br>            &quot;Hello, {}\\n&quot;, i<br>        )).unwrap();<br>    }<br>}<br><br>user0@pop-os ~/Projects/bench % ldc2 d.d -O5 &amp;&amp; time ./d &gt;&gt; /dev/null<br>./d &gt;&gt; /dev/null  <br>17.04s user 0.06s system 99% cpu 17.100 total<br>user0@pop-os ~/Projects/bench % cat d.d<br>void main() {<br>    import std.stdio;<br>    stdout.setvbuf(null);<br>    stdout.lock();<br><br>    foreach(i; 0 .. 100_000_000)<br>        writef!&quot;Hello, %s\\n&quot;(i);<br>}</pre>",
+            "time": 1572224774,
+            "resto": 73339442
+        },
+        {
+            "no": 73342730,
+            "now": "10/27/19(Sun)21:06:58",
+            "name": "Anonymous",
+            "com": "<a href=\"#p73342704\" class=\"quotelink\">&gt;&gt;73342704</a><br>with -betterC. still 25% slower than Rust, 5800ms vs. 4600ms with the 100mil loop.",
+            "time": 1572224818,
+            "resto": 73339442
+        },
+        {
+            "no": 73342763,
+            "now": "10/27/19(Sun)21:10:05",
+            "name": "Anonymous",
+            "com": "<a href=\"#p73339776\" class=\"quotelink\">&gt;&gt;73339776</a><br><pre class=\"prettyprint\">(defun-match* squares (n i sum)<br>  ((n (guard i (&gt; i n)) sum) sum)<br>  ((n i sum) (squares n (1+ i) (+ sum (* i i)))))</pre>",
+            "time": 1572225005,
+            "resto": 73339442
+        },
+        {
+            "no": 73342800,
+            "now": "10/27/19(Sun)21:14:56",
+            "name": "Anonymous",
+            "com": "<a href=\"#p73342763\" class=\"quotelink\">&gt;&gt;73342763</a><br>lel<br><pre class=\"prettyprint\">(defun-match* squares (n i sum)<br>  ((_ (guard i (&gt; i n)) _) sum)<br>  (_ (squares n (1+ i) (+ sum (* i i)))))</pre>",
+            "time": 1572225296,
+            "resto": 73339442
+        },
+        {
+            "no": 73342802,
+            "now": "10/27/19(Sun)21:15:16",
+            "name": "Anonymous",
+            "com": "<a href=\"#p73342730\" class=\"quotelink\">&gt;&gt;73342730</a><br>That&#039;s probably because you aren&#039;t locking stdout. I&#039;m not sure if printf is either buffered too.",
+            "time": 1572225316,
+            "resto": 73339442
+        },
+        {
+            "no": 73342850,
+            "now": "10/27/19(Sun)21:20:12",
+            "name": "Anonymous",
+            "com": "<a href=\"#p73342723\" class=\"quotelink\">&gt;&gt;73342723</a><br>meanwhile, Nim:<br><pre class=\"prettyprint\">import strformat<br><br>for i in 0 ..&lt; 100_000_000:<br>  echo &amp;&quot;Hello, {i}&quot;</pre><br>is only 11.5 times slower than Rust, 53s vs. 4600ms<br><a href=\"#p73342802\" class=\"quotelink\">&gt;&gt;73342802</a><br>you&#039;re not sure? strace it. It&#039;s buffered.<br>goddamnit anon, what kind of idiot would just go and run a bunchmark without even knowing if I/O buffering is happening or not?<br>This is absolutely outrageous. You are a disgrace. When people say &quot;don&#039;t optimize&quot;, they&#039;re talking about you. You are why Python even exists. You are<br>oh yeah Nim&#039;s buffered, that&#039;s why it&#039;s so slow. This is only a little slower than the original D:<br><pre class=\"prettyprint\">import strformat<br><br>for i in 0 ..&lt; 100_000_000:<br>  stdout.write &amp;&quot;Hello, {i}\\n&quot;</pre>",
+            "time": 1572225612,
+            "resto": 73339442
+        },
+        {
+            "no": 73342858,
+            "now": "10/27/19(Sun)21:20:42",
+            "name": "Anonymous",
+            "com": "<a href=\"#p73339792\" class=\"quotelink\">&gt;&gt;73339792</a> <a href=\"#p73339810\" class=\"quotelink\">&gt;&gt;73339810</a> <a href=\"#p73340086\" class=\"quotelink\">&gt;&gt;73340086</a> <a href=\"#p73340181\" class=\"quotelink\">&gt;&gt;73340181</a> <a href=\"#p73340240\" class=\"quotelink\">&gt;&gt;73340240</a> <a href=\"#p73341609\" class=\"quotelink\">&gt;&gt;73341609</a> <a href=\"#p73341951\" class=\"quotelink\">&gt;&gt;73341951</a> <a href=\"#p73342227\" class=\"quotelink\">&gt;&gt;73342227</a> <a href=\"#p73342363\" class=\"quotelink\">&gt;&gt;73342363</a> <a href=\"#p73342454\" class=\"quotelink\">&gt;&gt;73342454</a> <a href=\"#p73342763\" class=\"quotelink\">&gt;&gt;73342763</a> <a href=\"#p73342320\" class=\"quotelink\">&gt;&gt;73342320</a><br><pre class=\"prettyprint\">pub fn have_sex(end: u128) -&gt; u128 {<br>    end * (end + 1) * (2 * end * 1) / 6<br>}</pre>",
+            "time": 1572225642,
+            "resto": 73339442
+        },
+        {
+            "no": 73342872,
+            "now": "10/27/19(Sun)21:21:49",
+            "name": "Anonymous",
+            "com": "<a href=\"#p73342850\" class=\"quotelink\">&gt;&gt;73342850</a><br><span class=\"quote\">&gt;is only 11.5 times slower than Rust, 53s vs. 4600ms</span><br>You kinda sound very proud of that lmao",
+            "time": 1572225709,
+            "resto": 73339442
+        },
+        {
+            "no": 73342876,
+            "now": "10/27/19(Sun)21:22:23",
+            "name": "Anonymous",
+            "com": "<a href=\"#p73342858\" class=\"quotelink\">&gt;&gt;73342858</a><br>sorry discord/rust tranny,  I&#039;m drunk.",
+            "time": 1572225743,
+            "resto": 73339442
+        },
+        {
+            "no": 73342898,
+            "now": "10/27/19(Sun)21:24:30",
+            "name": "Anonymous",
+            "com": "<a href=\"#p73342858\" class=\"quotelink\">&gt;&gt;73342858</a><br><span class=\"quote\">&gt;u128</span><br><span class=\"quote\">&gt;to calculate a number that fits in 20 bits</span><br>this is what they call &quot;compensating for something&quot;",
+            "time": 1572225870,
+            "resto": 73339442
+        },
+        {
+            "no": 73342905,
+            "now": "10/27/19(Sun)21:25:07",
+            "name": "Anonymous",
+            "com": "<a href=\"#p73342858\" class=\"quotelink\">&gt;&gt;73342858</a><br><span class=\"quote\">&gt;* 1</span><br>Y tho",
+            "time": 1572225907,
+            "resto": 73339442
+        },
+        {
+            "no": 73342912,
+            "now": "10/27/19(Sun)21:26:01",
+            "name": "Anonymous",
+            "com": "<a href=\"#p73342905\" class=\"quotelink\">&gt;&gt;73342905</a><br><a href=\"#p73342858\" class=\"quotelink\">&gt;&gt;73342858</a><br><span class=\"quote\">&gt;* 1</span><br>ah, I meant + 1",
+            "time": 1572225961,
+            "resto": 73339442
+        },
+        {
+            "no": 73342983,
+            "now": "10/27/19(Sun)21:33:03",
+            "name": "Anonymous",
+            "com": "<a href=\"#p73342850\" class=\"quotelink\">&gt;&gt;73342850</a><br>step 1:<br>Go to nim forum<br>step 2: <br>Open a thread<br>step 3:<br>post this benchmark, bonus point if you mention both rust and D in it<br>step 4:<br>watch everyone in the nim community hyperoptimize it for you<br>step 5:<br>at the end say shit like... oh yea the documentation is lacking lol etc<br>step 6:<br>profit",
+            "time": 1572226383,
+            "resto": 73339442
+        },
+        {
+            "no": 73342991,
+            "now": "10/27/19(Sun)21:34:06",
+            "name": "Anonymous",
+            "com": "If your web applications backend isn&#039;t written in C++2a, you need to fucking kill yourself.",
+            "time": 1572226446,
+            "resto": 73339442
+        },
+        {
+            "no": 73343007,
+            "now": "10/27/19(Sun)21:36:01",
+            "name": "Anonymous",
+            "com": "<a href=\"#p73342858\" class=\"quotelink\">&gt;&gt;73342858</a><br><br>I don&#039;t get it.",
+            "time": 1572226561,
+            "resto": 73339442
+        },
+        {
+            "no": 73343020,
+            "now": "10/27/19(Sun)21:37:28",
+            "name": "Anonymous",
+            "com": "<a href=\"#p73343007\" class=\"quotelink\">&gt;&gt;73343007</a><br>Your O(n) shit just got BTFO&#039;d",
+            "time": 1572226648,
+            "resto": 73339442
+        },
+        {
+            "no": 73343069,
+            "now": "10/27/19(Sun)21:43:36",
+            "name": "Anonymous",
+            "com": "<a href=\"#p73343020\" class=\"quotelink\">&gt;&gt;73343020</a><br>Oh, we were supposed to be optimizing this? Surely the only purpose of such an easily solved peoblem is to demonstrate the syntax and features of our favorite language, no?<br><pre class=\"prettyprint\">sum_sqrs =: (%&amp;6*&gt;:*&gt;:@+:)<br></pre>",
+            "time": 1572227016,
+            "resto": 73339442
+        },
+        {
+            "no": 73343089,
+            "now": "10/27/19(Sun)21:45:56",
+            "name": "Anonymous",
+            "com": "<a href=\"#p73343069\" class=\"quotelink\">&gt;&gt;73343069</a><br><span class=\"quote\">&gt; : *</span><br><span class=\"quote\">&gt; : @</span><br>+ : )<br>gay",
+            "time": 1572227156,
+            "resto": 73339442
+        },
+        {
+            "no": 73343147,
+            "now": "10/27/19(Sun)21:52:56",
+            "name": "Anonymous",
+            "com": "Almost finished making my mini-blogging site",
+            "time": 1572227576,
+            "resto": 73339442
+        },
+        {
+            "no": 73343167,
+            "now": "10/27/19(Sun)21:54:48",
+            "name": "Anonymous",
+            "com": "<a href=\"#p73339612\" class=\"quotelink\">&gt;&gt;73339612</a><br>You make me feel less sad",
+            "time": 1572227688,
+            "resto": 73339442
+        },
+        {
+            "no": 73343228,
+            "now": "10/27/19(Sun)22:00:46",
+            "name": "Anonymous",
+            "filename": "3DCEA177-A0AE-421E-A0D7-8941436576EB",
+            "ext": ".jpg",
+            "w": 720,
+            "h": 704,
+            "tn_w": 125,
+            "tn_h": 122,
+            "tim": 1572228046352,
+            "time": 1572228046,
+            "md5": "r/OW5QNy4Bn/t7xPwSKoKw==",
+            "fsize": 288349,
+            "resto": 73339442
+        },
+        {
+            "no": 73343273,
+            "now": "10/27/19(Sun)22:05:00",
+            "name": "Anonymous",
+            "com": "<a href=\"#p73341314\" class=\"quotelink\">&gt;&gt;73341314</a><br>Nobody wants me nigga",
+            "time": 1572228300,
+            "resto": 73339442
+        },
+        {
+            "no": 73343280,
+            "now": "10/27/19(Sun)22:05:55",
+            "name": "Anonymous",
+            "com": "<a href=\"#p73343273\" class=\"quotelink\">&gt;&gt;73343273</a><br>Improve yourself<br><a href=\"//boards.4channel.org/fit/catalog#s=sig\" class=\"quotelink\">&gt;&gt;&gt;/fit/sig</a>",
+            "time": 1572228355,
+            "resto": 73339442
+        },
+        {
+            "no": 73343293,
+            "now": "10/27/19(Sun)22:06:56",
+            "name": "Anonymous",
+            "com": "<a href=\"#p73343273\" class=\"quotelink\">&gt;&gt;73343273</a><br>Nobody wants me rusty hoe either, or me bent saw.<br>But people surely want me *** Kotlin *** programming language, because that&#039;s valuable in current year",
+            "time": 1572228416,
+            "resto": 73339442
+        },
+        {
+            "no": 73343330,
+            "now": "10/27/19(Sun)22:11:17",
+            "name": "Anonymous",
+            "com": "<a href=\"#p73343228\" class=\"quotelink\">&gt;&gt;73343228</a><br>*blocks your path*<br>_Generic",
+            "time": 1572228677,
+            "resto": 73339442
+        },
+        {
+            "no": 73343336,
+            "now": "10/27/19(Sun)22:11:50",
+            "name": "Anonymous",
+            "com": "<a href=\"#p73343330\" class=\"quotelink\">&gt;&gt;73343330</a><br>That&#039;s not proper generics.",
+            "time": 1572228710,
+            "resto": 73339442
+        },
+        {
+            "no": 73343427,
+            "now": "10/27/19(Sun)22:25:11",
+            "name": "Anonymous",
+            "com": "<a href=\"#p73343020\" class=\"quotelink\">&gt;&gt;73343020</a><br><br>Okay, but why is the Rust tranny being a Rust tranny?",
+            "time": 1572229511,
+            "resto": 73339442
+        },
+        {
+            "no": 73343434,
+            "now": "10/27/19(Sun)22:26:44",
+            "name": "Anonymous",
+            "com": "<a href=\"#p73343228\" class=\"quotelink\">&gt;&gt;73343228</a><br><span class=\"quote\">&gt;get to make a wish or wishes</span><br><span class=\"quote\">&gt;wish for some programming bullshit</span><br>what the fuck dude",
+            "time": 1572229604,
+            "resto": 73339442
+        },
+        {
+            "no": 73343456,
+            "now": "10/27/19(Sun)22:29:24",
+            "name": "Anonymous",
+            "com": "<a href=\"#p73342543\" class=\"quotelink\">&gt;&gt;73342543</a><br><span class=\"quote\">&gt;current year of our Lord</span><br><span class=\"quote\">&gt;using Rust</span><br><span class=\"quote\">&gt;just to get a speed increase of 0.7% over the JVM</span><br><pre class=\"prettyprint\">import java.io.BufferedOutputStream<br><br>fun main() {<br>    val file = BufferedOutputStream(System.out, 8192)<br>    (0..100_000_000).forEach { file.write(&quot;Hello, $it\\n&quot;.toByteArray()) }<br>}</pre><br>(don&#039;t ask about the RAM usage)",
+            "time": 1572229764,
+            "resto": 73339442
+        },
+        {
+            "no": 73343463,
+            "now": "10/27/19(Sun)22:30:02",
+            "name": "Anonymous",
+            "com": "<a href=\"#p73343434\" class=\"quotelink\">&gt;&gt;73343434</a><br>Autist.",
+            "time": 1572229802,
+            "resto": 73339442
+        },
+        {
+            "no": 73343477,
+            "now": "10/27/19(Sun)22:31:27",
+            "name": "Anonymous",
+            "com": "<a href=\"#p73343456\" class=\"quotelink\">&gt;&gt;73343456</a><br>Holy crap, I feel like I don&#039;t even know Java anymore. That looks nothing like the Java I remember.",
+            "time": 1572229887,
+            "resto": 73339442
+        },
+        {
+            "no": 73343484,
+            "now": "10/27/19(Sun)22:31:57",
+            "name": "Anonymous",
+            "com": "<a href=\"#p73343456\" class=\"quotelink\">&gt;&gt;73343456</a><br>but how is the RAM usage?",
+            "time": 1572229917,
+            "resto": 73339442
+        },
+        {
+            "no": 73343485,
+            "now": "10/27/19(Sun)22:32:01",
+            "name": "Anonymous",
+            "com": "<a href=\"#p73343477\" class=\"quotelink\">&gt;&gt;73343477</a><br>that&#039;s Kotlin, not Java.<br>How *dare* you accuse me of writing Java?",
+            "time": 1572229921,
+            "resto": 73339442
+        },
+        {
+            "no": 73343489,
+            "now": "10/27/19(Sun)22:32:19",
+            "name": "Anonymous",
+            "com": "<a href=\"#p73343280\" class=\"quotelink\">&gt;&gt;73343280</a><br>This general is getting permanuked now because the jannies are seething fat &quot;&quot;&quot;&quot;people&quot;&quot;&quot;&quot; that can&#039;t understand why people would want to improve their lives",
+            "time": 1572229939,
+            "resto": 73339442
+        },
+        {
+            "no": 73343493,
+            "now": "10/27/19(Sun)22:32:33",
+            "name": "Anonymous",
+            "com": "<a href=\"#p73343477\" class=\"quotelink\">&gt;&gt;73343477</a><br>rajesh<br>remember your pilgrimage to the school of durgasoft",
+            "time": 1572229953,
+            "resto": 73339442
+        },
+        {
+            "no": 73343519,
+            "now": "10/27/19(Sun)22:36:41",
+            "name": "Anonymous",
+            "com": "<a href=\"#p73343484\" class=\"quotelink\">&gt;&gt;73343484</a><br>the JVM won&#039;t even wake up in the morning if you don&#039;t promise it 100MB<br>but if you throw a snake in its bed it&#039;ll grudgingly use only 50MB:<br>kotlin -J-Xms10m -J-Xmx10m Bench &gt;/dev/null",
+            "time": 1572230201,
+            "resto": 73339442
+        },
+        {
+            "no": 73343529,
+            "now": "10/27/19(Sun)22:37:59",
+            "name": "Anonymous",
+            "com": "<a href=\"#p73339442\" class=\"quotelink\">&gt;&gt;73339442</a><br>I was hoping to learn about the libraries FFMPEG provides so I could use them in some capacity. However, am I looking at the right thing? This doesn&#039;t actually tell me anything about what functions the library provides, or what its architecture is. <br><br>https://www.ffmpeg.org/libavcodec.h<wbr>tml<br><br>Does ffmpeg need volunteers to write documentation for its libraries?",
+            "filename": "Screen Shot 2019-10-27 at 7.35.32 PM",
+            "ext": ".png",
+            "w": 1850,
+            "h": 1644,
+            "tn_w": 125,
+            "tn_h": 111,
+            "tim": 1572230279044,
+            "time": 1572230279,
+            "md5": "XFTboCvh0xXvStkcooNZVg==",
+            "fsize": 345669,
+            "resto": 73339442
+        },
+        {
+            "no": 73343531,
+            "now": "10/27/19(Sun)22:38:26",
+            "name": "Anonymous",
+            "com": "<a href=\"#p73343427\" class=\"quotelink\">&gt;&gt;73343427</a><br>You&#039;ll forever be an incel",
+            "time": 1572230306,
+            "resto": 73339442
+        },
+        {
+            "no": 73343538,
+            "now": "10/27/19(Sun)22:39:10",
+            "name": "Anonymous",
+            "com": "<a href=\"#p73343531\" class=\"quotelink\">&gt;&gt;73343531</a><br><br>I have children. Dilate.",
+            "time": 1572230350,
+            "resto": 73339442
+        },
+        {
+            "no": 73343540,
+            "now": "10/27/19(Sun)22:39:17",
+            "name": "Anonymous",
+            "com": "<a href=\"#p73342858\" class=\"quotelink\">&gt;&gt;73342858</a><br>dont @ me, wiener",
+            "time": 1572230357,
+            "resto": 73339442
+        },
+        {
+            "no": 73343592,
+            "now": "10/27/19(Sun)22:46:40",
+            "name": "Anonymous",
+            "com": "<a href=\"#p73343493\" class=\"quotelink\">&gt;&gt;73343493</a><br>Fortunately, I learned Java before the pajeets took over youtube. That was forever ago though. I don&#039;t know how Java has evolved along the path of durga.",
+            "time": 1572230800,
+            "resto": 73339442
+        },
+        {
+            "no": 73343599,
+            "now": "10/27/19(Sun)22:48:13",
+            "name": "Anonymous",
+            "com": "<a href=\"#p73343529\" class=\"quotelink\">&gt;&gt;73343529</a><br>check the git repo, there&#039;s a doc folder with some examples. But yeah the doc is pretty sparse",
+            "time": 1572230893,
+            "resto": 73339442
+        },
+        {
+            "no": 73343611,
+            "now": "10/27/19(Sun)22:50:12",
+            "name": "Anonymous",
+            "com": "<a href=\"#p73343456\" class=\"quotelink\">&gt;&gt;73343456</a><br>Post benchmark",
+            "time": 1572231012,
+            "resto": 73339442
+        },
+        {
+            "no": 73343620,
+            "now": "10/27/19(Sun)22:51:17",
+            "name": "Anonymous",
+            "com": "<a href=\"#p73343538\" class=\"quotelink\">&gt;&gt;73343538</a><br>Lose weight. Cope.",
+            "time": 1572231077,
+            "resto": 73339442
+        },
+        {
+            "no": 73343641,
+            "now": "10/27/19(Sun)22:54:29",
+            "name": "Anonymous",
+            "com": "<a href=\"#p73343620\" class=\"quotelink\">&gt;&gt;73343620</a><br>Pope.",
+            "filename": "D6B4061C-C5ED-499C-B735-A9D02C0660E3",
+            "ext": ".png",
+            "w": 1000,
+            "h": 1000,
+            "tn_w": 125,
+            "tn_h": 125,
+            "tim": 1572231269799,
+            "time": 1572231269,
+            "md5": "jHjOiOZGghiVc8vtXsf0ow==",
+            "fsize": 290450,
+            "resto": 73339442
+        },
+        {
+            "no": 73343690,
+            "now": "10/27/19(Sun)22:59:42",
+            "name": "Anonymous",
+            "com": "<a href=\"#p73341440\" class=\"quotelink\">&gt;&gt;73341440</a><br>imgui is only good for quick hack jobs, if you do anything serious with ui its more of a hinderance",
+            "time": 1572231582,
+            "resto": 73339442
+        },
+        {
+            "no": 73343737,
+            "now": "10/27/19(Sun)23:05:47",
+            "name": "Anonymous",
+            "com": "<a href=\"#p73343611\" class=\"quotelink\">&gt;&gt;73343611</a><br><pre class=\"prettyprint\">| Lang            | Opts              | Time    | Speed | Memory |<br>|-----------------+----------------<wbr>---+---------+-------+--------|<br>| Nim             | -d:release        | 9276 ms | 2.09x | 5.5 MB |<br>| Rust            | -C -opt-level=3   | 4779 ms | 1.08x | 5.5 MB |<br>| D               | ldc2 -O3 -release | 5841 ms | 1.32x | 6.2 MB |<br>| Kotlin (JVM)    |                   | 4441 ms |    1x | 102 MB |<br>| Kotlin (Native) | -opt              | 86.8 s  | 19.5x | 5.5 MB |</pre><br>from previous sources and a variant on<br><pre class=\"prettyprint\">bench:: rust d nim JvmKt.class native.kexe<br>        /usr/bin/time kotlin JvmKt &gt;/dev/null<br>        /usr/bin/time ./native.kexe &gt;/dev/null<br>        /usr/bin/time ./nim &gt;/dev/null<br>        /usr/bin/time ./rust &gt;/dev/null<br>        /usr/bin/time ./d &gt;/dev/null<br>        <br>clean::<br>        rm -fv rust d nim *.class *.kexe<br><br>rust: rust.rs<br>        rustc -C opt-level=3 rust.rs<br><br>d: d.d<br>        ldc2 -O3 -release d.d<br><br>nim: nim.nim<br>        nim c -d:release $@<br><br>JvmKt.class: jvm.kt<br>        kotlinc-jvm $&lt;<br><br>native.kexe: native.kt<br>        kotlinc-native -opt $&lt; -o native</pre><br>Kotlin (Native) is<br><pre class=\"prettyprint\">import platform.posix.puts<br><br>fun main() {<br>    (0..100_000_000).forEach { puts(&quot;Hello, $it&quot;) }<br>}</pre><br>Kotlin/Native&#039;s slowness is due to some incredibly insane shit with Memory. It&#039;s beta. Look at it with ltrace",
+            "time": 1572231947,
+            "resto": 73339442
+        },
+        {
+            "no": 73344025,
+            "now": "10/27/19(Sun)23:33:00",
+            "name": "Anonymous",
+            "com": "<a href=\"#p73343737\" class=\"quotelink\">&gt;&gt;73343737</a><br><span class=\"quote\">&gt;102 MB</span><br>JESUS CHRIST",
+            "time": 1572233580,
+            "resto": 73339442
+        },
+        {
+            "no": 73344049,
+            "now": "10/27/19(Sun)23:34:31",
+            "name": "Anonymous",
+            "com": "<a href=\"#p73344025\" class=\"quotelink\">&gt;&gt;73344025</a><br>It&#039;s the cost of the JVM, it doesn&#039;t increase when the program grows.",
+            "time": 1572233671,
+            "resto": 73339442
+        },
+        {
+            "no": 73344061,
+            "now": "10/27/19(Sun)23:35:32",
+            "name": "Anonymous",
+            "com": "<a href=\"#p73344049\" class=\"quotelink\">&gt;&gt;73344049</a><br>Include the java benchmark too please.",
+            "time": 1572233732,
+            "resto": 73339442
+        },
+        {
+            "no": 73344070,
+            "now": "10/27/19(Sun)23:36:36",
+            "name": "Anonymous",
+            "com": "<a href=\"#p73344061\" class=\"quotelink\">&gt;&gt;73344061</a><br>I&#039;m not the same anon, I&#039;m just saying that anything running on JVM will have a fix overhead.",
+            "time": 1572233796,
+            "resto": 73339442
+        },
+        {
+            "no": 73344081,
+            "now": "10/27/19(Sun)23:37:20",
+            "name": "Anonymous",
+            "com": "<a href=\"#p73344025\" class=\"quotelink\">&gt;&gt;73344025</a><br>heh.<br><pre class=\"prettyprint\">| Kotlin (Graal)  | -O3               | 27.7 s  | 6.24x | 261 MB |</pre><br><a href=\"#p73344061\" class=\"quotelink\">&gt;&gt;73344061</a><br>all the code has been posted. I never did a Java benchmark. Only Kotlin on JVM.",
+            "time": 1572233840,
+            "resto": 73339442
+        },
+        {
+            "no": 73344154,
+            "now": "10/27/19(Sun)23:45:20",
+            "name": "Anonymous",
+            "com": "<a href=\"#p73343737\" class=\"quotelink\">&gt;&gt;73343737</a><br>I get a significant performance improvement on D if I use the C&#039;s stdio<br><pre class=\"prettyprint\">import core.stdc.stdio: printf;<br>import std.stdio;<br><br>void main() {<br>    stdout.lock();<br><br>    foreach (i; 0 .. 100_000_000)<br>        printf(&quot;Hello, %u&quot;, i);<br>}<br></pre><br>Twice as efficient",
+            "time": 1572234320,
+            "resto": 73339442
+        },
+        {
+            "no": 73344174,
+            "now": "10/27/19(Sun)23:47:47",
+            "name": "Anonymous",
+            "com": "Henlo I would like to know if you have any recommendations on becoming a better database engineer.<br><br>Company I&#039;m working for has a lot of complex logic embedded in stored procedures. Obviously learning a lot just working on the software, but I want to be better.<br><br>So, any good videos, books, etc would be really appreciated.",
+            "time": 1572234467,
+            "resto": 73339442
+        },
+        {
+            "no": 73344206,
+            "now": "10/27/19(Sun)23:52:36",
+            "name": "Anonymous",
+            "com": "C++ obliterates everything<br><pre class=\"prettyprint\">#include &lt;iostream&gt;<br><br>auto main() -&gt; int {<br>    for(unsigned int i{0}; i &lt; 1000000; ++i)<br>        std::cout &lt;&lt; &quot;Hello, &quot; &lt;&lt; i &lt;&lt; &#039;\\n&#039;;<br>}</pre><br><br>real    0m6.941s<br>user    0m6.911s<br>sys     0m0.028s",
+            "time": 1572234756,
+            "resto": 73339442
+        },
+        {
+            "no": 73344211,
+            "now": "10/27/19(Sun)23:53:39",
+            "name": "Anonymous",
+            "com": "<a href=\"#p73344206\" class=\"quotelink\">&gt;&gt;73344206</a><br>Sorry, wrong timing, that&#039;s D. Here&#039;s C++<br>real    0m0.092s<br>user    0m0.092s<br>sys     0m0.000s",
+            "time": 1572234819,
+            "resto": 73339442
+        },
+        {
+            "no": 73344260,
+            "now": "10/28/19(Mon)00:00:16",
+            "name": "Anonymous",
+            "com": "<pre class=\"prettyprint\">#include&lt;stdio.h&gt;<br>#include&lt;stdlib.h&gt;<br><br>void strappend(char ** s, char * a) {<br>    char * result;<br>    asprintf(&amp;result, &quot;%s%s&quot;, *s, a);<br>    free(*s);<br>    *s = result;<br>}<br><br>int main() {<br>    char * s;<br>    asprintf(&amp;s, &quot;Hello &quot;);<br>    strappend(&amp;s, &quot;dude&quot;);<br>    printf(&quot;%s\\n&quot;, s);<br>}</pre>",
+            "time": 1572235216,
+            "resto": 73339442
+        },
+        {
+            "no": 73344261,
+            "now": "10/28/19(Mon)00:00:24",
+            "name": "Anonymous",
+            "com": "<a href=\"#p73344206\" class=\"quotelink\">&gt;&gt;73344206</a><br>Nice try, C++ peasant, it&#039;s 1000000000.<br><pre class=\"prettyprint\">#include &lt;iostream&gt;<br><br>auto main() -&gt; int {<br>    for(unsigned int i{0}; i &lt; 1000000000; ++i)<br>        std::cout &lt;&lt; &quot;Hello, &quot; &lt;&lt; i &lt;&lt; &#039;\\n&#039;;<br>}<br><br>eal    1m26.475s<br>user    1m26.036s<br>sys     0m0.420s</pre><br><br>Rust: <br><pre class=\"prettyprint\">use std::io::Write;<br><br>fn main() {<br>    let stdout = std::io::stdout();<br>    let mut lock = stdout.lock();<br>    for i in 0 .. 100_000_000 {<br>        lock.write_fmt(format_args!(<br>            &quot;Hello, {}\\n&quot;, i<br>        )).unwrap();<br>    }<br>}<br><br>real    0m20.254s<br>user    0m11.330s<br>sys     0m8.919s<br></pre><br><br><pre class=\"prettyprint\">import core.stdc.stdio: printf;<br>import std.stdio;<br><br>void main() {<br>    stdout.lock();<br><br>    foreach (i; 0 .. 100_000_000)<br>        printf(&quot;Hello, %u\\n&quot;, i);<br>}<br><br>real    0m6.877s<br>user    0m6.859s<br>sys     0m0.016s</pre><br><br>Only reason D wins is because D has a subset of the standard C library baked into their std.<br>IDK about other languages.",
+            "time": 1572235224,
+            "resto": 73339442
+        },
+        {
+            "no": 73344282,
+            "now": "10/28/19(Mon)00:03:39",
+            "name": "Anonymous",
+            "com": "<span class=\"quote\">&gt;Python crashes with segmentation fault</span><br><span class=\"quote\">&gt;import faulthandler</span><br><span class=\"quote\">&gt;it stops crashing</span>",
+            "filename": "jontron_it_works",
+            "ext": ".jpg",
+            "w": 807,
+            "h": 677,
+            "tn_w": 124,
+            "tn_h": 104,
+            "tim": 1572235419238,
+            "time": 1572235419,
+            "md5": "J/5wyIlFazgNQly9qutV+w==",
+            "fsize": 92043,
+            "resto": 73339442
+        },
+        {
+            "no": 73344288,
+            "now": "10/28/19(Mon)00:04:17",
+            "name": "Anonymous",
+            "com": "<a href=\"#p73344206\" class=\"quotelink\">&gt;&gt;73344206</a><br>every other language makes the number readable with thousand marks. Why didn&#039;t you do that in C++?<br>a. because you wanted to intentionally make this deceitful benchmark, that targets 1 million instead of 100 million? Villain!<br>b. because you don&#039;t know what the C++ thousand-mark syntax is? Fool!<br>C++ does not win with this code. It is behind Kotlin (JVM), D, and Rust.<br><pre class=\"prettyprint\">| C++             | -O3               | 7364 ms | 1.66x | 5.5 MB |</pre>",
+            "time": 1572235457,
+            "resto": 73339442
+        },
+        {
+            "no": 73344292,
+            "now": "10/28/19(Mon)00:05:05",
+            "name": "Anonymous",
+            "com": "btw the C++ syntax is apostrophes:<br><pre class=\"prettyprint\">#include &lt;iostream&gt;<br><br>auto main() -&gt; int {<br>    for(unsigned int i{0}; i &lt; 100&#039;000&#039;000; ++i)<br>        std::cout &lt;&lt; &quot;Hello, &quot; &lt;&lt; i &lt;&lt; &#039;\\n&#039;;<br>}</pre>",
+            "time": 1572235505,
+            "resto": 73339442
+        },
+        {
+            "no": 73344298,
+            "now": "10/28/19(Mon)00:05:32",
+            "name": "Anonymous",
+            "com": "<a href=\"#p73344261\" class=\"quotelink\">&gt;&gt;73344261</a><br><a href=\"#p73344288\" class=\"quotelink\">&gt;&gt;73344288</a><br>Dilate",
+            "time": 1572235532,
+            "resto": 73339442
+        },
+        {
+            "no": 73344305,
+            "now": "10/28/19(Mon)00:06:51",
+            "name": "Anonymous",
+            "com": "<a href=\"#p73344288\" class=\"quotelink\">&gt;&gt;73344288</a><br>How is D with the printf?",
+            "time": 1572235611,
+            "resto": 73339442
+        },
+        {
+            "no": 73344325,
+            "now": "10/28/19(Mon)00:09:31",
+            "name": "Anonymous",
+            "com": "<a href=\"#p73344305\" class=\"quotelink\">&gt;&gt;73344305</a><br>that&#039;s the version I used for <a href=\"#p73343737\" class=\"quotelink\">&gt;&gt;73343737</a>",
+            "time": 1572235771,
+            "resto": 73339442
+        },
+        {
+            "no": 73344366,
+            "now": "10/28/19(Mon)00:16:33",
+            "name": "Anonymous",
+            "com": "why are you retards benchmarking hello world",
+            "time": 1572236193,
+            "resto": 73339442
+        },
+        {
+            "no": 73344369,
+            "now": "10/28/19(Mon)00:17:04",
+            "name": "Anonymous",
+            "com": "<a href=\"#p73344261\" class=\"quotelink\">&gt;&gt;73344261</a><br>Can you do it with pure C, FORTRAN or COBOL?",
+            "time": 1572236224,
+            "resto": 73339442
+        },
+        {
+            "no": 73344381,
+            "now": "10/28/19(Mon)00:19:03",
+            "name": "Anonymous",
+            "com": "<a href=\"#p73344366\" class=\"quotelink\">&gt;&gt;73344366</a><br>Benchmarking is the ultimate Lang dick measuring contest. Jump in.",
+            "time": 1572236343,
+            "resto": 73339442
+        },
+        {
+            "no": 73344432,
+            "now": "10/28/19(Mon)00:25:24",
+            "name": "Anonymous",
+            "com": "<a href=\"#p73339442\" class=\"quotelink\">&gt;&gt;73339442</a><br>the op should have a smug loli in it desu",
+            "time": 1572236724,
+            "resto": 73339442
+        },
+        {
+            "no": 73344454,
+            "now": "10/28/19(Mon)00:27:37",
+            "name": "Anonymous",
+            "com": "Why would you benchmark how fast your lang prints shit to the console? Most programs don&#039;t spend a lot of time printing shit.",
+            "time": 1572236857,
+            "resto": 73339442
+        },
+        {
+            "no": 73344456,
+            "now": "10/28/19(Mon)00:27:49",
+            "name": "Anonymous",
+            "com": "i&#039;m trying to write a simple snake game in javafx. i decided to make my Snake class a subclass of Rectangle, however my ide is griping about me trying to use Rectangle&#039;s methods in my subclass (methods like setHeight(), setWidth(), etc). why is this?",
+            "time": 1572236869,
+            "resto": 73339442
+        },
+        {
+            "no": 73344463,
+            "now": "10/28/19(Mon)00:29:09",
+            "name": "Anonymous",
+            "com": "I&#039;m gonna be honest here lads, C++ cout and string formatting is fucking trash. feels bad man",
+            "time": 1572236949,
+            "resto": 73339442
+        },
+        {
+            "no": 73344486,
+            "now": "10/28/19(Mon)00:33:06",
+            "name": "Anonymous",
+            "com": "<a href=\"#p73344463\" class=\"quotelink\">&gt;&gt;73344463</a><br>Can you lock stdout in C or C++? I think this is why C++ is lagging behind io benchmarks",
+            "time": 1572237186,
+            "resto": 73339442
+        },
+        {
+            "no": 73344510,
+            "now": "10/28/19(Mon)00:35:32",
+            "name": "Anonymous",
+            "com": "<a href=\"#p73344456\" class=\"quotelink\">&gt;&gt;73344456</a><br>Use ANCII graphs for improved performance.",
+            "time": 1572237332,
+            "resto": 73339442
+        },
+        {
+            "no": 73344512,
+            "now": "10/28/19(Mon)00:35:46",
+            "name": "Anonymous",
+            "com": "<a href=\"#p73344486\" class=\"quotelink\">&gt;&gt;73344486</a><br>I&#039;m trying to find out but it looks like the libstdc++ vendor is free to flush whenever. However doing <pre class=\"prettyprint\"> &lt;&lt; std::endl</pre> always flushes.",
+            "time": 1572237346,
+            "resto": 73339442
+        },
+        {
+            "no": 73344540,
+            "now": "10/28/19(Mon)00:38:42",
+            "name": "Anonymous",
+            "com": "<a href=\"#p73344292\" class=\"quotelink\">&gt;&gt;73344292</a><br><pre class=\"prettyprint\">#include &lt;stdio&gt;<br><br>main() {<br>    for(unsigned int i = 0; i &lt; 100000000; ++i)<br>        printf(&quot;Hello, %d \\n&quot;, i);<br>    return 0;<br>}<br></pre>",
+            "time": 1572237522,
+            "resto": 73339442
+        },
+        {
+            "no": 73344552,
+            "now": "10/28/19(Mon)00:40:19",
+            "name": "Anonymous",
+            "com": "<a href=\"#p73344512\" class=\"quotelink\">&gt;&gt;73344512</a><br>That&#039;s why you use &#039;\\n&#039;",
+            "time": 1572237619,
+            "resto": 73339442
+        },
+        {
+            "no": 73344568,
+            "now": "10/28/19(Mon)00:42:42",
+            "name": "Anonymous",
+            "com": "<a href=\"#p73344552\" class=\"quotelink\">&gt;&gt;73344552</a><br>I fucking said the stdc++ lib vendor is free to flush whenever, even if you send &#039;\\n&#039;",
+            "time": 1572237762,
+            "resto": 73339442
+        },
+        {
+            "no": 73344579,
+            "now": "10/28/19(Mon)00:43:46",
+            "name": "Anonymous",
+            "com": "<a href=\"#p73344568\" class=\"quotelink\">&gt;&gt;73344568</a><br>Just use &quot;stdio.h&quot; instead.",
+            "time": 1572237826,
+            "resto": 73339442
+        },
+        {
+            "no": 73344657,
+            "now": "10/28/19(Mon)00:56:44",
+            "name": "Anonymous",
+            "com": "<a href=\"#p73344510\" class=\"quotelink\">&gt;&gt;73344510</a><br>did you mean ascii? as in make them out of characters (or maybe arrays of characters)? Sorry if this is a pleb question but",
+            "time": 1572238604,
+            "resto": 73339442
+        }
+    ]
+}
