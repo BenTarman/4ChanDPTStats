@@ -3,10 +3,10 @@ package tests
 import (
 	"4chanDPTShill/api"
 	"4chanDPTShill/types"
-  "testing"
-  "encoding/json"
-  "os"
-  "io/ioutil"
+	"encoding/json"
+	"io/ioutil"
+	"os"
+	"testing"
 )
 
 var dptTestThread types.Thread
@@ -15,11 +15,19 @@ var jsonFile, _ = os.Open("dptTestThread.json")
 var byteValue, _ = ioutil.ReadAll(jsonFile)
 var _ = json.Unmarshal(byteValue, &dptTestThread)
 
-
 func TestFindPythonInComment(t *testing.T) {
 	comment := "python port of anonymouth but i don't know shit about linguistics"
 	actual := api.FindPythonInComment(comment)
 	if actual != 1 {
+		t.Error("Test failed")
+	}
+}
+
+func TestFindCInComment(t *testing.T) {
+	comment := "You should learn PowerShell or C# and dotnet."
+	actual := api.FindPythonInComment(comment)
+
+	if actual != 0 {
 		t.Error("Test failed")
 	}
 }
@@ -32,16 +40,33 @@ func TestNoPythonFoundInComment(t *testing.T) {
 	}
 }
 
-
-
 func TestFindPythonInWholeThread(t *testing.T) {
-  numFinds := 0
-  for _, dptComment := range dptTestThread.Posts {
-    numFinds += api.FindPythonInComment(dptComment.Comment)
-  }
-
-  if numFinds != 12 {
+	numFinds := 0
+	for _, dptComment := range dptTestThread.Posts {
+		numFinds += api.FindPythonInComment(dptComment.Comment)
+	}
+	if numFinds != 12 {
 		t.Error("Test failed")
 	}
 }
 
+func TestFindCSharpInWholeThread(t *testing.T) {
+	numFinds := 0
+	for _, dptComment := range dptTestThread.Posts {
+		numFinds += api.FindCSharpInComment(dptComment.Comment)
+	}
+	if numFinds != 8 {
+		t.Error("Test failed")
+	}
+}
+
+func TestFindCInWholeThread(t *testing.T) {
+	numFinds := 0
+	for _, dptComment := range dptTestThread.Posts {
+		numFinds += api.FindCInComment(dptComment.Comment)
+	}
+
+	if numFinds != 6 {
+		t.Error("Test failed")
+	}
+}
