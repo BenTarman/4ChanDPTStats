@@ -1,6 +1,7 @@
 package api
 
 import (
+	"4chanDPTShill/lib"
 	"4chanDPTShill/types"
 	"encoding/json"
 	"fmt"
@@ -37,6 +38,10 @@ func getThread(apiURL string, threadInfo types.ThreadInfo, dptActiveThreads *[]t
 	json.Unmarshal(body, &dptThreadJSONObj)
 
 	dptThreadJSONObj.ThreadInfo = threadInfo
+
+
+
+	dptThreadJSONObj.ShilledLanguages = lib.GetShilledLanguageCountInThread(dptThreadJSONObj)
 
 	// append to main list
 	*dptActiveThreads = append(*dptActiveThreads, dptThreadJSONObj)

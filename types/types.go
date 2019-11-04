@@ -3,6 +3,7 @@ package types
 // Thread = All the info in a Thread.
 type Thread struct {
 	ThreadInfo // reference to ThreadInfo struct
+	ShilledLanguages // reference to ShilledLanguages in the Thread
 
 	Posts []struct {
 		PostNum     int    `json:"no"`
@@ -53,4 +54,5 @@ type ShilledLanguages struct {
 	Elixir     int `json:"Elixir"`
 	Haskell    int `json:"Haskell"`
 	Lisp 	   int `json:"Lisp"`
+	C          int 	`json:"C"`
 }

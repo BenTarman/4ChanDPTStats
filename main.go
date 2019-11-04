@@ -1,9 +1,10 @@
 package main
 
 import (
+	"4chanDPTShill/api"
 	"log"
 	"net/http"
-	"4chanDPTShill/api"
+
 	"github.com/gorilla/mux"
 )
 
