@@ -1,7 +1,7 @@
 package main
 
 import (
-	"4chanDPTShill/api"
+	"github.com/BenTarman/4ChanDPTStats.git/server/api"
 	"log"
 	"net/http"
 

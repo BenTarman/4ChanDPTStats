@@ -3,7 +3,7 @@
 package lib
 
 import (
-	"4chanDPTShill/types"
+	"github.com/BenTarman/4ChanDPTStats.git/server/types"
 	"regexp"
 )
 

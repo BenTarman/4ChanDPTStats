@@ -1,8 +1,8 @@
 package tests
 
 import (
-	"4chanDPTShill/lib"
-	"4chanDPTShill/types"
+	"github.com/BenTarman/4ChanDPTStats.git/server//lib"
+	"github.com/BenTarman/4ChanDPTStats.git/server//types"
 	"encoding/json"
 	"io/ioutil"
 	"os"
