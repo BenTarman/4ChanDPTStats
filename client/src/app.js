@@ -1,12 +1,8 @@
-let test = () => console.log('hello world');
-
-test();
-
-
-async function getPosts() {
-    const response = await fetch('https//jsonplaceholder.typicode.com/posts');
-    const data = await response.json();
-    return data;
-}
-
-getPosts().then(posts => console.log(posts));
+export default {
+    name: 'App',
+    template: `
+      <div>
+        <h1>DPT 4chan</h1>
+      </div>
+    `,
+  };
