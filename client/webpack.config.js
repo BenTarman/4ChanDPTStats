@@ -10,17 +10,23 @@ module.exports = {
         filename: 'app.bundle.js'
     },
     module: {
-        rules: [{
-            test: /\.js?$/,
-            exclude: path.resolve('node_modules'),
-            use: [{
-                loader: 'babel-loader',
-                options: {
-                    presets: [
-                        ['@babel/preset-env']
-                    ]
-                }
-            }]
-        }]
+        rules: [
+            {
+                test: /\.js?$/,
+                exclude: path.resolve('node_modules'),
+                use: [{
+                    loader: 'babel-loader',
+                    options: {
+                        presets: [
+                            ['@babel/preset-env']
+                        ]
+                    }
+                }]
+            },
+            {
+                test: /\.scss$/,
+                use: ['style-loader', 'css-loader', 'sass-loader']
+            }
+        ]
     }
 }
