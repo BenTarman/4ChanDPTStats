@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <script src="https://cdn.jsdelivr.net/npm/vue/dist/vue.js"></script>
+    <title>4Chan DPT Statistics</title>
+</head>
+<body>
+    <header class="header">
+        <div class="header__logo-box">
+            <img class="header__logo-box--logo" src="data/megumiSVG.svg" alt="logo">
+        </div>
+
+        <div class="header__text-box">
+            <h1 class="header__heading-primary">
+                <span class="header__heading-primary--main">4Chan DPT Statistics </span>
+                <span class="header_heading-primary--sub">Find out which Programming Languages are most talked about</span>
+            </h1>
+        </div>
+
+    </header>
+
+
+    <!--    TODO: add links here instead of all thesse <br>-->
+    <br><br><br><br><br><br><br><br><br><br><br><br><br><br><br>
+    <br><br><br><br><br><br><br><br><br><br><br><br><br><br><br>
+    <br><br><br><br><br>
+
+
+
+    <div class="row">
+        <div class="col-1-of-2">
+            <!-- Vue instance -->
+            <div id="shilledLanguageGraph" style="color:white;">
+               
+                {{highestCount}}
+                <div class="shilledLanguage-counts" v-for="(count, language) in languageCounts">
+                    <shilled-language-bar></shilled-language-bar>
+                </div>
+                
+            </div>
+        </div>
+
+        <div class="col-1-of-2">
+            <div id="chanThread" style="color:white;">
+                asdf
+            </div>
+        </div>
+
+    </div>
+</body>
+</html>

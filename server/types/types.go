@@ -2,8 +2,8 @@ package types
 
 // Thread = All the info in a Thread.
 type Thread struct {
-	ThreadInfo // reference to ThreadInfo struct
-	ShilledLanguages // reference to ShilledLanguages in the Thread
+	ThreadInfo `json:"threadInfo"` // reference to ThreadInfo struct
+	ShilledLanguages `json:"languageCounts"` // reference to ShilledLanguages in the Thread
 
 	Posts []struct {
 		PostNum     int    `json:"no"`

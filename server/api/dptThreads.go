@@ -18,7 +18,15 @@ func GetActiveThreads(w http.ResponseWriter, r *http.Request) {
 
 	var dptActiveThreads []types.Thread = GetPossibleDPT()
 	w.Header().Set("Content-Type", "application/json")
+
+	// needed for development
+	enableCors(&w)
+
 	json.NewEncoder(w).Encode(dptActiveThreads)
+}
+
+func enableCors(w *http.ResponseWriter) {
+	(*w).Header().Set("Access-Control-Allow-Origin", "*")
 }
 
 func getThread(apiURL string, threadInfo types.ThreadInfo, dptActiveThreads *[]types.Thread) {
@@ -38,8 +46,6 @@ func getThread(apiURL string, threadInfo types.ThreadInfo, dptActiveThreads *[]t
 	json.Unmarshal(body, &dptThreadJSONObj)
 
 	dptThreadJSONObj.ThreadInfo = threadInfo
-
-
 
 	dptThreadJSONObj.ShilledLanguages = lib.GetShilledLanguageCountInThread(dptThreadJSONObj)
 
