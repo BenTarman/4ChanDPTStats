@@ -4,7 +4,26 @@
 
 
 .shilledLanguage-bar {
-    background-color: $color-white;
-    width: 80%;
-    height: 20px;
+    background-color: $color-primary-green;
+    height: 2.5rem;
+    color: $color-white;
+
+
 }
+
+
+.slide-leave-active,
+.slide-enter-active {
+  transition: all .5s;
+}
+.slide-enter {
+  transform: translateX(100%);
+}
+.slide-leave-to {
+  transform: translateX(-100%);
+}
+
+.slide-move {
+    transition: all .5s;
+}
+

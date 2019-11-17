@@ -2,6 +2,7 @@
     max-width: $grid-width;
     margin: 0 auto;
 
+    transition: all 1s;
 
 
     &:not(:last-child) {
@@ -18,4 +19,30 @@
             margin-right: $gutter-horizontal;
         }
     }
+
+    // custom grid for bar graph
+    .langName {
+        margin-bottom: .3rem;
+        &:not(:last-child) {
+            margin-top: 1rem;
+        }
+    }
+
+    .barGraph {
+        width: calc(100% - (2 * #{$gutter-horizontal}));
+        float: left;
+
+        margin-right: $gutter-horizontal;
+    }
+
+    .languageCount {
+        width: 2rem;
+        float: left;
+    }
 }
+
+
+
+
+
+
