@@ -107,6 +107,10 @@ func GetPossibleDPT() []types.Thread {
 
 		// Compute image file path that can be used in html img tag
 		imgURLPath := fmt.Sprintf("https://i.4cdn.org/g/%s.%s", imgURL, imgExt)
+
+		// Download image on server. Needed to bypass captcha. We will still serve link though so client can click it!
+		lib.DownLoadImg(imgURLPath, threadID)
+
 		dptThreadObj = types.ThreadInfo{threadID, uint32(unixTime), imgURLPath}
 		apiURL := fmt.Sprintf("https://a.4cdn.org/g/thread/%v.json", dptThreadObj.ID)
 

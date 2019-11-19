@@ -1,5 +1,6 @@
 const template = `
   <div>
+  {{img}}
     <img :src="img" style="max-width: 250px;">
   </div>
 `
