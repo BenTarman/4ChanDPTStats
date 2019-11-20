@@ -1,13 +1,23 @@
 const path = require('path');
+const fs = require('fs');
 const HtmlWebpackPlugin = require('html-webpack-plugin');
+const webpack = require('webpack');
+
+const someFileContents = fs.readFileSync('src/components/shilledLanguages/shilledLanguages.html', "utf-8");
+console.log(someFileContents)
 
 module.exports = {
     entry: {
         app: './main.js'
     },
-    plugins: [new HtmlWebpackPlugin({
-        template: './templates/app.html',
-    })],
+    plugins: [
+        new HtmlWebpackPlugin({
+            template: './templates/app.html',
+        }),
+        new webpack.DefinePlugin({
+            'somevar': JSON.stringify(someFileContents)
+          })
+    ],
     module: {
         rules: [
             {

@@ -12,23 +12,7 @@ const ShilledLaunguageBar = Vue.component('shilled-language-bar', {
     }
   },
 
-  template: `
-  <div class="bar-element">
-    <div class="row">
-      <div class="langName">
-        <div>{{langName}}</div>
-      </div>
-
-      <div class="barGraph">
-        <div class=shilledLanguage-bar :style="barWidth"></div>
-      </div>
-
-      <div class="languageCount">
-        <div> {{langCount}}</div>
-      </div>
-    </div>
-  </div>
-    `,
+  template: somevar,
 
   computed: {
     barWidth: function() {
