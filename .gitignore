@@ -3,3 +3,4 @@ go.sum
 .vscode/
 *package-lock.json
 *dist/
+server/img/*

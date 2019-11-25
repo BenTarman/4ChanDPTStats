@@ -17,6 +17,10 @@ import (
 func GetActiveThreads(w http.ResponseWriter, r *http.Request) {
 
 	var dptActiveThreads []types.Thread = GetPossibleDPT()
+
+	//update mongo
+	lib.InsertActiveDPTThreads(dptActiveThreads)
+
 	w.Header().Set("Content-Type", "application/json")
 
 	// needed for development

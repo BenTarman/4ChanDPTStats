@@ -1,4 +1,4 @@
-// GetActiveThreads = Gets Active DPT Threads
+// This file is just regex to match languages in comments
 
 package lib
 
