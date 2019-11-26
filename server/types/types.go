@@ -23,6 +23,7 @@ type Thread struct {
 		Replies     int    `bson:"replies,omitempty" json:"replies,omitempty"`
 		Images      int    `bson:"images,omitempty" json:"images,omitempty"`
 		UniqueIps   int    `bson:"unique_ips,omitempty" json:"unique_ips,omitempty"`
+		Archived	int	   `bson:"archived,omitempty" json:"archived,omitempty"`
 	} `bson:"posts" json:"posts"`
 }
 
