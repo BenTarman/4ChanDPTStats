@@ -3,8 +3,9 @@ const fs = require('fs');
 const HtmlWebpackPlugin = require('html-webpack-plugin');
 const webpack = require('webpack');
 
-const someFileContents = fs.readFileSync('src/components/shilledLanguages/shilledLanguages.html', "utf-8");
-console.log(someFileContents)
+// html files
+const shilledLanguagesTemplateHTML = fs.readFileSync('src/components/shilledLanguages/template.html', "utf-8");
+const threadInfoHTML = fs.readFileSync('src/components/threadInfo/template.html', "utf-8");
 
 module.exports = {
     entry: {
@@ -15,7 +16,8 @@ module.exports = {
             template: './templates/app.html',
         }),
         new webpack.DefinePlugin({
-            'somevar': JSON.stringify(someFileContents)
+            'shilledLanguagesTemplate': JSON.stringify(shilledLanguagesTemplateHTML),
+            'threadInfoTemplate': JSON.stringify(threadInfoHTML)
           })
     ],
     module: {

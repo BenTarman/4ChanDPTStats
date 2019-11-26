@@ -1,7 +1,7 @@
 import axios from 'axios';
 
 // components used
-import ShilledLaunguageBar from "./components/shilledLanguages";
+import ShilledLaunguageBar from "./components/shilledLanguages/component";
 
 function dynamicSort(property) {
   let sortOrder = 1;

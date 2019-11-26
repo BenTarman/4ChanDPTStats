@@ -8,7 +8,6 @@ import (
 	"go.mongodb.org/mongo-driver/mongo"
 	"go.mongodb.org/mongo-driver/mongo/options"
 	"github.com/BenTarman/4ChanDPTStats.git/server/types"
-
 )
 
 // InsertActiveDPTThreads = insert active dpt threads into mongo. Don't insert duplicates.

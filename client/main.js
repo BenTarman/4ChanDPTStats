@@ -5,4 +5,4 @@ import "./styles/main.scss";
 import "./src/app";
 import "./src/thread";
 
-import "./src/components/threadInfo";
+import "./src/components/threadInfo/component";

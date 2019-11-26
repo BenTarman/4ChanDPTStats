@@ -102,5 +102,4 @@ func GetActiveDPTThreads() []types.Thread {
 	}
 
 	return dptActiveThreads
-
 }

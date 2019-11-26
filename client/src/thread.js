@@ -1,6 +1,6 @@
 import axios from 'axios';
 
-import ThreadInfo from './components/threadInfo';
+import ThreadInfo from './components/threadInfo/component';
 
 const app = new Vue({
     el: '#chanThread',

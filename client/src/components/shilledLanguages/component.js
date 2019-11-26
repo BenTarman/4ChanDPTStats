@@ -12,7 +12,7 @@ const ShilledLaunguageBar = Vue.component('shilled-language-bar', {
     }
   },
 
-  template: somevar,
+  template: shilledLanguagesTemplate,
 
   computed: {
     barWidth: function() {
