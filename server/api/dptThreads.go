@@ -15,11 +15,13 @@ func GetAllThreads(w http.ResponseWriter, r *http.Request) {
 	w.Header().Set("Content-Type", "application/json")
 
 	// needed for development
-	enableCors(&w)
+	enableCorsAgain(&w)
 
 	json.NewEncoder(w).Encode(dptActiveThreads)
 }
 
-func enableCors(w *http.ResponseWriter) {
+
+// TODO: export this stuff to a config file
+func enableCorsAgain(w *http.ResponseWriter) {
 	(*w).Header().Set("Access-Control-Allow-Origin", "*")
 }

@@ -15,10 +15,13 @@ html {
   font-family: Ubuntu Mono;
 }
 
+// page layout parts
 @import './layout/header';
 @import './layout/grid';
+@import './layout/thread';
 
 @import './pages/dptStatistics';
 
 // vue components
 @import './components/shilledLanguageGraph';
+@import './components/threadPost';

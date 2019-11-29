@@ -1,4 +1,4 @@
-<div>
+<div style="color: white;">
   <div class="row">
     <div class="col-1-of-2">
       <shilled-language-bar-graph
@@ -6,7 +6,9 @@
       ></shilled-language-bar-graph>
     </div>
     <div class="col-1-of-2">
-      <thread-info></thread-info>
+      <thread-info :threadInfo="threadInfo"></thread-info>
+
+      <thread-posts :posts="posts"></thread-posts>
     </div>
   </div>
 </div>

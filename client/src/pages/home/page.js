@@ -1,4 +1,8 @@
-import getDptThreads from '../../utils/thread_utils';
+import {
+  getDptThreads,
+  getLatestDptThread,
+  getThreadInfo
+} from '../../utils/thread_utils';
 
 const homePage = {
   template: homePageTemplate,
@@ -6,7 +10,8 @@ const homePage = {
   data() {
     return {
       languageCounts: [],
-      dptThreads: []
+      threadInfo: {},
+      posts: []
     };
   },
 
@@ -15,10 +20,11 @@ const homePage = {
       this.store.findAll('threads')
       */
     // Get
-    this.dptThreads = await getDptThreads();
+    const dptThreads = await getDptThreads();
+    const mostRecentThread = getLatestDptThread(dptThreads);
+    const languageCountsObj = mostRecentThread.languageCounts;
 
-    const languageCountsObj = this.dptThreads.data[0].languageCounts;
-
+    // languageCounts
     for (let key in languageCountsObj) {
       if (languageCountsObj[key] !== 0) {
         this.languageCounts.push({
@@ -27,6 +33,15 @@ const homePage = {
         });
       }
     }
+
+    // threadInfo
+    this.threadInfo = await getThreadInfo(mostRecentThread.threadInfo);
+
+    console.log(this.threadInfo);
+
+    // posts
+    debugger;
+    this.posts = mostRecentThread.posts;
   }
 };
 

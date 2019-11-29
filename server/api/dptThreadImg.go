@@ -15,6 +15,16 @@ func GetImages(w http.ResponseWriter, r *http.Request) {
 	fmt.Println(threadID)
 
 	w.Header().Set("Content-Type", "image/jpeg")
+
+
+	// needed for development
+	enableCors(&w)
+	
 	var url = fmt.Sprintf("/home/bentarman/codeProjects/4chanDPTShill/server/img/%v.png", threadID)
     http.ServeFile(w, r,url)
+}
+
+
+func enableCors(w *http.ResponseWriter) {
+	(*w).Header().Set("Access-Control-Allow-Origin", "*")
 }

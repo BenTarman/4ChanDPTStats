@@ -19,6 +19,16 @@ const shilledLanguageBarGraphHTML = fs.readFileSync(
   'utf-8'
 );
 
+const threadPostsHTML = fs.readFileSync(
+  'src/components/threadPosts/template.html',
+  'utf-8'
+);
+
+const threadPostHTML = fs.readFileSync(
+  'src/components/threadPost/template.html',
+  'utf-8'
+);
+
 module.exports = {
   entry: {
     app: './main.js'
@@ -34,7 +44,9 @@ module.exports = {
       homePageTemplate: JSON.stringify(homePageHTML),
       shilledLanguageBarGraphTemplate: JSON.stringify(
         shilledLanguageBarGraphHTML
-      )
+      ),
+      threadPostsTemplate: JSON.stringify(threadPostsHTML),
+      threadPostTemplate: JSON.stringify(threadPostHTML)
     })
   ],
   module: {

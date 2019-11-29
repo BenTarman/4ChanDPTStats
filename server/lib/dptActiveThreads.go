@@ -89,7 +89,7 @@ func GetActiveDPTThreads() []types.Thread {
 		imgExtCapture := reImgExt.FindAllString(dptThread, -1)
 		imgExt := strings.Split(strings.Split(imgExtCapture[0], ":")[1], ".")[1]
 
-		// Compute image file path that can be used in html img tag
+		// Compute image file path that can be used in html img ztag
 		imgURLPath := fmt.Sprintf("https://i.4cdn.org/g/%s.%s", imgURL, imgExt)
 
 		// Download image on server. Needed to bypass captcha. We will still serve link though so client can click it!

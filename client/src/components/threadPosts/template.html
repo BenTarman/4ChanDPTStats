@@ -1,0 +1,9 @@
+<div>
+  <div v-if="posts.length">
+    <div class="thread-posts">
+      <p v-for="post in posts">
+        <thread-post :post="post"></thread-post>
+      </p>
+    </div>
+  </div>
+</div>

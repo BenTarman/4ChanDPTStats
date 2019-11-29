@@ -1,0 +1,19 @@
+.thread-post {
+  background-color: $color-secondary-dark;
+  display: table;
+
+  margin-bottom: 2rem;
+
+  &__comment {
+    color: white;
+    font-size: 1.4rem;
+
+    .quotelink {
+      color: red;
+    }
+
+    .quote {
+      color: green;
+    }
+  }
+}
