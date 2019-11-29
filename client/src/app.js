@@ -1,8 +1,5 @@
 import axios from 'axios';
 
-// components used
-import ShilledLaunguageBar from "./components/shilledLanguages/component";
-
 function dynamicSort(property) {
   let sortOrder = 1;
   // allow negative sorting
@@ -23,10 +20,6 @@ const app = new Vue({
   data: {
     componentKey: 0,
     languageCounts: [],
-  },
-
-  components: {
-    'shilled-language-bar': ShilledLaunguageBar,
   },
 
   created() {

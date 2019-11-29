@@ -1,6 +1,5 @@
 import axios from 'axios';
 
-import ThreadInfo from './components/threadInfo/component';
 
 const app = new Vue({
     el: '#chanThread',
@@ -8,11 +7,6 @@ const app = new Vue({
       threadInfo: {},
       imgURL: '',
     },
-
-    components: {
-        'thread-info': ThreadInfo,
-    },
-
 
     created() {
         // This is tempory. Should do api call in global file and just pass in languageCounts to this vue instance
@@ -23,12 +17,9 @@ const app = new Vue({
        });
 
    },
-
-
-
+   
     methods: {
   
     }
-
 });
 
