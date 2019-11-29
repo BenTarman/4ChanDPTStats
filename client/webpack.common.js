@@ -4,40 +4,56 @@ const HtmlWebpackPlugin = require('html-webpack-plugin');
 const webpack = require('webpack');
 
 // html files
-const shilledLanguagesTemplateHTML = fs.readFileSync('src/components/shilledLanguages/template.html', "utf-8");
-const threadInfoHTML = fs.readFileSync('src/components/threadInfo/template.html', "utf-8");
+const shilledLanguagesTemplateHTML = fs.readFileSync(
+  'src/components/shilledLanguageBarItem/template.html',
+  'utf-8'
+);
+const threadInfoHTML = fs.readFileSync(
+  'src/components/threadInfo/template.html',
+  'utf-8'
+);
+const homePageHTML = fs.readFileSync('src/pages/home.html', 'utf-8');
+
+const shilledLanguageBarGraphHTML = fs.readFileSync(
+  'src/components/shilledLanguageBarGraph/template.html',
+  'utf-8'
+);
 
 module.exports = {
-    entry: {
-        app: './main.js'
-    },
-    plugins: [
-        new HtmlWebpackPlugin({
-            template: './index.html',
-        }),
-        new webpack.DefinePlugin({
-            'shilledLanguagesTemplate': JSON.stringify(shilledLanguagesTemplateHTML),
-            'threadInfoTemplate': JSON.stringify(threadInfoHTML)
-          })
-    ],
-    module: {
-        rules: [
-            {
-                test: /\.js?$/,
-                exclude: path.resolve('node_modules'),
-                use: [{
-                    loader: 'babel-loader',
-                    options: {
-                        presets: [
-                            ['@babel/preset-env']
-                        ]
-                    }
-                }]
-            },
-            {
-                test: /\.scss$/,
-                use: ['style-loader', 'css-loader', 'sass-loader']
+  entry: {
+    app: './main.js'
+  },
+  plugins: [
+    new HtmlWebpackPlugin({
+      template: './index.html'
+    }),
+    new webpack.DefinePlugin({
+      shilledLanguagesTemplate: JSON.stringify(shilledLanguagesTemplateHTML),
+      threadInfoTemplate: JSON.stringify(threadInfoHTML),
+      homePageTemplate: JSON.stringify(homePageHTML),
+      shilledLanguageBarGraphTemplate: JSON.stringify(
+        shilledLanguageBarGraphHTML
+      )
+    })
+  ],
+  module: {
+    rules: [
+      {
+        test: /\.js?$/,
+        exclude: path.resolve('node_modules'),
+        use: [
+          {
+            loader: 'babel-loader',
+            options: {
+              presets: [['@babel/preset-env']]
             }
+          }
         ]
-    }
-}
+      },
+      {
+        test: /\.scss$/,
+        use: ['style-loader', 'css-loader', 'sass-loader']
+      }
+    ]
+  }
+};

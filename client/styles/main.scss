@@ -1,25 +1,24 @@
-@import "./abstract/variables";
-@import "./abstract/mixins";
+@import './abstract/variables';
+@import './abstract/mixins';
 
-@import  url("https://fonts.googleapis.com/css?family=Ubuntu+Mono");
+@import url('https://fonts.googleapis.com/css?family=Ubuntu+Mono');
 
 * {
-    margin: 0;
-    padding: 0;
-    box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
 }
 
 html {
-    font-size: 62.5%;
-    background-color: $color-black;
-    font-family: Ubuntu Mono;
+  font-size: 62.5%;
+  background-color: $color-black;
+  font-family: Ubuntu Mono;
 }
 
-@import "./layout/header";
-@import "./layout/grid";
+@import './layout/header';
+@import './layout/grid';
 
-@import "./pages/dptStatistics";
-
+@import './pages/dptStatistics';
 
 // vue components
-@import "./components/shilledLanguageGraph";
+@import './components/shilledLanguageGraph';

@@ -1,15 +1,14 @@
-
 const ShilledLaunguageBar = Vue.component('shilled-language-bar', {
   props: {
     'max-bound': Number,
     'lang-count': Number,
-    'lang-name': String,
+    'lang-name': String
   },
 
-  data(){
+  data() {
     return {
       test: 42
-    }
+    };
   },
 
   template: shilledLanguagesTemplate,
@@ -22,7 +21,6 @@ const ShilledLaunguageBar = Vue.component('shilled-language-bar', {
       };
     }
   }
-})
-
+});
 
 export default ShilledLaunguageBar;

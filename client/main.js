@@ -1,12 +1,16 @@
+import './styles/main.scss';
 
-import "./styles/main.scss";
+// global component files. Basically "lower-level" components
+import './src/components/threadInfo/component';
+import './src/components/shilledLanguageBarItem/component';
 
+// global component files upperlevel.
+import './src/components/shilledLanguageBarGraph/component';
 
-// global component files
-import "./src/components/threadInfo/component";
-import "./src/components/shilledLanguages/component";
+// import vue pages. The "page-level" component.
+import Home from './src/pages/home';
 
-// import vue files
-import "./src/app";
-import "./src/thread";
-
+new Vue({
+  el: '#app',
+  render: h => h(Home)
+});

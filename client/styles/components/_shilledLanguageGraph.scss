@@ -1,20 +1,15 @@
 .shilledLanguage-counts {
-  
 }
-
 
 .shilledLanguage-bar {
-    background-color: $color-primary-green;
-    height: 2.5rem;
-    color: $color-white;
-
-
+  background-color: $color-primary-green;
+  height: 2.5rem;
+  color: $color-white;
 }
-
 
 .slide-leave-active,
 .slide-enter-active {
-  transition: all .5s;
+  transition: all 0.5s;
 }
 .slide-enter {
   transform: translateX(100%);
@@ -24,6 +19,5 @@
 }
 
 .slide-move {
-    transition: all .5s;
+  transition: all 0.5s;
 }
-

@@ -1,8 +1,8 @@
 // clear floats so height stops collapsing.
 @mixin clearfix {
-    &::after {
-        content: "";
-        display: table;
-        clear: both;
-    }
+  &::after {
+    content: '';
+    display: table;
+    clear: both;
+  }
 }

@@ -3,41 +3,42 @@ import axios from 'axios';
 function dynamicSort(property) {
   let sortOrder = 1;
   // allow negative sorting
-  if(property[0] === "-") {
-      sortOrder = -1;
-      property = property.substr(1);
+  if (property[0] === '-') {
+    sortOrder = -1;
+    property = property.substr(1);
   }
   return (a, b) => {
-      const result = (a[property] < b[property]) ? -1 : (a[property] > b[property]) ? 1 : 0;
-      return result * sortOrder;
-  }
+    const result =
+      a[property] < b[property] ? -1 : a[property] > b[property] ? 1 : 0;
+    return result * sortOrder;
+  };
 }
 
-
-
-const app = new Vue({
-  el: '#shilledLanguageGraph',
-  data: {
-    componentKey: 0,
-    languageCounts: [],
+const ShilledLanguageBarGraph = Vue.component('shilled-language-bar-graph', {
+  data() {
+    return {
+      componentKey: 0,
+      languageCounts: []
+    };
   },
+
+  template: shilledLanguageBarGraphTemplate,
 
   created() {
     // This is tempory. Should do api call in global file and just pass in languageCounts to this vue instance
 
-    axios.get("http://localhost:8000/api/threads").then(activeThreads => {
+    axios.get('http://localhost:8000/api/threads').then(activeThreads => {
       const languageCountsObj = activeThreads.data[0].languageCounts;
 
       for (let key in languageCountsObj) {
         if (languageCountsObj[key] !== 0) {
-          this.languageCounts.push({ 
-              language: key,
-              count: languageCountsObj[key] 
-            });
+          this.languageCounts.push({
+            language: key,
+            count: languageCountsObj[key]
+          });
         }
       }
     });
-
   },
 
   computed: {
@@ -56,16 +57,12 @@ const app = new Vue({
   },
 
   methods: {
-    sortByLangCounts() {
-
-
-    },
+    sortByLangCounts() {},
 
     forceRerender() {
-      this.componentKey += 1;  
+      this.componentKey += 1;
     }
-    
   }
 });
 
-
+export default ShilledLanguageBarGraph;

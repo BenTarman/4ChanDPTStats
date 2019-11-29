@@ -1,0 +1,16 @@
+<div style="color:white;" :key="componentKey">
+  <transition-group name="slide">
+    <div
+      class="shilledLanguage-counts"
+      v-for="(barObject, index) in languageCounts"
+      :key="index"
+    >
+      <shilled-language-bar
+        :max-bound="highestCount"
+        :barObject="barObject"
+        :lang-count="barObject.count"
+        :lang-name="barObject.language"
+      ></shilled-language-bar>
+    </div>
+  </transition-group>
+</div>
