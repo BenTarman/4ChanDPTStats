@@ -1,5 +1,11 @@
 <div>
-  <div class="thread-post">
+  <div :class="postStyle">
+    <div class="thread-post__post-info">
+      <span class="thread-post__post-info--name" v-html="post.Name"></span>
+      <span class="thread-post__post-info--now" v-html="post.now"></span>
+      <span class="thread-post__post-info--no" v-html="post.no"></span>
+    </div>
+
     <p class="thread-post__comment">
       <span v-html="post.com"></span>
     </p>

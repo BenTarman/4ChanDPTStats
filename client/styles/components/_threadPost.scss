@@ -1,19 +1,37 @@
-.thread-post {
-  background-color: $color-secondary-dark;
+@mixin post {
   display: table;
-
   margin-bottom: 2rem;
+  font-size: 1.6rem;
+  padding: 0.2rem 1rem;
+
+  &__post-info {
+    &--name {
+      color: #733e39;
+    }
+  }
 
   &__comment {
     color: white;
-    font-size: 1.4rem;
+    margin-bottom: 1.4rem;
 
     .quotelink {
-      color: red;
+      color: $color-primary-red;
     }
 
     .quote {
-      color: green;
+      color: $color-primary-green;
     }
   }
+}
+
+// standard post
+.thread-post {
+  @include post;
+  background-color: $color-primary-dark;
+}
+
+// OP post
+.OP-post {
+  @include post;
+  font-size: 2rem;
 }
