@@ -13,7 +13,7 @@ module.exports = {
     },
     plugins: [
         new HtmlWebpackPlugin({
-            template: './templates/app.html',
+            template: './index.html',
         }),
         new webpack.DefinePlugin({
             'shilledLanguagesTemplate': JSON.stringify(shilledLanguagesTemplateHTML),
