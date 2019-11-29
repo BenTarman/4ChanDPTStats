@@ -12,7 +12,7 @@ const threadInfoHTML = fs.readFileSync(
   'src/components/threadInfo/template.html',
   'utf-8'
 );
-const homePageHTML = fs.readFileSync('src/pages/home.html', 'utf-8');
+const homePageHTML = fs.readFileSync('src/pages/home/template.html', 'utf-8');
 
 const shilledLanguageBarGraphHTML = fs.readFileSync(
   'src/components/shilledLanguageBarGraph/template.html',
@@ -23,6 +23,7 @@ module.exports = {
   entry: {
     app: './main.js'
   },
+
   plugins: [
     new HtmlWebpackPlugin({
       template: './index.html'
