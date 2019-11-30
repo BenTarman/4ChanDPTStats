@@ -4,6 +4,15 @@ import {
   getThreadInfo
 } from '../../utils/thread_utils';
 
+import { EventBus } from '../../Events';
+
+function isOverflown(element) {
+  return (
+    element.scrollHeight > element.clientHeight ||
+    element.scrollWidth > element.clientWidth
+  );
+}
+
 const homePage = {
   template: homePageTemplate,
 
@@ -11,7 +20,9 @@ const homePage = {
     return {
       languageCounts: [],
       threadInfo: {},
-      posts: []
+      posts: [],
+
+      currTopThreadPos: 0
     };
   },
 
@@ -20,6 +31,7 @@ const homePage = {
       this.store.findAll('threads')
       */
     // Get
+
     const dptThreads = await getDptThreads();
     const mostRecentThread = getLatestDptThread(dptThreads);
     const languageCountsObj = mostRecentThread.languageCounts;
@@ -40,8 +52,40 @@ const homePage = {
     console.log(this.threadInfo);
 
     // posts
-    debugger;
     this.posts = mostRecentThread.posts;
+  },
+
+  updated() {
+    // TODO: figure out why mounted lifecycle wasn't working for this.
+    if (this.posts[0] && document.getElementById(this.posts[0].no)) {
+      this.currTopThreadPos = document
+        .getElementById(this.posts[0].no)
+        .getBoundingClientRect().top;
+    }
+  },
+
+  methods: {
+    adjustView() {
+      const container = document.querySelector('.chanThread');
+      let postToScrollToId = null;
+
+      for (let post of this.posts) {
+        const postElem = document.getElementById(post.no);
+
+        if (
+          postElem.getBoundingClientRect().bottom - this.currTopThreadPos >
+          container.clientHeight
+        ) {
+          postToScrollToId = post.no;
+          break;
+        }
+      }
+
+      // just leave view the same if we are at end of thread
+      if (postToScrollToId !== null) {
+        document.getElementById(postToScrollToId).scrollIntoView();
+      }
+    }
   }
 };
 

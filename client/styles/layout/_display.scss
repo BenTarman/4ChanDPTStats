@@ -1,0 +1,23 @@
+.display {
+}
+
+// this is annoying but basically need to both to be scrollable in their div.
+@mixin overflowHelpler {
+  overflow: auto;
+  height: 60vh;
+
+  // hide scrollbar
+  scrollbar-width: none;
+
+  &::-webkit-scrollbar {
+    display: none;
+  }
+}
+
+.chanThread {
+  @include overflowHelpler;
+}
+
+.shilledLangGraph {
+  @include overflowHelpler;
+}

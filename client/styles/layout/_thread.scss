@@ -5,4 +5,19 @@
 
 .thread-posts {
   float: none;
+  margin-right: 2rem;
+}
+
+.adjust-view {
+  font-size: 4rem;
+  //font-weight: 1200;
+  cursor: pointer;
+  display: inline-block;
+  color: $color-primary-green;
+}
+
+.down-arrow-btn {
+  z-index: 1;
+  text-align: right;
+  margin-right: 2rem;
 }

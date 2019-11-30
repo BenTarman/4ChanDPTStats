@@ -1,14 +1,20 @@
-<div style="color: white;">
+<div class="display">
   <div class="row">
-    <div class="col-1-of-2">
+    <div class="col-1-of-2 shilledLangGraph">
       <shilled-language-bar-graph
         :languageCounts="languageCounts"
       ></shilled-language-bar-graph>
     </div>
     <div class="col-1-of-2">
-      <thread-info :threadInfo="threadInfo"></thread-info>
+      <div class="chanThread">
+        <thread-info :threadInfo="threadInfo"></thread-info>
 
-      <thread-posts :posts="posts"></thread-posts>
+        <thread-posts :posts="posts"></thread-posts>
+      </div>
+
+      <div class="down-arrow-btn">
+        <i class="adjust-view icon-arrows-down-double" @click="adjustView"></i>
+      </div>
     </div>
   </div>
 </div>
