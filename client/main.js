@@ -16,7 +16,17 @@ import './src/components/shilledLanguageBarGraph/component';
 // import vue pages. The "page-level" component.
 import Home from './src/pages/home/page';
 
+import VueRouter from 'vue-router';
+import { routes } from './src/routes';
+
+Vue.use(VueRouter);
+
+const router = new VueRouter({
+  routes
+});
+
 new Vue({
   el: '#app',
+  router,
   render: h => h(Home)
 });

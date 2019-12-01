@@ -29,6 +29,16 @@ const threadPostHTML = fs.readFileSync(
   'utf-8'
 );
 
+const threadsHTML = fs.readFileSync(
+  'src/components/threads/baseThreadsComponent/template.html',
+  'utf-8'
+);
+
+const dptStatsHTML = fs.readFileSync(
+  'src/components/dpt-stats/template.html',
+  'utf-8'
+);
+
 module.exports = {
   entry: {
     app: './main.js'
@@ -46,7 +56,9 @@ module.exports = {
         shilledLanguageBarGraphHTML
       ),
       threadPostsTemplate: JSON.stringify(threadPostsHTML),
-      threadPostTemplate: JSON.stringify(threadPostHTML)
+      threadPostTemplate: JSON.stringify(threadPostHTML),
+      threadsTemplate: JSON.stringify(threadsHTML),
+      dptStatsTemplate: JSON.stringify(dptStatsHTML)
     })
   ],
   module: {

@@ -21,3 +21,19 @@
   text-align: right;
   margin-right: 2rem;
 }
+
+.next-thread {
+  font-size: 3rem;
+  //font-weight: 1200;
+  cursor: pointer;
+
+  color: $color-primary-green;
+
+  &__left {
+    float: left;
+  }
+
+  &__right {
+    float: right;
+  }
+}

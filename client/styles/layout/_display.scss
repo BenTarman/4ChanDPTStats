@@ -3,7 +3,8 @@
 
 // this is annoying but basically need to both to be scrollable in their div.
 @mixin overflowHelpler {
-  overflow: auto;
+  overflow-y: scroll;
+  overflow-x: hidden;
   height: 60vh;
 
   // hide scrollbar

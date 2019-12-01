@@ -42,3 +42,5 @@ export async function getThreadInfo(threadInfo) {
   threadInfo.imgBase64 = await getBase64();
   return threadInfo;
 }
+
+export async function getLanguageCounts() {}

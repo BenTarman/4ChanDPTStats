@@ -1,0 +1,35 @@
+<div>
+  <div class="next-thread row">
+    <div class="col-1-of-2">
+      <i
+        @click="prevThread"
+        class="next-thread__left icon-arrows-square-left"
+      ></i>
+    </div>
+    <div class="col-1-of-2">
+      <i
+        @click="nextThread"
+        class="next-thread__right icon-arrows-square-right"
+      ></i>
+    </div>
+  </div>
+
+  <div class="row">
+    <div class="col-1-of-2 shilledLangGraph">
+      <shilled-language-bar-graph
+        :languageCounts="languageCounts"
+      ></shilled-language-bar-graph>
+    </div>
+    <div class="col-1-of-2">
+      <div class="chanThread">
+        <thread-info :threadInfo="threadInfo"></thread-info>
+
+        <thread-posts :posts="posts"></thread-posts>
+      </div>
+
+      <div class="down-arrow-btn">
+        <i class="adjust-view icon-arrows-down-double" @click="adjustView"></i>
+      </div>
+    </div>
+  </div>
+</div>

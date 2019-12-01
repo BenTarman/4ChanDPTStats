@@ -20,7 +20,9 @@ html {
 @import './layout/grid';
 @import './layout/thread';
 @import './layout/display';
+@import './layout/display-options';
 
 // vue components
 @import './components/shilledLanguageGraph';
 @import './components/threadPost';
+@import './components/threadNavBar';

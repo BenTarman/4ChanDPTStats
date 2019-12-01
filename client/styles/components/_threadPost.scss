@@ -1,5 +1,7 @@
 @mixin post {
   display: table;
+  width: 100%;
+  table-layout: fixed;
   margin-bottom: 2rem;
   font-size: 1.6rem;
   padding: 0.2rem 1rem;

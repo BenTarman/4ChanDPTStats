@@ -1,0 +1,23 @@
+<div class="display">
+  <section class="display-options">
+    <div class="view-choice">
+      <router-link
+        :to="{name: 'active-threads'}"
+        class="view-choice__link"
+        tag="div"
+      >
+        Show Active Threads
+      </router-link>
+
+      <router-link
+        :to="{name: 'all-threads'}"
+        class="view-choice__link"
+        tag="div"
+      >
+        Show All Threads
+      </router-link>
+    </div>
+  </section>
+
+  <router-view></router-view>
+</div>

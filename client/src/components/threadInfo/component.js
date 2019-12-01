@@ -1,11 +1,7 @@
 const ThreadInfo = Vue.component('thread-info', {
   props: ['threadInfo'],
 
-  template: threadInfoTemplate,
-
-  created() {
-    console.log('da threadinfo', this.threadInfo);
-  }
+  template: threadInfoTemplate
 });
 
 export default ThreadInfo;
