@@ -27,13 +27,26 @@
   //font-weight: 1200;
   cursor: pointer;
 
-  color: $color-primary-green;
-
-  &__left {
+  &__left--active {
     float: left;
+
+    color: $color-primary-green;
   }
 
-  &__right {
+  &__right--active {
     float: right;
+
+    color: $color-primary-green;
+  }
+
+  &__left--disable {
+    float: left;
+
+    color: grey;
+  }
+
+  &__right--disable {
+    float: right;
+    color: grey;
   }
 }

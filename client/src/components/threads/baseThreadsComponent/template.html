@@ -1,16 +1,10 @@
 <div>
   <div class="next-thread row">
     <div class="col-1-of-2">
-      <i
-        @click="prevThread"
-        class="next-thread__left icon-arrows-square-left"
-      ></i>
+      <i @click="prevThread" :class="prevThreadStyle"></i>
     </div>
     <div class="col-1-of-2">
-      <i
-        @click="nextThread"
-        class="next-thread__right icon-arrows-square-right"
-      ></i>
+      <i @click="nextThread" :class="nextThreadStyle"></i>
     </div>
   </div>
 

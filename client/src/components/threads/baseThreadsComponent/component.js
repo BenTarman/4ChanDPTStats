@@ -12,7 +12,9 @@ const BaseThreadsComponent = {
       posts: [],
       currTopThreadPos: 0,
       threads: null,
-      currThreadIdx: 0
+      currThreadIdx: 0,
+      prevThreadStyle: 'next-thread__left--disable icon-arrows-square-left',
+      nextThreadStyle: 'next-thread__right--active icon-arrows-square-right'
     };
   },
 
@@ -42,6 +44,27 @@ const BaseThreadsComponent = {
     next(vm => {
       console.log('mode: ', vm.mode);
     });
+  },
+
+  watch: {
+    currThreadIdx() {
+      if (this.currThreadIdx === 0) {
+        this.prevThreadStyle =
+          'next-thread__left--disable icon-arrows-square-left';
+        this.nextThreadStyle =
+          'next-thread__right--active icon-arrows-square-right';
+      } else if (this.currThreadIdx === this.threads.data.length - 1) {
+        this.prevThreadStyle =
+          'next-thread__left--active icon-arrows-square-left';
+        this.nextThreadStyle =
+          'next-thread__right--disable icon-arrows-square-right';
+      } else {
+        this.prevThreadStyle =
+          'next-thread__left--active icon-arrows-square-left';
+        this.nextThreadStyle =
+          'next-thread__right--active icon-arrows-square-right';
+      }
+    }
   },
 
   methods: {
