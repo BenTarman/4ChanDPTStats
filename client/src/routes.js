@@ -15,8 +15,7 @@ export const routes = [
       {
         path: 'active-threads',
         component: ActiveThreads,
-        name: 'active-threads',
-        props: true
+        name: 'active-threads'
       },
       {
         path: 'all-threads',
@@ -26,5 +25,5 @@ export const routes = [
     ]
   },
 
-  { path: '/', component: HomePage, name: 'home' }
+  { path: '/', component: HomePage, name: 'home', redirect: 'dpt-stats' }
 ];

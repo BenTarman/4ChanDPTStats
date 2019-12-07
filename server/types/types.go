@@ -31,7 +31,8 @@ type Thread struct {
 type ThreadInfo struct {
 	ID         string `bson:"threadID" json:"threadID"` // thread id
 	UnixTime   uint32 `bson:"unixtime" json:"unixtime"` // unix time, won't work after January 2038 lol
-	ImgURLPath string `bson:"imgURL" json:"imgURL"` 	// thread picture
+	URL 	   string `bson:"URL" json:"URL"` 			// thread url link
+	IsActive   int    `bson:"isActive" json:"isActive"` //is thread active
 }
 
 // ShilledLanguages = struct to hold number times language is shilled per thread

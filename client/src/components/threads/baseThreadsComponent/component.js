@@ -1,6 +1,7 @@
 import {
-  getDptThreads,
+  getAllDptThreads,
   getLatestDptThread,
+  getActiveDptThreads,
   getThreadInfo
 } from '../../../utils/thread_utils';
 
@@ -26,7 +27,10 @@ const BaseThreadsComponent = {
   },
 
   async created() {
-    this.threads = await getDptThreads();
+    this.threads =
+      this.$route.name === 'all-threads'
+        ? await getAllDptThreads()
+        : await getActiveDptThreads();
     this.setThreadData();
   },
 
@@ -53,7 +57,7 @@ const BaseThreadsComponent = {
           'next-thread__left--disable icon-arrows-square-left';
         this.nextThreadStyle =
           'next-thread__right--active icon-arrows-square-right';
-      } else if (this.currThreadIdx === this.threads.data.length - 1) {
+      } else if (this.currThreadIdx === this.threads.length - 1) {
         this.prevThreadStyle =
           'next-thread__left--active icon-arrows-square-left';
         this.nextThreadStyle =
@@ -69,9 +73,9 @@ const BaseThreadsComponent = {
 
   methods: {
     async setThreadData() {
-      const mostRecentThread = this.threads.data[this.currThreadIdx];
+      const currThread = this.threads[this.currThreadIdx];
 
-      const languageCountsObj = mostRecentThread.languageCounts;
+      const languageCountsObj = currThread.languageCounts;
 
       // languageCounts
       const langCounts = [];
@@ -87,10 +91,10 @@ const BaseThreadsComponent = {
       this.languageCounts = langCounts;
 
       // threadInfo
-      this.threadInfo = await getThreadInfo(mostRecentThread.threadInfo);
+      this.threadInfo = await getThreadInfo(currThread.threadInfo);
 
       // posts
-      this.posts = mostRecentThread.posts;
+      this.posts = currThread.posts;
     },
 
     prevThread() {
@@ -102,7 +106,7 @@ const BaseThreadsComponent = {
 
     nextThread() {
       this.currThreadIdx =
-        this.currThreadIdx + 1 >= this.threads.data.length
+        this.currThreadIdx + 1 >= this.threads.length
           ? this.currThreadIdx
           : this.currThreadIdx + 1;
 

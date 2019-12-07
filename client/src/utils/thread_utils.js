@@ -1,16 +1,31 @@
 import axios from 'axios';
 
-export async function getDptThreads() {
-  if (localStorage.getItem('dptThreads')) {
+export async function getAllDptThreads() {
+  if (sessionStorage.getItem('dptThreads')) {
     try {
-      return JSON.parse(localStorage.getItem('dptThreads'));
+      return JSON.parse(sessionStorage.getItem('dptThreads'));
     } catch (e) {
-      localStorage.removeItem('dptThreads');
+      sessionStorage.removeItem('dptThreads');
       return {};
     }
   }
 
-  return await axios.get('http://localhost:8000/api/threads');
+  const threads = await axios.get('http://localhost:8000/api/threads');
+  return threads.data;
+}
+
+export async function getActiveDptThreads() {
+  if (sessionStorage.getItem('activeDptThreads')) {
+    try {
+      return JSON.parse(sessionStorage.getItem('activeDptThreads'));
+    } catch (e) {
+      sessionStorage.removeItem('activeDptThreads');
+      return {};
+    }
+  }
+
+  const threads = await axios.get('http://localhost:8000/api/threads');
+  return threads.data.filter(thread => thread.threadInfo.isActive === 1);
 }
 
 // Get most recent thread
@@ -28,10 +43,13 @@ export function getLatestDptThread(dptThreads) {
   return mostRecentThread;
 }
 
-async function getBase64() {
-  const response = await axios.get('http://localhost:8000/api/img/73762946', {
-    responseType: 'arraybuffer'
-  });
+async function getBase64(threadID) {
+  const response = await axios.get(
+    `http://localhost:8000/api/img/${threadID}`,
+    {
+      responseType: 'arraybuffer'
+    }
+  );
 
   return 'data:image/jpg;base64,'.concat(
     Buffer.from(response.data, 'binary').toString('base64')
@@ -39,7 +57,7 @@ async function getBase64() {
 }
 
 export async function getThreadInfo(threadInfo) {
-  threadInfo.imgBase64 = await getBase64();
+  threadInfo.imgBase64 = await getBase64(threadInfo.threadID);
   return threadInfo;
 }
 

@@ -95,7 +95,10 @@ func GetActiveDPTThreads() []types.Thread {
 		// Download image on server. Needed to bypass captcha. We will still serve link though so client can click it!
 		DownLoadImg(imgURLPath, threadID)
 
-		dptThreadObj = types.ThreadInfo{threadID, uint32(unixTime), imgURLPath}
+		threadURLPath := fmt.Sprintf("https://boards.4channel.org/g/thread/%s", threadID)
+		isActive := 1
+
+		dptThreadObj = types.ThreadInfo{threadID, uint32(unixTime), threadURLPath, isActive}
 		apiURL := fmt.Sprintf("https://a.4cdn.org/g/thread/%v.json", dptThreadObj.ID)
 
 		getThread(apiURL, dptThreadObj, &dptActiveThreads)
