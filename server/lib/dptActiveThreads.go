@@ -31,7 +31,7 @@ func getThread(apiURL string, threadInfo types.ThreadInfo, dptActiveThreads *[]t
 
 	dptThreadJSONObj.ThreadInfo = threadInfo
 
-	dptThreadJSONObj.ShilledLanguages = GetShilledLanguageCountInThread(dptThreadJSONObj)
+	dptThreadJSONObj.ShilledLanguages = GetShilledLanguageCountInThread(&dptThreadJSONObj)
 
 	// append to main list
 	*dptActiveThreads = append(*dptActiveThreads, dptThreadJSONObj)

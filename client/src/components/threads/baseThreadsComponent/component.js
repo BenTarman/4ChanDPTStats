@@ -1,6 +1,5 @@
 import {
   getAllDptThreads,
-  getLatestDptThread,
   getActiveDptThreads,
   getThreadInfo
 } from '../../../utils/thread_utils';
@@ -15,13 +14,18 @@ const BaseThreadsComponent = {
       posts: [],
       currTopThreadPos: 0,
       threads: null,
-      currThreadIdx: 0
+      currThreadIdx: 0,
+      filteredPosts: []
     };
   },
 
   props: ['prevThreadStyle', 'nextThreadStyle'],
 
   async created() {
+    eventBus.$on('filterPosts', filters => {
+      this.updatePostsByFilter(filters);
+    });
+
     eventBus.$on('nextThread', () => {
       this.currThreadIdx =
         this.currThreadIdx + 1 >= this.threads.length
@@ -65,7 +69,6 @@ const BaseThreadsComponent = {
 
   watch: {
     currThreadIdx() {
-      debugger;
       if (this.currThreadIdx === 0) {
         eventBus.$emit('disableLeftArrow');
       } else if (this.currThreadIdx === this.threads.length - 1) {
@@ -100,6 +103,25 @@ const BaseThreadsComponent = {
 
       // posts
       this.posts = currThread.posts;
+
+      // by default show whole thread
+      this.filteredPosts = this.posts;
+    },
+
+    updatePostsByFilter(filter) {
+      if (filter.length === 0) {
+        this.filteredPosts = this.posts;
+      } else {
+        this.filteredPosts = this.posts.filter(post => {
+          const languages = post.languageMentions.split(';');
+
+          let ret = [];
+          filter.forEach(lang => {
+            ret.push(languages.includes(lang));
+          });
+          return !ret.includes(false);
+        });
+      }
     },
 
     adjustView() {

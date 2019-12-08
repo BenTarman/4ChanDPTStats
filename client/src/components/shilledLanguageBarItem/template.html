@@ -5,7 +5,11 @@
     </div>
 
     <div class="barGraph">
-      <div class="shilledLanguage-bar" :style="barWidth"></div>
+      <div
+        class="shilledLanguage-bar"
+        :style="barWidth"
+        @onClick="showUsageInThread"
+      ></div>
     </div>
 
     <div class="languageCount">

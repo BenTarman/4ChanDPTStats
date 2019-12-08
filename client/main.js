@@ -9,6 +9,7 @@ import './src/components/threadInfo/component';
 import './src/components/shilledLanguageBarItem/component';
 import './src/components/threadPosts/component';
 import './src/components/threadPost/component';
+import './src/components/thread-filters/component';
 
 // global component files upperlevel.
 import './src/components/shilledLanguageBarGraph/component';

@@ -39,6 +39,11 @@ const dptStatsHTML = fs.readFileSync(
   'utf-8'
 );
 
+const threadFiltersHTML = fs.readFileSync(
+  'src/components/thread-filters/thread-filters.html',
+  'utf-8'
+);
+
 module.exports = {
   entry: {
     app: './main.js'
@@ -58,7 +63,8 @@ module.exports = {
       threadPostsTemplate: JSON.stringify(threadPostsHTML),
       threadPostTemplate: JSON.stringify(threadPostHTML),
       threadsTemplate: JSON.stringify(threadsHTML),
-      dptStatsTemplate: JSON.stringify(dptStatsHTML)
+      dptStatsTemplate: JSON.stringify(dptStatsHTML),
+      threadFiltersTemplate: JSON.stringify(threadFiltersHTML)
     })
   ],
   module: {

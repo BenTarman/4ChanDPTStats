@@ -1,10 +1,4 @@
 import { eventBus } from '../../Events';
-import {
-  getAllDptThreads,
-  getLatestDptThread,
-  getActiveDptThreads,
-  getThreadInfo
-} from '../../utils/thread_utils';
 
 const DptStats = Vue.component('dpt-stats', {
   template: dptStatsTemplate,
@@ -12,9 +6,7 @@ const DptStats = Vue.component('dpt-stats', {
   data() {
     return {
       prevThreadStyle: 'next-thread__left--disable icon-arrows-square-left',
-      nextThreadStyle: 'next-thread__right--active icon-arrows-square-right',
-      allThreads: null,
-      activeThreads: null
+      nextThreadStyle: 'next-thread__right--active icon-arrows-square-right'
     };
   },
 
@@ -58,25 +50,10 @@ const DptStats = Vue.component('dpt-stats', {
   methods: {
     prevThread() {
       eventBus.$emit('prevThread');
-      /*
-      this.currThreadIdx =
-        this.currThreadIdx - 1 < 0 ? 0 : this.currThreadIdx - 1;
-
-      this.setThreadData();
-      */
     },
 
     nextThread() {
       eventBus.$emit('nextThread');
-
-      /*
-      this.currThreadIdx =
-        this.currThreadIdx + 1 >= this.threads.length
-          ? this.currThreadIdx
-          : this.currThreadIdx + 1;
-
-      this.setThreadData();
-      */
     }
   }
 });

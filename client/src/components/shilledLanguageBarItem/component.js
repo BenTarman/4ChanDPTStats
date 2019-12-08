@@ -7,7 +7,7 @@ const ShilledLaunguageBar = Vue.component('shilled-language-bar', {
 
   data() {
     return {
-      test: 42
+      isSelected: false
     };
   },
 
@@ -20,6 +20,11 @@ const ShilledLaunguageBar = Vue.component('shilled-language-bar', {
         width: width + '%'
       };
     }
+  },
+
+  methods: {
+    // TODO: When a bar is selected, we will treat is a "filter"
+    showUsageInThread() {}
   }
 });
 

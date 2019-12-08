@@ -3,144 +3,156 @@
 package lib
 
 import (
-	"github.com/BenTarman/4ChanDPTStats.git/server/types"
 	"regexp"
+	"strings"
+
+	"github.com/BenTarman/4ChanDPTStats.git/server/types"
 )
 
 // GetShilledLanguageCountInThread = return an ShilledLanguages struct that contanis the counts
-func GetShilledLanguageCountInThread(dptThread types.Thread) types.ShilledLanguages {
+func GetShilledLanguageCountInThread(dptThread *types.Thread) types.ShilledLanguages {
 	// Get shilled language counts
 	var shilledLanguagesInThread types.ShilledLanguages
-	for _, dptComment := range dptThread.Posts {
-		shilledLanguagesInThread.Python += FindPythonInComment(dptComment.Comment)
-		shilledLanguagesInThread.CSharp += FindCSharpInComment(dptComment.Comment)
-		shilledLanguagesInThread.JavaScript += FindJavaScriptInComment(dptComment.Comment)
-		shilledLanguagesInThread.JavaScript += FindJavaInComment(dptComment.Comment)
-		shilledLanguagesInThread.Sepples += FindSepplesInComment(dptComment.Comment)
-		shilledLanguagesInThread.Swift += FindSwiftInComment(dptComment.Comment)
-		shilledLanguagesInThread.TypeScript += FindTypeScriptInComment(dptComment.Comment)
-		shilledLanguagesInThread.Go += FindGoInComment(dptComment.Comment)
-		shilledLanguagesInThread.Ruby += FindRubyInComment(dptComment.Comment)
-		shilledLanguagesInThread.PHP += FindPHPInComment(dptComment.Comment)
-		shilledLanguagesInThread.Perl += FindPerlInComment(dptComment.Comment)
-		shilledLanguagesInThread.Kotlin += FindKotlinInComment(dptComment.Comment)
-		shilledLanguagesInThread.Rust += FindRustInComment(dptComment.Comment)
-		shilledLanguagesInThread.Scheme += FindSchemeInComment(dptComment.Comment)
-		shilledLanguagesInThread.Erlang += FindErlangInComment(dptComment.Comment)
-		shilledLanguagesInThread.Scala += FindScalaInComment(dptComment.Comment)
-		shilledLanguagesInThread.Elixir += FindElixirInComment(dptComment.Comment)
-		shilledLanguagesInThread.Haskell += FindHaskellInComment(dptComment.Comment)
-		shilledLanguagesInThread.Lisp += FindLispInComment(dptComment.Comment)
-		shilledLanguagesInThread.C += FindCInComment(dptComment.Comment)
+
+	for i := 0; i < len((*dptThread).Posts); i++ {
+		var languageMentions strings.Builder
+
+		dptComment := (*dptThread).Posts[i]
+		shilledLanguagesInThread.CSharp += FindCSharpInComment(dptComment.Comment, &languageMentions)
+		shilledLanguagesInThread.Python += FindPythonInComment(dptComment.Comment, &languageMentions)
+		shilledLanguagesInThread.JavaScript += FindJavaScriptInComment(dptComment.Comment, &languageMentions)
+		shilledLanguagesInThread.JavaScript += FindJavaInComment(dptComment.Comment, &languageMentions)
+		shilledLanguagesInThread.Sepples += FindSepplesInComment(dptComment.Comment, &languageMentions)
+		shilledLanguagesInThread.Swift += FindSwiftInComment(dptComment.Comment, &languageMentions)
+		shilledLanguagesInThread.TypeScript += FindTypeScriptInComment(dptComment.Comment, &languageMentions)
+		shilledLanguagesInThread.Go += FindGoInComment(dptComment.Comment, &languageMentions)
+		shilledLanguagesInThread.Ruby += FindRubyInComment(dptComment.Comment, &languageMentions)
+		shilledLanguagesInThread.PHP += FindPHPInComment(dptComment.Comment, &languageMentions)
+		shilledLanguagesInThread.Perl += FindPerlInComment(dptComment.Comment, &languageMentions)
+		shilledLanguagesInThread.Kotlin += FindKotlinInComment(dptComment.Comment, &languageMentions)
+		shilledLanguagesInThread.Rust += FindRustInComment(dptComment.Comment, &languageMentions)
+		shilledLanguagesInThread.Scheme += FindSchemeInComment(dptComment.Comment, &languageMentions)
+		shilledLanguagesInThread.Erlang += FindErlangInComment(dptComment.Comment, &languageMentions)
+		shilledLanguagesInThread.Scala += FindScalaInComment(dptComment.Comment, &languageMentions)
+		shilledLanguagesInThread.Elixir += FindElixirInComment(dptComment.Comment, &languageMentions)
+		shilledLanguagesInThread.Haskell += FindHaskellInComment(dptComment.Comment, &languageMentions)
+		shilledLanguagesInThread.Lisp += FindLispInComment(dptComment.Comment, &languageMentions)
+		shilledLanguagesInThread.C += FindCInComment(dptComment.Comment, &languageMentions)
+
+		// since passing a pointer this will change what is inserted in the database.
+		(*dptThread).Posts[i].LanguageMentions = strings.TrimSuffix(languageMentions.String(), ";")
 	}
 	return shilledLanguagesInThread
 }
 
-func findShilledLanguageCount(match string, comment string) int {
+func findShilledLanguageCount(match string, comment string, languageMentions *strings.Builder, language string) int {
 	re := regexp.MustCompile(match)
 	matches := re.FindAllStringIndex(comment, -1)
 	if len(matches) == 0 {
 		return 0
 	}
+
+	(*languageMentions).WriteString(language)
+
 	return 1
 }
 
 // Python
-func FindPythonInComment(comment string) int {
-	return findShilledLanguageCount("python|Python", comment)
+func FindPythonInComment(comment string, languageMentions *strings.Builder) int {
+	return findShilledLanguageCount("python|Python", comment, languageMentions, "python;")
 }
 
 // C#
-func FindCSharpInComment(comment string) int {
-	return findShilledLanguageCount("csharp|C#|CSharp|c#", comment)
+func FindCSharpInComment(comment string, languageMentions *strings.Builder) int {
+	return findShilledLanguageCount("csharp|C#|CSharp|c#", comment, languageMentions, "C#;")
 }
 
 // JavaScript
-func FindJavaScriptInComment(comment string) int {
-	return findShilledLanguageCount("Javascript|JavaScript|javascript|JS", comment)
+func FindJavaScriptInComment(comment string, languageMentions *strings.Builder) int {
+	return findShilledLanguageCount("Javascript|JavaScript|javascript|JS", comment, languageMentions, "javascript;")
 }
 
 // Java
-func FindJavaInComment(comment string) int {
-	return findShilledLanguageCount("Java|Java", comment)
+func FindJavaInComment(comment string, languageMentions *strings.Builder) int {
+	return findShilledLanguageCount("Java|Java", comment, languageMentions, "java;")
 }
 
 // C++
-func FindSepplesInComment(comment string) int {
-	return findShilledLanguageCount("c\\+\\+|C\\+\\+|sepples|Sepples", comment)
+func FindSepplesInComment(comment string, languageMentions *strings.Builder) int {
+	return findShilledLanguageCount("c\\+\\+|C\\+\\+|sepples|Sepples", comment, languageMentions, "sepples;")
 }
 
 // Swift
-func FindSwiftInComment(comment string) int {
-	return findShilledLanguageCount("swift|Swift", comment)
+func FindSwiftInComment(comment string, languageMentions *strings.Builder) int {
+	return findShilledLanguageCount("swift|Swift", comment, languageMentions, "swift;")
 }
 
 // TypeScript
-func FindTypeScriptInComment(comment string) int {
-	return findShilledLanguageCount("TypeScript|Typescript|typescript", comment)
+func FindTypeScriptInComment(comment string, languageMentions *strings.Builder) int {
+	return findShilledLanguageCount("TypeScript|Typescript|typescript", comment, languageMentions, "typescript;")
 }
 
 // Go TODO: edit this to not allow search at start
-func FindGoInComment(comment string) int {
-	return findShilledLanguageCount("goLang|golang|, go| , Go", comment)
+func FindGoInComment(comment string, languageMentions *strings.Builder) int {
+	return findShilledLanguageCount("goLang|golang|, go| , Go", comment, languageMentions, "golang;")
 }
 
 // Ruby
-func FindRubyInComment(comment string) int {
-	return findShilledLanguageCount("Ruby|ruby", comment)
+func FindRubyInComment(comment string, languageMentions *strings.Builder) int {
+	return findShilledLanguageCount("Ruby|ruby", comment, languageMentions, "ruby;")
 }
 
 // PHP
-func FindPHPInComment(comment string) int {
-	return findShilledLanguageCount("php|Php|PHP", comment)
+func FindPHPInComment(comment string, languageMentions *strings.Builder) int {
+	return findShilledLanguageCount("php|Php|PHP", comment, languageMentions, "php;")
 }
 
 // Perl
-func FindPerlInComment(comment string) int {
-	return findShilledLanguageCount("perl|Perl", comment)
+func FindPerlInComment(comment string, languageMentions *strings.Builder) int {
+	return findShilledLanguageCount("perl|Perl", comment, languageMentions, "perl;")
 }
 
 // Kotlin
-func FindKotlinInComment(comment string) int {
-	return findShilledLanguageCount("Kotlin|kotlin", comment)
+func FindKotlinInComment(comment string, languageMentions *strings.Builder) int {
+	return findShilledLanguageCount("Kotlin|kotlin", comment, languageMentions, "kotlin;")
 }
 
 // Rust
-func FindRustInComment(comment string) int {
-	return findShilledLanguageCount("rust|Rust", comment)
+func FindRustInComment(comment string, languageMentions *strings.Builder) int {
+	return findShilledLanguageCount("rust|Rust", comment, languageMentions, "rust;")
 }
 
 // Scheme
-func FindSchemeInComment(comment string) int {
-	return findShilledLanguageCount("Scheme|scheme", comment)
+func FindSchemeInComment(comment string, languageMentions *strings.Builder) int {
+	return findShilledLanguageCount("Scheme|scheme", comment, languageMentions, "scheme;")
 }
 
 // Erlang
-func FindErlangInComment(comment string) int {
-	return findShilledLanguageCount("Erlang|erlang", comment)
+func FindErlangInComment(comment string, languageMentions *strings.Builder) int {
+	return findShilledLanguageCount("Erlang|erlang", comment, languageMentions, "erlang;")
 }
 
 // Scala
-func FindScalaInComment(comment string) int {
-	return findShilledLanguageCount("Scala|scala", comment)
+func FindScalaInComment(comment string, languageMentions *strings.Builder) int {
+	return findShilledLanguageCount("Scala|scala", comment, languageMentions, "scala;")
 }
 
 // Elixir
-func FindElixirInComment(comment string) int {
-	return findShilledLanguageCount("Elixir|elixir", comment)
+func FindElixirInComment(comment string, languageMentions *strings.Builder) int {
+	return findShilledLanguageCount("Elixir|elixir", comment, languageMentions, "elixir;")
 }
 
 // Haskell
-func FindHaskellInComment(comment string) int {
-	return findShilledLanguageCount("Haskell|haskell", comment)
+func FindHaskellInComment(comment string, languageMentions *strings.Builder) int {
+	return findShilledLanguageCount("Haskell|haskell", comment, languageMentions, "haskell;")
 }
 
 // Lisp
-func FindLispInComment(comment string) int {
-	return findShilledLanguageCount("Lisp|lisp", comment)
+func FindLispInComment(comment string, languageMentions *strings.Builder) int {
+	return findShilledLanguageCount("Lisp|lisp", comment, languageMentions, "lisp;")
 }
 
 // C
-func FindCInComment(comment string) int {
-	return findShilledLanguageCount("<br>C\\s+|\\s+C\\s+|\\s+C\\.", comment)
+func FindCInComment(comment string, languageMentions *strings.Builder) int {
+	return findShilledLanguageCount("<br>C\\s+|\\s+C\\s+|\\s+C\\.", comment, languageMentions, "C;")
 }
