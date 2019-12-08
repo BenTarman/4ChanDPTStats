@@ -5,6 +5,8 @@ import {
   getThreadInfo
 } from '../../../utils/thread_utils';
 
+import { eventBus } from '../../../Events';
+
 const BaseThreadsComponent = {
   data() {
     return {
@@ -13,11 +15,11 @@ const BaseThreadsComponent = {
       posts: [],
       currTopThreadPos: 0,
       threads: null,
-      currThreadIdx: 0,
-      prevThreadStyle: 'next-thread__left--disable icon-arrows-square-left',
-      nextThreadStyle: 'next-thread__right--active icon-arrows-square-right'
+      currThreadIdx: 0
     };
   },
+
+  props: ['prevThreadStyle', 'nextThreadStyle'],
 
   props: {
     mode: {
@@ -27,6 +29,22 @@ const BaseThreadsComponent = {
   },
 
   async created() {
+    eventBus.$on('nextThread', () => {
+      this.currThreadIdx =
+        this.currThreadIdx + 1 >= this.threads.length
+          ? this.currThreadIdx
+          : this.currThreadIdx + 1;
+
+      this.setThreadData();
+    });
+
+    eventBus.$on('prevThread', () => {
+      this.currThreadIdx =
+        this.currThreadIdx - 1 < 0 ? 0 : this.currThreadIdx - 1;
+
+      this.setThreadData();
+    });
+
     this.threads =
       this.$route.name === 'all-threads'
         ? await getAllDptThreads()
@@ -52,21 +70,13 @@ const BaseThreadsComponent = {
 
   watch: {
     currThreadIdx() {
+      debugger;
       if (this.currThreadIdx === 0) {
-        this.prevThreadStyle =
-          'next-thread__left--disable icon-arrows-square-left';
-        this.nextThreadStyle =
-          'next-thread__right--active icon-arrows-square-right';
+        eventBus.$emit('disableLeftArrow');
       } else if (this.currThreadIdx === this.threads.length - 1) {
-        this.prevThreadStyle =
-          'next-thread__left--active icon-arrows-square-left';
-        this.nextThreadStyle =
-          'next-thread__right--disable icon-arrows-square-right';
+        eventBus.$emit('disableRightArrow');
       } else {
-        this.prevThreadStyle =
-          'next-thread__left--active icon-arrows-square-left';
-        this.nextThreadStyle =
-          'next-thread__right--active icon-arrows-square-right';
+        eventBus.$emit('enableBothArrows');
       }
     }
   },
@@ -95,22 +105,6 @@ const BaseThreadsComponent = {
 
       // posts
       this.posts = currThread.posts;
-    },
-
-    prevThread() {
-      this.currThreadIdx =
-        this.currThreadIdx - 1 < 0 ? 0 : this.currThreadIdx - 1;
-
-      this.setThreadData();
-    },
-
-    nextThread() {
-      this.currThreadIdx =
-        this.currThreadIdx + 1 >= this.threads.length
-          ? this.currThreadIdx
-          : this.currThreadIdx + 1;
-
-      this.setThreadData();
     },
 
     adjustView() {

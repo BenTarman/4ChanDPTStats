@@ -1,22 +1,35 @@
 <div class="display">
-  <section class="display-options">
-    <div class="view-choice">
+  <section class="display-options row">
+    <div class="col-1-of-4 next-thread">
+      <i @click="prevThread" :class="prevThreadStyle"></i>
+    </div>
+
+    <div class="view-choice col-1-of-4">
       <router-link
         :to="{name: 'active-threads'}"
         class="view-choice__link"
         tag="div"
-        active
+        :prevThreadStyle="prevThreadStyle"
+        :nextThreadStyle="nextThreadStyle"
       >
         Show Active Threads
       </router-link>
+    </div>
 
+    <div class="view-choice col-1-of-4">
       <router-link
         :to="{name: 'all-threads'}"
         class="view-choice__link"
         tag="div"
+        :prevThreadStyle="prevThreadStyle"
+        :nextThreadStyle="nextThreadStyle"
       >
         Show All Threads
       </router-link>
+    </div>
+
+    <div class="col-1-of-4 next-thread">
+      <i @click="nextThread" :class="nextThreadStyle"></i>
     </div>
   </section>
 
