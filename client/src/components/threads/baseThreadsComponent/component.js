@@ -21,13 +21,6 @@ const BaseThreadsComponent = {
 
   props: ['prevThreadStyle', 'nextThreadStyle'],
 
-  props: {
-    mode: {
-      default: '',
-      type: String
-    }
-  },
-
   async created() {
     eventBus.$on('nextThread', () => {
       this.currThreadIdx =
@@ -50,6 +43,10 @@ const BaseThreadsComponent = {
         ? await getAllDptThreads()
         : await getActiveDptThreads();
     this.setThreadData();
+
+    if (this.threads.length <= 1) {
+      eventBus.$emit('disableBothArrows');
+    }
   },
 
   updated() {
@@ -61,11 +58,9 @@ const BaseThreadsComponent = {
     }
   },
 
-  beforeRouteEnter(to, from, next) {
-    console.log('WTF');
-    next(vm => {
-      console.log('mode: ', vm.mode);
-    });
+  beforeRouteLeave(to, from, next) {
+    eventBus.$emit('resetArrows');
+    next();
   },
 
   watch: {
