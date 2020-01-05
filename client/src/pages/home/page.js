@@ -1,5 +1,11 @@
 const homePage = {
-  template: homePageTemplate
+  template: homePageTemplate,
+
+  data() {
+    return {
+      showNavBar: false
+    };
+  }
 };
 
 export default homePage;

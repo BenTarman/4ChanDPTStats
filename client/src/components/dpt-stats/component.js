@@ -6,11 +6,16 @@ const DptStats = Vue.component('dpt-stats', {
   data() {
     return {
       prevThreadStyle: 'next-thread__left--disable icon-arrows-square-left',
-      nextThreadStyle: 'next-thread__right--active icon-arrows-square-right'
+      nextThreadStyle: 'next-thread__right--active icon-arrows-square-right',
+      threadDate: ''
     };
   },
 
   async created() {
+    eventBus.$on('setThreadDate', date => {
+      this.threadDate = date;
+    });
+
     eventBus.$on('disableLeftArrow', () => {
       this.prevThreadStyle =
         'next-thread__left--disable icon-arrows-square-left';

@@ -1,10 +1,8 @@
 import ActiveThreads from './components/threads/activeThreads/component';
-
 import AllThreads from './components/threads/allThreads/component';
-
 import HomePage from './pages/home/page';
-
 import DptStats from './components/dpt-stats/component';
+import AboutPage from './pages/about/page';
 
 export const routes = [
   {
@@ -25,5 +23,6 @@ export const routes = [
     ]
   },
 
-  { path: '/', component: HomePage, name: 'home', redirect: 'dpt-stats' }
+  { path: '/', component: HomePage, name: 'home', redirect: 'dpt-stats' },
+  { path: '/about', component: AboutPage, name: 'about' }
 ];

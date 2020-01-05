@@ -8,7 +8,7 @@
 
   &__post-info {
     &--name {
-      color: #733e39;
+      color: $color-purple;
     }
   }
 
@@ -30,6 +30,9 @@
 .thread-post {
   @include post;
   background-color: $color-primary-dark;
+
+  &__comment {
+  }
 }
 
 // OP post

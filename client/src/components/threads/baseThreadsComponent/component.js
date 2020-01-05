@@ -15,7 +15,9 @@ const BaseThreadsComponent = {
       currTopThreadPos: 0,
       threads: null,
       currThreadIdx: 0,
-      filteredPosts: []
+      filteredPosts: [],
+      highlightLangs: false,
+      currFilters: []
     };
   },
 
@@ -24,6 +26,7 @@ const BaseThreadsComponent = {
   async created() {
     eventBus.$on('filterPosts', filters => {
       this.updatePostsByFilter(filters);
+      this.currFilters = filters;
     });
 
     eventBus.$on('nextThread', () => {
@@ -60,6 +63,18 @@ const BaseThreadsComponent = {
         .getElementById(this.posts[0].no)
         .getBoundingClientRect().top;
     }
+
+    if (this.highlightLangs) {
+      this.filteredPosts.forEach(post => {
+        // highlight the shown language in the comment
+        const elemToStyle = document.getElementById(post.no);
+        if (elemToStyle && this.currFilters) {
+          this.currFilters.forEach(lang => {
+            elemToStyle.querySelector(`.${lang}`).style.color = '#00b277';
+          });
+        }
+      });
+    }
   },
 
   beforeRouteLeave(to, from, next) {
@@ -69,6 +84,7 @@ const BaseThreadsComponent = {
 
   watch: {
     currThreadIdx() {
+      // emit to change the thread info.
       if (this.currThreadIdx === 0) {
         eventBus.$emit('disableLeftArrow');
       } else if (this.currThreadIdx === this.threads.length - 1) {
@@ -104,6 +120,9 @@ const BaseThreadsComponent = {
       // posts
       this.posts = currThread.posts;
 
+      // Thread date is on the first post
+      eventBus.$emit('setThreadDate', this.posts[0].now);
+
       // by default show whole thread
       this.filteredPosts = this.posts;
     },
@@ -111,7 +130,10 @@ const BaseThreadsComponent = {
     updatePostsByFilter(filter) {
       if (filter.length === 0) {
         this.filteredPosts = this.posts;
+        this.highlightLangs = false;
       } else {
+        this.highlightLangs = true;
+
         this.filteredPosts = this.posts.filter(post => {
           const languages = post.languageMentions.split(';');
 
@@ -119,6 +141,9 @@ const BaseThreadsComponent = {
           filter.forEach(lang => {
             ret.push(languages.includes(lang));
           });
+
+          // elemToStyle.querySelector(`.${languages[0]}`).style.color = 'green';
+
           return !ret.includes(false);
         });
       }

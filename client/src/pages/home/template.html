@@ -1,3 +1,51 @@
 <div>
+  <header class="header">
+    <div class="header__logo-box">
+      <img
+        class="header__logo-box--logo"
+        alt="logo"
+        src="data/Murakami_Shiina_Holding_Computer_C_Programming_Language.png"
+      />
+    </div>
+
+    <div class="header__text-box">
+      <h1 class="header__heading-primary">
+        <span class="header__heading-primary--main">4Chan DPT Statistics </span>
+        <span class="header_heading-primary--sub"
+          >Find out which Programming Languages are most talked about</span
+        >
+      </h1>
+    </div>
+
+    <nav
+      class="header__nav"
+      @mouseover="showNavBar = true"
+      @mouseleave="showNavBar = false"
+    >
+      <svg class="icon icon-bars">
+        <use xlink:href="data/symbol-defs.svg#icon-bars"></use>
+      </svg>
+
+      <ul v-show="showNavBar">
+        <li>
+          <router-link :to="{name: 'home'}" style="color: white;">
+            Home
+          </router-link>
+        </li>
+        <li>
+          <router-link :to="{name: 'about'}" style="color: white;">
+            Complete History
+          </router-link>
+        </li>
+
+        <li>
+          <router-link :to="{name: 'about'}" style="color: white;">
+            About
+          </router-link>
+        </li>
+      </ul>
+    </nav>
+  </header>
+
   <router-view></router-view>
 </div>

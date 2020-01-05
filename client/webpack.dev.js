@@ -7,6 +7,7 @@ module.exports = merge(common, {
   entry: {
     app: './main.js'
   },
+  devtool: 'source-map',
   output: {
     path: path.resolve(__dirname, 'dist'),
     filename: 'app.bundle.js'

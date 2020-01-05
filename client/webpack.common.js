@@ -14,6 +14,8 @@ const threadInfoHTML = fs.readFileSync(
 );
 const homePageHTML = fs.readFileSync('src/pages/home/template.html', 'utf-8');
 
+const aboutPageHTML = fs.readFileSync('src/pages/about/template.html', 'utf-8');
+
 const shilledLanguageBarGraphHTML = fs.readFileSync(
   'src/components/shilledLanguageBarGraph/template.html',
   'utf-8'
@@ -57,6 +59,7 @@ module.exports = {
       shilledLanguagesTemplate: JSON.stringify(shilledLanguagesTemplateHTML),
       threadInfoTemplate: JSON.stringify(threadInfoHTML),
       homePageTemplate: JSON.stringify(homePageHTML),
+      aboutPageTemplate: JSON.stringify(aboutPageHTML),
       shilledLanguageBarGraphTemplate: JSON.stringify(
         shilledLanguageBarGraphHTML
       ),
