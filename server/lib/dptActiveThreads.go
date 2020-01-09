@@ -12,7 +12,6 @@ import (
 	"encoding/json"
 )
 
-
 func getThread(apiURL string, threadInfo types.ThreadInfo, dptActiveThreads *[]types.Thread) {
 	response, err := http.Get(apiURL)
 	if err != nil {
@@ -20,7 +19,7 @@ func getThread(apiURL string, threadInfo types.ThreadInfo, dptActiveThreads *[]t
 	}
 	defer response.Body.Close()
 
-	// Read response data in to memeory
+	// Read response data in to memory
 	body, err := ioutil.ReadAll(response.Body)
 	if err != nil {
 		log.Fatal("Error reading HTTP body", err)

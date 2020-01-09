@@ -47,6 +47,27 @@ func InsertActiveDPTThreads(dptThreads []types.Thread) {
 	}
 }
 
+func UpdateTotalStatistics(totalShilledLanguageCount types.ShilledLanguages) {
+	client, err := mongo.NewClient(options.Client().ApplyURI("mongodb://localhost:27017"))
+
+	if err != nil {
+        log.Fatal(err)
+    }
+
+	ctx, _ := context.WithTimeout(context.Background(), 10*time.Second)
+    err = client.Connect(ctx)
+    if err != nil {
+        log.Fatal(err)
+    }
+	defer client.Disconnect(ctx)
+
+    dptShillDB := client.Database("DPTShill")
+	statsCollection := dptShillDB.Collection("Stats")
+
+	// Update database with new stats
+	statsCollection.DeleteMany(ctx, bson.M{})
+	statsCollection.InsertOne(ctx, totalShilledLanguageCount)
+}
 
 func GetAllDPTThreads() []types.Thread {
 	client, err := mongo.NewClient(options.Client().ApplyURI("mongodb://localhost:27017"))
@@ -71,4 +92,30 @@ func GetAllDPTThreads() []types.Thread {
 	cur.All(ctx, &ret)
 
 	return ret
+}
+
+func GetAllStatistics() types.ShilledLanguages {
+	client, err := mongo.NewClient(options.Client().ApplyURI("mongodb://localhost:27017"))
+
+	if err != nil {
+        log.Fatal(err)
+    }
+
+	ctx, _ := context.WithTimeout(context.Background(), 10*time.Second)
+    err = client.Connect(ctx)
+    if err != nil {
+        log.Fatal(err)
+    }
+	defer client.Disconnect(ctx)
+
+    dptShillDB := client.Database("DPTShill")
+	statsCollection := dptShillDB.Collection("Stats")
+
+	// Select everything in the mongodb database database database database
+	var ret []types.ShilledLanguages
+	cur, _ := statsCollection.Find(ctx, bson.D{})
+	cur.All(ctx, &ret)
+
+	// There should only be one collection anyways.
+	return ret[0]
 }

@@ -59,8 +59,6 @@ func findShilledLanguageCount(match string, comment *string, languageMentions *s
 		return 0
 	}
 
-
-
 	for i := 0; i < len(matches); i++ {
 		firstIdx := matches[i][0]
 		lastIdx := matches[i][1] 
@@ -68,9 +66,7 @@ func findShilledLanguageCount(match string, comment *string, languageMentions *s
 		*offset = len(fmt.Sprintf("<span class=\"%s\">", strings.TrimSuffix(language, ";"))) + len("</span>")
 		*comment = (*comment)[:firstIdx] + fmt.Sprintf("<span class=\"%s\">", strings.TrimSuffix(language, ";")) + (*comment)[firstIdx:lastIdx] + "</span>" + (*comment)[lastIdx:]
 	}
-
 	
-
 	(*languageMentions).WriteString(language)
 
 	return 1

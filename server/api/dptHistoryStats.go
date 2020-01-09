@@ -8,18 +8,18 @@ import (
 )
 
 // GetAllThreads = Gets All DPT Threads
-func GetAllThreads(w http.ResponseWriter, r *http.Request) {
-	var dptActiveThreads []types.Thread = lib.GetAllDPTThreads()
+func GetAllStats(w http.ResponseWriter, r *http.Request) {
+	var shilledLanguages types.ShilledLanguages = lib.GetAllStatistics()
 	
 	w.Header().Set("Content-Type", "application/json")
 
 	// needed for development
-	enableCorsAgain(&w)
+	enableCorsAgainAgain(&w)
 
-	json.NewEncoder(w).Encode(dptActiveThreads)
+	json.NewEncoder(w).Encode(shilledLanguages)
 }
 
 // TODO: export this stuff to a config file
-func enableCorsAgain(w *http.ResponseWriter) {
+func enableCorsAgainAgain(w *http.ResponseWriter) {
 	(*w).Header().Set("Access-Control-Allow-Origin", "*")
 }

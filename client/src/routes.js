@@ -3,6 +3,7 @@ import AllThreads from './components/threads/allThreads/component';
 import HomePage from './pages/home/page';
 import DptStats from './components/dpt-stats/component';
 import AboutPage from './pages/about/page';
+import HistoryPage from './pages/history/page';
 
 export const routes = [
   {
@@ -24,5 +25,6 @@ export const routes = [
   },
 
   { path: '/', component: HomePage, name: 'home', redirect: 'dpt-stats' },
-  { path: '/about', component: AboutPage, name: 'about' }
+  { path: '/about', component: AboutPage, name: 'about' },
+  { path: '/history', component: HistoryPage, name: 'history' }
 ];

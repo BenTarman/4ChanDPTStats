@@ -9,19 +9,22 @@ import (
 )
 
 func main() {
-
-
 	// Background Tasks that will update database with latest threads every hour
 	go lib.UpdateThreadsChronJob()
+
+	// Background Task that will add up everything in the database. This runs once a day.
+	go lib.SumUpStatisticsChronJob()
 	
 	router := mux.NewRouter()
 
 	// Main endpoint for the threads
 	router.HandleFunc("/api/threads", api.GetAllThreads).Methods("GET")
 
-	// endpoint for OP thread image
+	// Endpoint for OP thread image
 	router.HandleFunc("/api/img/{threadID}", api.GetImages).Methods("GET")
 
-	log.Fatal(http.ListenAndServe(":8000", router))
+	// Endpoint
+	router.HandleFunc("/api/stats", api.GetAllStats).Methods("GET")
 
+	log.Fatal(http.ListenAndServe(":8000", router))
 }
