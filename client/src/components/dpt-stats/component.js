@@ -8,21 +8,24 @@ const DptStats = Vue.component('dpt-stats', {
       prevThreadStyle: 'next-thread__left--disable icon-arrows-square-left',
       nextThreadStyle: 'next-thread__right--active icon-arrows-square-right',
       threadDate: '',
-      currentThreads: [],
-      mode: 'all-threads'
+      currentThreads: []
     };
   },
 
-  mounted() {
-    if (this.mode === 'all-threads') {
-      document.querySelector('.all-threads').style.backgroundColor = '#733e39';
-    } else {
-      document.querySelector('.active-threads').style.backgroundColor =
-        '#733e39';
-    }
-  },
-
   async created() {
+    eventBus.$on('setMode', mode => {
+      if (mode === 'all-threads') {
+        document.querySelector('.all-threads').style.backgroundColor =
+          '#733e39';
+        document.querySelector('.active-threads').style.backgroundColor =
+          '#353535';
+      } else {
+        document.querySelector('.active-threads').style.backgroundColor =
+          '#733e39';
+        document.querySelector('.all-threads').style.backgroundColor =
+          '#353535';
+      }
+    });
     eventBus.$on('setThreadDate', date => {
       this.threadDate = date;
     });

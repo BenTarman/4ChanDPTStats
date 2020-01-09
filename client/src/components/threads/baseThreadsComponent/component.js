@@ -59,6 +59,7 @@ const BaseThreadsComponent = {
         : await getActiveDptThreads();
     this.setThreadData();
 
+    eventBus.$emit('setMode', this.$route.name);
     eventBus.$emit('setCurrentThreads', this.threads);
 
     if (this.threads.length <= 1) {
