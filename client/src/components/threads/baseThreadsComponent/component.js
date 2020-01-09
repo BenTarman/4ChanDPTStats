@@ -45,11 +45,21 @@ const BaseThreadsComponent = {
       this.setThreadData();
     });
 
+    // Go to specefic thread selected from dropdown control
+    eventBus.$on('goToThread', threadID => {
+      this.currThreadIdx = this.threads.indexOf(
+        this.threads.find(thread => thread.threadInfo.threadID === threadID)
+      );
+      this.setThreadData();
+    });
+
     this.threads =
       this.$route.name === 'all-threads'
         ? await getAllDptThreads()
         : await getActiveDptThreads();
     this.setThreadData();
+
+    eventBus.$emit('setCurrentThreads', this.threads);
 
     if (this.threads.length <= 1) {
       eventBus.$emit('disableBothArrows');

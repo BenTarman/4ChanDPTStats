@@ -14,6 +14,19 @@ export async function getAllDptThreads() {
   return threads.data;
 }
 
+export async function getTotalDptStatistics() {
+  if (sessionStorage.getItem('dptStatsTotal')) {
+    try {
+      return JSON.parse(sessionStorage.getItem('dptStatsTotal'));
+    } catch (e) {
+      return {};
+    }
+  }
+
+  const allStats = await axios.get('http://localhost:8000/api/stats');
+  return allStats.data;
+}
+
 export async function getActiveDptThreads() {
   if (sessionStorage.getItem('activeDptThreads')) {
     try {

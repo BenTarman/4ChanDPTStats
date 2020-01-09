@@ -47,7 +47,12 @@ const dptStatsHTML = fs.readFileSync(
 );
 
 const threadFiltersHTML = fs.readFileSync(
-  'src/components/thread-filters/thread-filters.html',
+  'src/components/thread-filters/template.html',
+  'utf-8'
+);
+
+const threadSelectHTML = fs.readFileSync(
+  'src/components/thread-select/template.html',
   'utf-8'
 );
 
@@ -73,7 +78,8 @@ module.exports = {
       threadPostTemplate: JSON.stringify(threadPostHTML),
       threadsTemplate: JSON.stringify(threadsHTML),
       dptStatsTemplate: JSON.stringify(dptStatsHTML),
-      threadFiltersTemplate: JSON.stringify(threadFiltersHTML)
+      threadFiltersTemplate: JSON.stringify(threadFiltersHTML),
+      threadSelectTemplate: JSON.stringify(threadSelectHTML)
     })
   ],
   module: {
