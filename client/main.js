@@ -11,6 +11,8 @@ import './src/components/threadPosts/component';
 import './src/components/threadPost/component';
 import './src/components/thread-filters/component';
 import './src/components/thread-select/component';
+import './src/components/thread-type-select/component';
+import './src/components/sort-graph-dropdown/component';
 
 // global component files upperlevel.
 import './src/components/shilledLanguageBarGraph/component';

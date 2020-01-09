@@ -24,7 +24,12 @@ export const routes = [
     ]
   },
 
-  { path: '/', component: HomePage, name: 'home', redirect: 'dpt-stats' },
+  {
+    path: '/',
+    component: HomePage,
+    name: 'home',
+    redirect: 'dpt-stats/active-threads'
+  },
   { path: '/about', component: AboutPage, name: 'about' },
   { path: '/history', component: HistoryPage, name: 'history' }
 ];

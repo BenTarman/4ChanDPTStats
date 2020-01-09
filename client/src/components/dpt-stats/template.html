@@ -1,10 +1,7 @@
 <div class="display">
   <div class="threadFilters row">
     <div class="threadDate col-1-of-4">
-      thread date: {{threadDate}}
-    </div>
-    <div class="col-1-of-4">
-      <thread-filters></thread-filters>
+      <sort-graph-dropdown></sort-graph-dropdown>
     </div>
     <div class="col-1-of-4">
       <thread-filters></thread-filters>
@@ -12,13 +9,16 @@
     <div class="col-1-of-4">
       <thread-select :currentThreads="currentThreads"></thread-select>
     </div>
+    <div class="col-1-of-4">
+      <thread-type-select></thread-type-select>
+    </div>
   </div>
   <section class="display-options row">
     <div class="col-1-of-4 next-thread">
       <i @click="prevThread" :class="prevThreadStyle"></i>
     </div>
 
-    <div class="view-choice col-1-of-4">
+    <div class="view-choice active-threads col-1-of-4">
       <router-link
         :to="{name: 'active-threads'}"
         class="view-choice__link"
@@ -30,7 +30,7 @@
       </router-link>
     </div>
 
-    <div class="view-choice col-1-of-4">
+    <div class="view-choice all-threads col-1-of-4">
       <router-link
         :to="{name: 'all-threads'}"
         class="view-choice__link"

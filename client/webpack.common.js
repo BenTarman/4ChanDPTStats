@@ -56,6 +56,16 @@ const threadSelectHTML = fs.readFileSync(
   'utf-8'
 );
 
+const threadTypeSelectHTML = fs.readFileSync(
+  'src/components/thread-type-select/template.html',
+  'utf-8'
+);
+
+const sortGraphDropdownHTML = fs.readFileSync(
+  'src/components/sort-graph-dropdown/template.html',
+  'utf-8'
+);
+
 module.exports = {
   entry: {
     app: './main.js'
@@ -79,7 +89,9 @@ module.exports = {
       threadsTemplate: JSON.stringify(threadsHTML),
       dptStatsTemplate: JSON.stringify(dptStatsHTML),
       threadFiltersTemplate: JSON.stringify(threadFiltersHTML),
-      threadSelectTemplate: JSON.stringify(threadSelectHTML)
+      threadSelectTemplate: JSON.stringify(threadSelectHTML),
+      threadTypeSelectTemplate: JSON.stringify(threadTypeSelectHTML),
+      sortGraphDropdownTemplate: JSON.stringify(sortGraphDropdownHTML)
     })
   ],
   module: {

@@ -8,8 +8,18 @@ const DptStats = Vue.component('dpt-stats', {
       prevThreadStyle: 'next-thread__left--disable icon-arrows-square-left',
       nextThreadStyle: 'next-thread__right--active icon-arrows-square-right',
       threadDate: '',
-      currentThreads: []
+      currentThreads: [],
+      mode: 'all-threads'
     };
+  },
+
+  mounted() {
+    if (this.mode === 'all-threads') {
+      document.querySelector('.all-threads').style.backgroundColor = '#733e39';
+    } else {
+      document.querySelector('.active-threads').style.backgroundColor =
+        '#733e39';
+    }
   },
 
   async created() {

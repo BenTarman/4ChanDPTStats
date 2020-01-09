@@ -1,0 +1,16 @@
+.thread-select-type {
+  color: white;
+  font-size: 1.8rem;
+
+  .thread-select-options {
+    display: flex;
+
+    border-radius: 1rem;
+
+    div {
+      background-color: $color-secondary-dark;
+      border: 1px solid black;
+      padding: 2rem 3.2rem;
+    }
+  }
+}

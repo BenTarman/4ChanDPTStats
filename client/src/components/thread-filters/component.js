@@ -10,7 +10,28 @@ const ThreadFilters = Vue.component('thread-filters', {
   data() {
     return {
       values: [],
-      options: ['python', 'javascript']
+      options: [
+        'typescript',
+        'swift',
+        'scheme',
+        'scala',
+        'rust',
+        'ruby',
+        'python',
+        'perl',
+        'php',
+        'lisp',
+        'kotlin',
+        'javascript',
+        'java',
+        'haskell',
+        'go',
+        'erlang',
+        'elixir',
+        'C++',
+        'C#',
+        'C'
+      ]
     };
   },
 
