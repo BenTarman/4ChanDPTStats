@@ -8,7 +8,8 @@ const DptStats = Vue.component('dpt-stats', {
       prevThreadStyle: 'next-thread__left--disable icon-arrows-square-left',
       nextThreadStyle: 'next-thread__right--active icon-arrows-square-right',
       threadDate: '',
-      currentThreads: []
+      currentThreads: [],
+      showThread: null
     };
   },
 
@@ -32,6 +33,10 @@ const DptStats = Vue.component('dpt-stats', {
 
     eventBus.$on('setCurrentThreads', threads => {
       this.currentThreads = threads;
+    });
+
+    eventBus.$on('setShowThread', thread => {
+      this.showThread = thread;
     });
 
     eventBus.$on('disableLeftArrow', () => {

@@ -7,7 +7,10 @@
       <thread-filters></thread-filters>
     </div>
     <div class="col-1-of-4">
-      <thread-select :currentThreads="currentThreads"></thread-select>
+      <thread-select
+        :currentThreads="currentThreads"
+        :showThread="showThread"
+      ></thread-select>
     </div>
     <div class="col-1-of-4">
       <thread-type-select></thread-type-select>

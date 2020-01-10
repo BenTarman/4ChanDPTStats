@@ -7,7 +7,7 @@ const ThreadSelect = Vue.component('thread-select', {
     };
   },
 
-  props: ['currentThreads'],
+  props: ['currentThreads', 'showThread'],
 
   components: {
     Multiselect: window.VueMultiselect.default
@@ -16,6 +16,12 @@ const ThreadSelect = Vue.component('thread-select', {
   watch: {
     value() {
       eventBus.$emit('goToThread', this.value.split(':')[0]);
+    },
+
+    // Manually select from dropdown list if thread view changed in some other way besides using dropdown
+    // (ie press arrow or initial page load).
+    showThread() {
+      this.value = `${this.showThread.threadInfo.threadID}: ${this.showThread.posts[0].now}`;
     }
   },
 

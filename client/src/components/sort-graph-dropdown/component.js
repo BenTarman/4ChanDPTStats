@@ -1,3 +1,5 @@
+import { eventBus } from '../../Events';
+
 const SortGraphDropdown = Vue.component('sort-graph-dropdown', {
   data() {
     return {
@@ -8,6 +10,12 @@ const SortGraphDropdown = Vue.component('sort-graph-dropdown', {
 
   components: {
     Multiselect: window.VueMultiselect.default
+  },
+
+  watch: {
+    value() {
+      eventBus.$emit('sortGraph', this.value);
+    }
   },
 
   template: sortGraphDropdownTemplate

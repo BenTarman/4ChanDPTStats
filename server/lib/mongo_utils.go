@@ -8,6 +8,7 @@ import (
 	"go.mongodb.org/mongo-driver/mongo"
 	"go.mongodb.org/mongo-driver/mongo/options"
 	"github.com/BenTarman/4ChanDPTStats.git/server/types"
+	"fmt"
 )
 
 // InsertActiveDPTThreads = insert active dpt threads into mongo. Don't insert duplicates.
@@ -37,13 +38,19 @@ func InsertActiveDPTThreads(dptThreads []types.Thread) {
 		var currThread types.Thread
 		threadsCollection.FindOne(context.Background(), bson.M{ "threadInfo.threadID": p.ThreadInfo.ID }).Decode(&currThread)
 
-		// If in the collection just delete it (and will reinsert correct one).
+		fmt.Println(currThread.ThreadInfo.ID, p.ThreadInfo.ID)
+		// If in the collection just update it
 		if currThread.ThreadInfo.ID == p.ThreadInfo.ID {
-			threadsCollection.DeleteOne(ctx, bson.M{"threadInfo.threadID": currThread.ThreadInfo.ID})
+			fmt.Println("deleting thread")
+			threadsCollection.UpdateOne(ctx,  bson.M{}, bson.D{
+				{"$set", bson.D{{"threadInfo.isActive", 1}}},
+			})
+		} else {
+			// else insert into mongo (will have isActive=1)
+			threadsCollection.InsertOne(context.Background(), p)
 		}
 
-		// else insert into mongo (will have isActive=1)
-		threadsCollection.InsertOne(context.Background(), p)
+		
 	}
 }
 

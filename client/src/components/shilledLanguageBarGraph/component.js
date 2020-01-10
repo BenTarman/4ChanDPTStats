@@ -1,3 +1,5 @@
+import { eventBus } from '../../Events';
+
 function dynamicSort(property) {
   let sortOrder = 1;
   // allow negative sorting
@@ -13,10 +15,18 @@ function dynamicSort(property) {
 }
 
 const ShilledLanguageBarGraph = Vue.component('shilled-language-bar-graph', {
-  data() {
-    return {
-      componentKey: 0
-    };
+  created() {
+    eventBus.$on('sortGraph', sortValue => {
+      if (sortValue === 'ascending') {
+        this.sortAscending();
+      } else if (sortValue === 'descending') {
+        this.sortDescending();
+      } else if (sortValue === 'alphabetical') {
+        this.sortAlphebetical();
+      } else {
+        this.sortRandom();
+      }
+    });
   },
 
   template: shilledLanguageBarGraphTemplate,
@@ -39,10 +49,34 @@ const ShilledLanguageBarGraph = Vue.component('shilled-language-bar-graph', {
   },
 
   methods: {
-    sortByLangCounts() {},
+    sortAscending() {
+      this.languageCounts = this.languageCounts.sort(
+        (a, b) => a.count < b.count
+      );
+    },
 
-    forceRerender() {
-      this.componentKey += 1;
+    sortDescending() {
+      this.languageCounts = this.languageCounts.sort(
+        (a, b) => a.count > b.count
+      );
+    },
+
+    sortAlphebetical() {
+      this.languageCounts = this.languageCounts.sort(
+        (a, b) => a.language > b.language
+      );
+    },
+
+    sortRandom() {
+      // need to shallow copy before shuffling.
+      const shuffleArr = [...this.languageCounts];
+      for (let i = shuffleArr.length - 1; i > 0; i--) {
+        // randomly get index to swap places with.
+        const j = Math.floor(Math.random() * (i + 1));
+        [shuffleArr[i], shuffleArr[j]] = [shuffleArr[j], shuffleArr[i]];
+      }
+
+      this.languageCounts = shuffleArr;
     }
   }
 });

@@ -62,6 +62,7 @@ const BaseThreadsComponent = {
     eventBus.$emit('setMode', this.$route.name);
     eventBus.$emit('setCurrentThreads', this.threads);
 
+    debugger;
     if (this.threads.length <= 1) {
       eventBus.$emit('disableBothArrows');
     }
@@ -109,6 +110,9 @@ const BaseThreadsComponent = {
   methods: {
     async setThreadData() {
       const currThread = this.threads[this.currThreadIdx];
+
+      // Make sure dropdown sets correct thread on display
+      eventBus.$emit('setShowThread', currThread);
 
       const languageCountsObj = currThread.languageCounts;
 
