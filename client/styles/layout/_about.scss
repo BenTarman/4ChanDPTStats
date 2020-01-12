@@ -1,0 +1,29 @@
+.about {
+  color: $color-white;
+  font-size: 1.8rem;
+  text-align: center;
+  margin-bottom: 5rem;
+}
+
+.backHomeWrapper {
+  text-align: center;
+}
+
+.backHome {
+  color: $color-white;
+  font-size: 1.6rem;
+  text-align: center;
+  text-decoration: none;
+  display: inline-block;
+  background-color: $color-secondary-dark;
+  padding: 1.5rem 2.5rem;
+  border-radius: 5px;
+
+  &:hover {
+    background-color: $color-primary-green;
+  }
+
+  &:active {
+    background-color: $color-purple;
+  }
+}

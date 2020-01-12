@@ -10,7 +10,6 @@ const historyPage = {
   async created() {
     const dptStatsTotal = await getTotalDptStatistics();
 
-    debugger;
     // languageCounts
     const langCounts = [];
     for (let key in dptStatsTotal) {

@@ -27,6 +27,7 @@ const DptStats = Vue.component('dpt-stats', {
           '#353535';
       }
     });
+
     eventBus.$on('setThreadDate', date => {
       this.threadDate = date;
     });

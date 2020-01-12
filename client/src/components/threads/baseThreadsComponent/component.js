@@ -62,7 +62,6 @@ const BaseThreadsComponent = {
     eventBus.$emit('setMode', this.$route.name);
     eventBus.$emit('setCurrentThreads', this.threads);
 
-    debugger;
     if (this.threads.length <= 1) {
       eventBus.$emit('disableBothArrows');
     }

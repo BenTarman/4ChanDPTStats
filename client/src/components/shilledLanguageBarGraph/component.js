@@ -1,32 +1,28 @@
 import { eventBus } from '../../Events';
 
-function dynamicSort(property) {
-  let sortOrder = 1;
-  // allow negative sorting
-  if (property[0] === '-') {
-    sortOrder = -1;
-    property = property.substr(1);
-  }
-  return (a, b) => {
-    const result =
-      a[property] < b[property] ? -1 : a[property] > b[property] ? 1 : 0;
-    return result * sortOrder;
-  };
-}
-
 const ShilledLanguageBarGraph = Vue.component('shilled-language-bar-graph', {
+  data() {
+    return {
+      currentSort: 'random'
+    };
+  },
+
   created() {
     eventBus.$on('sortGraph', sortValue => {
-      if (sortValue === 'ascending') {
-        this.sortAscending();
-      } else if (sortValue === 'descending') {
-        this.sortDescending();
-      } else if (sortValue === 'alphabetical') {
-        this.sortAlphebetical();
-      } else {
-        this.sortRandom();
-      }
+      this.currentSort = sortValue;
     });
+  },
+
+  beforeUpdate() {
+    if (this.currentSort === 'ascending') {
+      this.sortAscending();
+    } else if (this.currentSort === 'descending') {
+      this.sortDescending();
+    } else if (this.currentSort === 'alphabetical') {
+      this.sortAlphebetical();
+    } else {
+      this.sortRandom();
+    }
   },
 
   template: shilledLanguageBarGraphTemplate,
@@ -45,6 +41,20 @@ const ShilledLanguageBarGraph = Vue.component('shilled-language-bar-graph', {
         }
       }
       return max;
+    }
+  },
+
+  watch: {
+    currentSort: function() {
+      if (this.currentSort === 'ascending') {
+        this.sortAscending();
+      } else if (this.currentSort === 'descending') {
+        this.sortDescending();
+      } else if (this.currentSort === 'alphabetical') {
+        this.sortAlphebetical();
+      } else {
+        this.sortRandom();
+      }
     }
   },
 
