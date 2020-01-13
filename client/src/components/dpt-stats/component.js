@@ -5,7 +5,7 @@ const DptStats = Vue.component('dpt-stats', {
 
   data() {
     return {
-      prevThreadStyle: 'icon icon-keyboard_arrow_left--active',
+      prevThreadStyle: 'icon icon-keyboard_arrow_left--disable',
       nextThreadStyle: 'icon icon-keyboard_arrow_right--active',
       threadDate: '',
       currentThreads: [],

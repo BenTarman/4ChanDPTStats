@@ -134,11 +134,11 @@ const BaseThreadsComponent = {
       // posts
       this.posts = currThread.posts;
 
+      // Have posts respect current filter
+      this.updatePostsByFilter(this.currFilters);
+
       // Thread date is on the first post
       eventBus.$emit('setThreadDate', this.posts[0].now);
-
-      // by default show whole thread
-      this.filteredPosts = this.posts;
     },
 
     updatePostsByFilter(filter) {

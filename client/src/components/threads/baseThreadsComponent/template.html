@@ -8,7 +8,11 @@
     <div class="col-1-of-2">
       <div class="chanThread">
         <thread-info :threadInfo="threadInfo"></thread-info>
-        <thread-posts :posts="filteredPosts"></thread-posts>
+        <thread-posts
+          :posts="filteredPosts"
+          :currFilters="currFilters"
+          :highlightLangs="highlightLangs"
+        ></thread-posts>
       </div>
 
       <div class="icon-keyboard_arrow_down">

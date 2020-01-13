@@ -11,7 +11,9 @@ export async function getAllDptThreads() {
   }
 
   const threads = await axios.get('http://localhost:8000/api/threads');
-  return threads.data;
+  return threads.data.sort(
+    (a, b) => a.threadInfo.unixtime < b.threadInfo.unixtime
+  );
 }
 
 export async function getTotalDptStatistics() {
@@ -38,7 +40,10 @@ export async function getActiveDptThreads() {
   }
 
   const threads = await axios.get('http://localhost:8000/api/threads');
-  return threads.data.filter(thread => thread.threadInfo.isActive === 1);
+  debugger;
+  return threads.data
+    .filter(thread => thread.threadInfo.isActive === 1)
+    .sort((a, b) => a.threadInfo.unixtime < b.threadInfo.unixtime);
 }
 
 // Get most recent thread

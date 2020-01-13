@@ -39,9 +39,14 @@ func InsertActiveDPTThreads(dptThreads []types.Thread) {
 
 		// If in the collection just update it
 		if currThread.ThreadInfo.ID == p.ThreadInfo.ID {
-			threadsCollection.UpdateOne(ctx,  bson.M{}, bson.D{
-				{"$set", bson.D{{"threadInfo.isActive", 1}}},
-			})
+			threadsCollection.UpdateOne(ctx,  bson.M{"threadInfo.threadID": p.ThreadInfo.ID}, bson.M{
+				"$set": bson.M{
+				  "threadInfo": p.ThreadInfo,
+				  "languageCounts": p.ShilledLanguages,
+				  "posts": p.Posts,
+				},
+			  },
+			)
 		} else {
 			// else insert into mongo (will have isActive=1)
 			threadsCollection.InsertOne(context.Background(), p)

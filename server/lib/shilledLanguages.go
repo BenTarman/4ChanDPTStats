@@ -1,12 +1,10 @@
 // This file is just regex to match languages in comments
-
 package lib
 
 import (
 	"fmt"
 	"regexp"
 	"strings"
-
 	"github.com/BenTarman/4ChanDPTStats.git/server/types"
 )
 
@@ -52,7 +50,8 @@ func GetShilledLanguageCountInThread(dptThread *types.Thread) types.ShilledLangu
 }
 
 func findShilledLanguageCount(match string, comment *string, languageMentions *strings.Builder, language string, offset *int) int {
-	re := regexp.MustCompile(match)
+	matchLang := fmt.Sprintf("(\\s+%s\\s+)|(^%s$)|(\\s+%s$)|(^%s\\s+)", match, match, match, match)
+	re := regexp.MustCompile(matchLang)
 	matches := re.FindAllStringIndex(*comment, -1)
 
 	if len(matches) == 0 {
@@ -68,7 +67,6 @@ func findShilledLanguageCount(match string, comment *string, languageMentions *s
 	}
 	
 	(*languageMentions).WriteString(language)
-
 	return 1
 }
 
@@ -89,7 +87,7 @@ func FindJavaScriptInComment(comment *string, languageMentions *strings.Builder,
 
 // Java
 func FindJavaInComment(comment *string, languageMentions *strings.Builder, offset *int) int {
-	return findShilledLanguageCount("Java|Java", comment, languageMentions, "java;", offset)
+	return findShilledLanguageCount("Java|java", comment, languageMentions, "java;", offset)
 }
 
 // C++
@@ -109,7 +107,7 @@ func FindTypeScriptInComment(comment *string, languageMentions *strings.Builder,
 
 // Go TODO: edit this to not allow search at start
 func FindGoInComment(comment *string, languageMentions *strings.Builder, offset *int) int {
-	return findShilledLanguageCount("goLang|golang|, go| , Go", comment, languageMentions, "golang;", offset)
+	return findShilledLanguageCount("goLang|golang|Go", comment, languageMentions, "golang;", offset)
 }
 
 // Ruby
@@ -169,5 +167,5 @@ func FindLispInComment(comment *string, languageMentions *strings.Builder, offse
 
 // C
 func FindCInComment(comment *string, languageMentions *strings.Builder, offset *int) int {
-	return findShilledLanguageCount("<br>C\\s+|\\s+C\\s+|\\s+C\\.", comment, languageMentions, "C;", offset)
+	return findShilledLanguageCount("C|c", comment, languageMentions, "C;", offset)
 }

@@ -5,6 +5,12 @@ const homePage = {
     return {
       showNavBar: false
     };
+  },
+
+  methods: {
+    transitionHome() {
+      this.$router.push('/');
+    }
   }
 };
 

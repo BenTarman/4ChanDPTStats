@@ -103,5 +103,9 @@ func GetActiveDPTThreads() []types.Thread {
 		getThread(apiURL, dptThreadObj, &dptActiveThreads)
 	}
 
+
+
 	return dptActiveThreads
 }
+
+
