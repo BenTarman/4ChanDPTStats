@@ -6,7 +6,8 @@
   "scripts": {
     "build": "webpack --config webpack.prod.js",
     "start": "webpack-dev-server --config webpack.dev.js",
-    "clean-dist": "rm -rf dist/"
+    "clean-dist": "rm -rf dist/",
+    "prod-build": "rm -rf ../server/dist && npm run build && cp -r dist ../server/ && cp -r data ../server/dist"
   },
   "author": "",
   "license": "ISC",
