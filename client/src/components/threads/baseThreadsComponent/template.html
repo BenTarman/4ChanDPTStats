@@ -11,8 +11,10 @@
         <thread-posts :posts="filteredPosts"></thread-posts>
       </div>
 
-      <div class="down-arrow-btn">
-        <i class="adjust-view icon-arrows-down-double" @click="adjustView"></i>
+      <div class="icon-keyboard_arrow_down">
+        <svg class="icon-keyboard_arrow_down-svg" @click="adjustView">
+          <use xlink:href="data/symbol-defs.svg#icon-keyboard_arrow_down"></use>
+        </svg>
       </div>
     </div>
   </div>

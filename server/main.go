@@ -5,6 +5,7 @@ import (
 	"log"
 	"net/http"
 	"github.com/gorilla/mux"
+	"github.com/gorilla/handlers"
 	"github.com/BenTarman/4ChanDPTStats.git/server/lib"
 )
 
@@ -26,5 +27,19 @@ func main() {
 	// Endpoint
 	router.HandleFunc("/api/stats", api.GetAllStats).Methods("GET")
 
-	log.Fatal(http.ListenAndServe(":8000", router))
+	// index webapp
+	// router.PathPrefix("/").Handler(http.FileServer(http.Dir("./dist/")))
+
+
+
+
+	router.PathPrefix("/").Handler(http.StripPrefix("/", http.FileServer(http.Dir("dist"))))
+
+
+	// Where ORIGIN_ALLOWED is like `scheme://dns[:port]`, or `*` (insecure)
+	headersOk := handlers.AllowedHeaders([]string{"X-Requested-With"})
+	originsOk := handlers.AllowedOrigins([]string{"*"})
+	methodsOk := handlers.AllowedMethods([]string{"GET", "HEAD", "POST", "PUT", "OPTIONS"})
+
+	log.Fatal(http.ListenAndServe(":8000", handlers.CORS(originsOk, headersOk, methodsOk)(router)))
 }

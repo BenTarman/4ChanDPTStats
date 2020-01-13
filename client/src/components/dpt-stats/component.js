@@ -5,8 +5,8 @@ const DptStats = Vue.component('dpt-stats', {
 
   data() {
     return {
-      prevThreadStyle: 'next-thread__left--disable icon-arrows-square-left',
-      nextThreadStyle: 'next-thread__right--active icon-arrows-square-right',
+      prevThreadStyle: 'icon icon-keyboard_arrow_left--active',
+      nextThreadStyle: 'icon icon-keyboard_arrow_right--active',
       threadDate: '',
       currentThreads: [],
       showThread: null
@@ -41,38 +41,28 @@ const DptStats = Vue.component('dpt-stats', {
     });
 
     eventBus.$on('disableLeftArrow', () => {
-      this.prevThreadStyle =
-        'next-thread__left--disable icon-arrows-square-left';
-      this.nextThreadStyle =
-        'next-thread__right--active icon-arrows-square-right';
+      this.prevThreadStyle = 'icon icon-keyboard_arrow_left--disable';
+      this.nextThreadStyle = 'icon icon-keyboard_arrow_right--active';
     });
 
     eventBus.$on('disableRightArrow', () => {
-      this.prevThreadStyle =
-        'next-thread__left--active icon-arrows-square-left';
-      this.nextThreadStyle =
-        'next-thread__right--disable icon-arrows-square-right';
+      this.prevThreadStyle = 'icon icon-keyboard_arrow_left--active';
+      this.nextThreadStyle = 'icon icon-keyboard_arrow_right--disable';
     });
 
     eventBus.$on('resetArrows', () => {
-      this.prevThreadStyle =
-        'next-thread__left--disable icon-arrows-square-left';
-      this.nextThreadStyle =
-        'next-thread__right--active icon-arrows-square-right';
+      this.prevThreadStyle = 'icon icon-keyboard_arrow_left--disable';
+      this.nextThreadStyle = 'icon icon-keyboard_arrow_right--active';
     });
 
     eventBus.$on('enableBothArrows', () => {
-      this.prevThreadStyle =
-        'next-thread__left--active icon-arrows-square-left';
-      this.nextThreadStyle =
-        'next-thread__right--active icon-arrows-square-right';
+      this.prevThreadStyle = 'icon icon-keyboard_arrow_left--active';
+      this.nextThreadStyle = 'icon icon-keyboard_arrow_right--active';
     });
 
     eventBus.$on('disableBothArrows', () => {
-      this.prevThreadStyle =
-        'next-thread__left--disable icon-arrows-square-left';
-      this.nextThreadStyle =
-        'next-thread__right--disable icon-arrows-square-right';
+      this.prevThreadStyle = 'icon icon-keyboard_arrow_left--disable';
+      this.nextThreadStyle = 'icon icon-keyboard_arrow_right--disable';
     });
   },
 

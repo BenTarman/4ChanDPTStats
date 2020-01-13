@@ -14,8 +14,10 @@
     </div>
   </div>
   <section class="display-options row">
-    <div class="col-1-of-4 next-thread">
-      <i @click="prevThread" :class="prevThreadStyle"></i>
+    <div class="col-1-of-4 icon-keyboard_arrow_left">
+      <svg :class="prevThreadStyle" @click="prevThread">
+        <use xlink:href="data/symbol-defs.svg#icon-keyboard_arrow_left"></use>
+      </svg>
     </div>
 
     <div class="view-choice active-threads col-1-of-4">
@@ -42,8 +44,10 @@
       </router-link>
     </div>
 
-    <div class="col-1-of-4 next-thread">
-      <i @click="nextThread" :class="nextThreadStyle"></i>
+    <div class="col-1-of-4 icon-keyboard_arrow_right">
+      <svg :class="nextThreadStyle" @click="nextThread">
+        <use xlink:href="data/symbol-defs.svg#icon-keyboard_arrow_right"></use>
+      </svg>
     </div>
   </section>
 
