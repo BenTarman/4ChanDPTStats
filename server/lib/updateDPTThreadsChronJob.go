@@ -7,7 +7,7 @@ import (
 )
 
 func UpdateThreadsChronJob() {
-	gocron.Every(2).Seconds().Do(updateMongoWithNewThreads)
+	gocron.Every(1).Hour().Do(updateMongoWithNewThreads)
 	<- gocron.Start()
 }
 

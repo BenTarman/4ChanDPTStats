@@ -10,7 +10,7 @@ export async function getAllDptThreads() {
     }
   }
 
-  const threads = await axios.get('http://localhost:8000/api/threads');
+  const threads = await axios.get(`${apiURL}/api/threads`);
   return threads.data.sort(
     (a, b) => a.threadInfo.unixtime < b.threadInfo.unixtime
   );
@@ -25,7 +25,7 @@ export async function getTotalDptStatistics() {
     }
   }
 
-  const allStats = await axios.get('http://localhost:8000/api/stats');
+  const allStats = await axios.get(`${apiURL}/api/stats`);
   return allStats.data;
 }
 
@@ -39,8 +39,9 @@ export async function getActiveDptThreads() {
     }
   }
 
-  const threads = await axios.get('http://localhost:8000/api/threads');
-  debugger;
+  const threads = await axios.get(`${apiURL}/api/threads`);
+
+  console.log(apiURL);
   return threads.data
     .filter(thread => thread.threadInfo.isActive === 1)
     .sort((a, b) => a.threadInfo.unixtime < b.threadInfo.unixtime);
@@ -62,12 +63,9 @@ export function getLatestDptThread(dptThreads) {
 }
 
 async function getBase64(threadID) {
-  const response = await axios.get(
-    `http://localhost:8000/api/img/${threadID}`,
-    {
-      responseType: 'arraybuffer'
-    }
-  );
+  const response = await axios.get(`${apiURL}/api/img/${threadID}`, {
+    responseType: 'arraybuffer'
+  });
 
   return 'data:image/jpg;base64,'.concat(
     Buffer.from(response.data, 'binary').toString('base64')
