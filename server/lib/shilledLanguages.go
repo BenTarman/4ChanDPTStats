@@ -50,7 +50,7 @@ func GetShilledLanguageCountInThread(dptThread *types.Thread) types.ShilledLangu
 }
 
 func findShilledLanguageCount(match string, comment *string, languageMentions *strings.Builder, language string, offset *int) int {
-	matchLang := fmt.Sprintf("(\\s+%s\\s+)|(^%s$)|(\\s+%s$)|(^%s\\s+)", match, match, match, match)
+	matchLang := fmt.Sprintf("(\\s+(%s)\\s+)|(^(%s)$)|(\\s+(%s)$)|(^(%s)\\s+)", match, match, match, match)
 	re := regexp.MustCompile(matchLang)
 	matches := re.FindAllStringIndex(*comment, -1)
 

@@ -19,7 +19,7 @@ func DownLoadImg(fullURLFile string, threadID string) {
 }
 
 func downloadFile(client *http.Client, fullURLFile string, fileName string) {
-	file, err := os.Create("img/" + fileName)
+	file, err := os.Create("/home/eango/img/" + fileName)
     checkError(err)
     resp, err := client.Get(fullURLFile)
     checkError(err)

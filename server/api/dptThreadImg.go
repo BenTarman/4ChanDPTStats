@@ -18,7 +18,7 @@ func GetImages(w http.ResponseWriter, r *http.Request) {
 	// needed for development
 	enableCors(&w)
 
-	var url = fmt.Sprintf("/home/bentarman/codeProjects/4chanDPTShill/server/img/%v.png", threadID)
+	var url = fmt.Sprintf("/home/eango/img/%v.png", threadID)
 	http.ServeFile(w, r, url)
 }
 
